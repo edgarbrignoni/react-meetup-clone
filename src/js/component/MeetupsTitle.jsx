@@ -9,7 +9,7 @@ export class MeetupsTitle extends React.Component{
     render(){
         return (
             <div className="jumbotron jumbotron-fluid" style="padding-right: 210px;">
-                <div class="container">
+                <div className="container">
                     <a href="https://placeholder.com"><img src="http://via.placeholder.com/600x350"></img></a>
                     <h2 className="display-4">Meetup 1</h2>
                     <p className="lead">Location.</p>
