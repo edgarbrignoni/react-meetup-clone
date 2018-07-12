@@ -84,4 +84,3 @@ To include images, styles or any other type of file just use the **import** comm
 1. All your JS and CSS code must go inside the src/ directory, and webpack will automaticly bundle them and export them into the public folder.
 
 2. The HTML code must be inside public/index.html
-# react-meetup-clone
