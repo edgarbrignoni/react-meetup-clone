@@ -14,7 +14,6 @@ export class Home extends React.Component{
                 <NavBar />
                 <HomeTitle />
                 <HomeBody />
-                <Footer />
             </React.Fragment>
         );
     }
