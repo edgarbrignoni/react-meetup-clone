@@ -118,7 +118,7 @@ export default class Layout extends React.Component {
             ],
             "session": {
                 ID: 1,
-                userName: "mikeb",
+                userName: "mompy",
                 password: "abc123",
                 token: "wjer147892akerfdv"
             },
