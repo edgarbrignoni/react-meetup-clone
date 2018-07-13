@@ -14,7 +14,6 @@ export class Events extends React.Component{
                 <NavBar />
                 <EventsTitle />
                 <EventsBody />
-                <Footer />
             </React.Fragment>
         );
     }

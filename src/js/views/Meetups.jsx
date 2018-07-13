@@ -14,7 +14,6 @@ export class Meetups extends React.Component{
                 <NavBar />
                 <MeetupsTitle />
                 <MeetupsBody />
-                <Footer />
             </React.Fragment>
         );
     }

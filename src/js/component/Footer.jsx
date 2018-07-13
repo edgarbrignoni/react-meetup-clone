@@ -7,7 +7,7 @@ export class Footer extends React.Component{
     render(){
         return (
             <div className="footer">
-                <div className="container pb-2">
+                <div className="container-fluid pb-2">
                     <p className="text-center"><img src="http://via.placeholder.com/200x50" /></p>
                 </div>
             </div>
