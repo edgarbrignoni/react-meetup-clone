@@ -10,10 +10,16 @@ export class MeetupsTitle extends React.Component{
         return (
             <div className="jumbotron jumbotron-fluid">
                 <div className="container">
-                    <a href="https://placeholder.com"><img src="http://via.placeholder.com/600x350"/></a>
-                    <h2 className="display-4">Meetup 1</h2>
-                    <p className="lead">Location.</p>
-                    <p className="lead">Miami, FL</p>
+                    <div className="row align-items-start">
+                        <div className="col-6">
+                            <a href="https://placeholder.com"><img src="http://via.placeholder.com/600x350"/></a>
+                        </div>
+                        <div className="col-4">
+                            <h4 className="display-4">Meetup 1</h4>
+                            <p className="lead">Location.</p>
+                            <p className="lead">Miami, FL</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         );
