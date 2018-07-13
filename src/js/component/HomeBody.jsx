@@ -8,12 +8,9 @@ export class HomeBody extends React.Component{
     
     render(){
         return (
-            <React.Fragment>
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-            </React.Fragment>
+            // <React.Fragment>
+            <Card />
+            // </React.Fragment>
         );
     }
 }
