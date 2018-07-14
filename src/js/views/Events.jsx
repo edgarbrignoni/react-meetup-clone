@@ -12,8 +12,7 @@ export class Events extends React.Component{
         return (
             <React.Fragment>
                 <NavBar />
-                <EventsTitle />
-                <EventsBody />
+                <Footer />
             </React.Fragment>
         );
     }

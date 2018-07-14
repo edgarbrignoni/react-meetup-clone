@@ -10,9 +10,21 @@ export class HomeBody extends React.Component{
     render(){
         return (
             <Consumer>
-                {({ state }) => (state.events.map((item, index) => {
-                    <Card />;
-                }))}
+                {({ state }) => (
+                    state.events.map((item, index) => {
+                        return (
+                            <Card 
+                                key={index}
+                                ID={item.ID}
+                                name={item.name}
+                                date={item.date}
+                                time={item.time}
+                                description={item.description}
+                                location={item.location}
+                            />
+                        );
+                    })
+                )}
             </Consumer>
         );
     }

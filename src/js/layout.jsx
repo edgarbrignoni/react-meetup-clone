@@ -127,7 +127,7 @@ export default class Layout extends React.Component {
             ],
             "session": {
                 ID: 1,
-                userName: "mompy",
+                username: "mompy",
                 password: "abc123",
                 token: "wjer147892akerfdv"
             },
@@ -135,25 +135,36 @@ export default class Layout extends React.Component {
         };
         
         this.actions = {
-            
+            "loadSession": (receivedUsername, receivedPassword) => {
+                this.setState(
+                    {
+                        session: {
+                            ID: 1000,
+                            username: receivedUsername,
+                            password: receivedPassword,
+                            token: "dskfgndflkgdjlfjgfgf"
+                        }
+                    }
+                );
+            }
         };
     }
 
-  render() {
-    return (
-        <React.Fragment>
-            <BrowserRouter>
-                <Switch>
-                    <Provider value={{state:this.state, actions:this.actions}}>
-                        <Route exact path="/" component={Home} />
-                        <Route exact path="/home" component={Home} />
-                        <Route exact path="/events" component={Events} />
-                        <Route exact path="/meetups" component={Meetups} />
-                    </Provider>
-                    <Route render={() => <h1>Not found!</h1>} />
-                </Switch>
-            </BrowserRouter>
-        </React.Fragment>
-    );
-  }
+    render() {
+        return (
+            <React.Fragment>
+                <BrowserRouter>
+                    <Switch>
+                        <Provider value={{state:this.state, actions:this.actions}}>
+                            <Route exact path="/" component={Home} />
+                            <Route exact path="/home" component={Home} />
+                            <Route exact path="/events" component={Events} />
+                            <Route exact path="/meetups" component={Meetups} />
+                        </Provider>
+                        <Route render={() => <h1>Not found!</h1>} />
+                    </Switch>
+                </BrowserRouter>
+            </React.Fragment>
+        );
+    }
 }
