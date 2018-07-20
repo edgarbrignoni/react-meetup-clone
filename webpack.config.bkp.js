@@ -5,32 +5,32 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   entry: [
     './src/js/index.js'
-  ], 
+  ],
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'public'),
-    publicPath: path.resolve(__dirname, '/')
+    path: path.resolve(__dirname, 'public')
   },
+  
   
   module: {
     rules: [
-        { 
-          test: /\.(js|jsx)$/, 
-          exclude: /node_modules/, 
+        {
+          test: /\.(js|jsx)$/,
+          exclude: /node_modules/,
           use: [
-            "babel-loader", 
-            "eslint-loader"
+            'babel-loader', 
+            'eslint-loader'
           ]
         },
         { 
-          test: /\.(png|svg|jpg|gif)$/, 
+          test: /\.(png|svg|jpg|gif)$/,
           use: {
             loader: 'file-loader',
             options: { name: '[name].[ext]' } 
           }
         }, //for images
         {
-          test: [/\.css$/, /\.scss$/],
+          test: /\.scss$/,
           use: [
             {
               loader: "style-loader" // creates style nodes from JS strings
@@ -43,28 +43,28 @@ module.exports = {
             }
           ]
         }, //css only files
-        { 
-          test: /\.md$/, use: [
-            {
-              loader: "html-loader"
-            },
-            {
-              loader: "markdown-loader",
-              options: {
-                /* your options here */
-              }
-            }
-          ]
-        },
         { test: /\.woff($|\?)|\.woff2($|\?)|\.ttf($|\?)|\.eot($|\?)|\.svg($|\?)/, use: ['file-loader'] } //for fonts
     ]
   },
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   resolve: {
-    extensions: ['*', '.js', '.jsx']
+    extensions: ['*', '.js']
   },
   devtool: "source-map",
   devServer: {
-    contentBase: './dist',
+    contentBase:  './dist',
     hot: true,
     disableHostCheck: true,
     historyApiFallback: true
