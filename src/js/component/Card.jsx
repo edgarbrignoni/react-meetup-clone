@@ -1,9 +1,8 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import {Consumer} from "../stores/AppContext.jsx";
 import PropTypes from 'prop-types';
 
-export class Card extends React.Component{
+class Card extends React.Component{
     constructor(props) {
         super(props);
     }
@@ -11,19 +10,19 @@ export class Card extends React.Component{
     render() {
         return (
             <div className="row">
-                <div className="col-md-6 mx-auto mb-5">
+                <div className="col-md-6 mx-auto mt-5">
                     <div className="card">
                         <div className="card-header">
                             <h2>{this.props.date}</h2>
                         </div>
                         <div className="card-body">
                             <div className="row">
-                                <div className="col-3">
-                                    <h3 className="card-title">{this.props.time}</h3>
+                                <div className="col-sm-4 pr-0">
+                                    <h4 className="card-text">{this.props.time}</h4>
                                 </div>
-                                <div className="col-9">
-                                    <Link to={"/events/" + this.props.ID}>
-                                        <h5 className="card-text">{this.props.name} - {this.props.location}</h5>
+                                <div className="col-sm-8">
+                                    <Link to={"/event/" + this.props.ID}>
+                                        <h4 className="card-text">{this.props.name} - {this.props.location}</h4><br />
                                     </Link>
                                     <p className="card-text">{this.props.description}</p>
                                 </div>
@@ -35,6 +34,8 @@ export class Card extends React.Component{
         );
     }
 }
+
+export default Card;
 
 Card.propTypes = {
     ID: PropTypes.number,

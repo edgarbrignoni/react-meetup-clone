@@ -1,18 +1,18 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import PropTypes from "prop-types";
-import {withSession} from '../stores/AppContext.jsx';
+import { withSession } from '../stores/AppContext.jsx';
 import $ from "jquery";
-import {Consumer} from "../stores/AppContext.jsx";
+import PropTypes from "prop-types";
+import logo4Geeks from '../../img/logo4Geeks.png';
 
-class Navbar extends React.Component{
+class NavBar extends React.Component{
     constructor(props){
         super(props);
         
         this.state = {
-          username: '',
-          password: '',
-          modal: false
+            username: "",
+            password: "",
+            modal: false
         };
     }
     
@@ -29,37 +29,25 @@ class Navbar extends React.Component{
         
         return(
             <div>
-                <nav className="navbar navbar-light bg-light justify-content-between navbar-expand-sm">
+                <nav className="navbar navbar-dark bg-dark justify-content-between navbar-expand-sm">
                     <Link className="navbar-brand" to="/">
-                        <img className="img-fluid" src="https://www.4geeksacademy.co/wp-content/themes/the-fastest/assets/img/logo-black.png" />
+                        <img id="logoInverted" className="img-fluid" src={logo4Geeks} />
                     </Link>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                         <div className="navbar-nav">
-                            {
-                                session && typeof(session.user_nicename) !== 'undefined' ?
-                                    
-                                    <div className="d-flex">
-                                        <Link className="nav-item nav-link " to={"/user/"+session.user_nicename.value}>
-                                                Hello, {session.user_display_name.charAt(0).toUpperCase()+session.user_display_name.substring(1)}
-                                        </Link>
-                                        <a className="nav-item nav-link" href="#" onClick={() => actions.logout()}>
-                                                Logout
-                                        </a>
-                                    </div>
-                                :
-                                    
-                                    <button 
-                                        type="button" 
-                                        className="btn btn-primary" 
-                                        data-toggle="modal" 
-                                        data-target="#exampleModal">Login</button>
-                                
-                                
+                            {session && typeof(session.user_nicename) !== 'undefined' ?
+                                <button type="button" className="btn btn-secondary">Logout</button>
+                            :
+                                <button 
+                                    type="button" 
+                                    className="btn btn-primary" 
+                                    data-toggle="modal" 
+                                    data-target="#exampleModal">Login
+                                </button>
                             }
-
                         </div>
                     </div>
                 </nav>
@@ -74,8 +62,8 @@ class Navbar extends React.Component{
                             </div>
                             <div className="modal-body">
                                 <form role="form" onSubmit={(e) => {
-                                                                    e.preventDefault();
-                                                                    actions.loadSession(this.state.username, this.state.password);
+                                    e.preventDefault();
+                                    actions.loadSession(this.state.username, this.state.password);
                                 }}>
                                     <div className="form-group">
                                         <input type="text" name="user" value={this.state.user} placeholder="Username" onChange={(e) => this.setState({username: e.target.value})} />
@@ -88,14 +76,14 @@ class Navbar extends React.Component{
                     </div>
                 </div>
             </div>
-            );
+        );
     }
 }
 
-export default withSession(Navbar);
+export default withSession(NavBar);
 
-Navbar.propTypes = {
-  session: PropTypes.object,
-  actions: PropTypes.object,
-  currentView: PropTypes.string
+NavBar.propTypes = {
+    session: PropTypes.object,
+    actions: PropTypes.object,
+    currentView: PropTypes.string
 };

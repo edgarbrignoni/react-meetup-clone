@@ -3,18 +3,24 @@ import { Consumer } from '../stores/AppContext.jsx';
 import NavBar from '../component/NavBar.jsx';
 import Card from '../component/Card.jsx';
 import Footer from '../component/Footer.jsx';
-//create your first component
-class Home extends React.Component{
+
+class Meetup extends React.Component{
     
     render(){
         return (
             <React.Fragment>
                 <NavBar />
-                <div className="header text-center pb-3">
-                    <br />
-                    <h1 className="display-4">The Meetup Clone</h1>
-                    <p className="lead">This is a mini project created by <a href="#">4GeeksAcademy</a></p>
-                    <p><small>Using: ReactJS, Bootstrap, @Fortawesome, Moment, React-router</small></p>
+                <div className="container-fluid">
+                    <div className="header row">
+                        <div className="col mt-4 mb-4">
+                            <a href="#"><img className="img-fluid" src="http://via.placeholder.com/600x350"/></a>
+                        </div>
+                        <div className="col mt-4 mb-4">
+                            <h4>Meetup ##</h4>
+                            <br />
+                            <p>Location<br />City, State</p>
+                        </div>
+                    </div>
                 </div>
                 <Consumer>
                     {({ state }) => (
@@ -39,4 +45,4 @@ class Home extends React.Component{
     }
 }
 
-export default Home;
+export default Meetup;
