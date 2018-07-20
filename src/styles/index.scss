@@ -3,13 +3,11 @@
 .header {
     background-color: #343a40;
     color: white;
-    margin-bottom: 20px;
-
 }
 
-.container{
-    background-color: #615e5e;
-}
+// .container{
+//     background-color: #615e5e;
+// }
 
 .jumbotron-fluid {
     padding-right: 210px;
@@ -26,17 +24,19 @@
     width: 100%;
     height: 64px;
     line-height: 60px;
-    background-color: #343a40;
+    background-color: #212529;
     color: white;
 }
 
-#logo1 {
+#logoInverted {
     -webkit-filter: invert(100%);
     filter: invert(100%);
-    margin-top: 20px;
-    margin-left: 20px;
 }
-#logo2 {
-    -webkit-filter: invert(100%);
-    filter: invert(100%);
+
+.yesBTN {
+    margin-bottom: 10px;
+}
+
+.socialIcons {
+    margin: 10px;
 }

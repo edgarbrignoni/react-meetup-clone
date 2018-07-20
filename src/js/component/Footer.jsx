@@ -1,16 +1,23 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import logo4Geeks from '../../img/logo4Geeks.png';
 
 //create your first component
-export class Footer extends React.Component{
+class Footer extends React.Component{
     
     render(){
         return (
             <div className="footer">
-                <div className="container-fluid pb-2">
-                    <p className="text-center"><img src="http://via.placeholder.com/200x50" /></p>
+                <div className="container-fluid mt-5 pb-2">
+                    <p className="text-center">
+                        <Link to="/">
+                            <img id="logoInverted" className="img-fluid" src={logo4Geeks} />
+                        </Link>
+                    </p>
                 </div>
             </div>
         );
     }
 }
+
+export default Footer;
