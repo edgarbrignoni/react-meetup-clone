@@ -9,7 +9,7 @@ import faFa from '@fortawesome/fontawesome-free-brands/faFacebook';
 import faClock from '@fortawesome/fontawesome-free-solid/faClock';
 import Moment from "moment";
 // import ReactGA from 'react-ga';
-import NavBar from '../component/NavBar.jsx';
+import Navbar from '../component/Navbar.jsx';
 import Footer from '../component/Footer.jsx';
 
 class Event extends React.Component {
@@ -25,7 +25,7 @@ class Event extends React.Component {
     // ReactGA.pageview(window.location.pathname + window.location.search);
         return(
             <div>
-                <NavBar />
+                <Navbar />
                 <Consumer>
                     {({ state, actions }) => 
                         {
@@ -110,8 +110,8 @@ class Event extends React.Component {
                                                             </div>
                                                         }
                                                         <div className="text-center socialIcons">
-                                                            <span className="socialIcons"><FontAwesomeIcon className="fa-3x" icon={faTw} /></span>
-                                                            <span className="socialIcons"><FontAwesomeIcon className="fa-3x" icon={faFa} /></span>
+                                                            <span className="socialIcons"><FontAwesomeIcon className="fa-2x" icon={faTw} /></span>
+                                                            <span className="socialIcons"><FontAwesomeIcon className="fa-2x" icon={faFa} /></span>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -124,7 +124,7 @@ class Event extends React.Component {
                                                         <div className="card-body">
                                                             <div className="row cardInfo">
                                                                 <div className="col-2 socialIcons">
-                                                                    <FontAwesomeIcon className="fa-3x" icon={faClock}/>
+                                                                    <FontAwesomeIcon className="fa-2x" icon={faClock}/>
                                                                 </div>
                                                                 <div className="col-8">
                                                                     <span className="card-date">{event.day}</span><br/>

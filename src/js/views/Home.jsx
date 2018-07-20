@@ -1,6 +1,6 @@
 import React from 'react';
 import { Consumer } from '../stores/AppContext.jsx';
-import NavBar from '../component/NavBar.jsx';
+import Navbar from '../component/Navbar.jsx';
 import Card from '../component/Card.jsx';
 import Footer from '../component/Footer.jsx';
 //create your first component
@@ -9,7 +9,7 @@ class Home extends React.Component{
     render(){
         return (
             <React.Fragment>
-                <NavBar />
+                <Navbar />
                 <div className="header text-center pb-3">
                     <br />
                     <h1 className="display-4">The Meetup Clone</h1>

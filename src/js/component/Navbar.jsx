@@ -5,7 +5,7 @@ import $ from "jquery";
 import PropTypes from "prop-types";
 import logo4Geeks from '../../img/logo4Geeks.png';
 
-class NavBar extends React.Component{
+class Navbar extends React.Component{
     constructor(props){
         super(props);
         
@@ -80,9 +80,9 @@ class NavBar extends React.Component{
     }
 }
 
-export default withSession(NavBar);
+export default withSession(Navbar);
 
-NavBar.propTypes = {
+Navbar.propTypes = {
     session: PropTypes.object,
     actions: PropTypes.object,
     currentView: PropTypes.string

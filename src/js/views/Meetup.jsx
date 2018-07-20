@@ -1,6 +1,6 @@
 import React from 'react';
 import { Consumer } from '../stores/AppContext.jsx';
-import NavBar from '../component/NavBar.jsx';
+import Navbar from '../component/Navbar.jsx';
 import Card from '../component/Card.jsx';
 import Footer from '../component/Footer.jsx';
 
@@ -9,7 +9,7 @@ class Meetup extends React.Component{
     render(){
         return (
             <React.Fragment>
-                <NavBar />
+                <Navbar />
                 <div className="container-fluid">
                     <div className="header row">
                         <div className="col mt-4 mb-4">
