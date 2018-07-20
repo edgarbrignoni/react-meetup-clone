@@ -8,11 +8,19 @@ export class EventsTitle extends React.Component{
     
     render(){
         return (
-            <div className="text-center mt-5">
-                <h1>Hello Rigo!</h1>
-                <p><img src={rigoImage} /></p>
-                <a href="#" className="btn btn-success">If you see this green button... bootstrap is working</a>
-                <p>Made by <a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with love!</p>
+            <div className="jumbotron jumbotron-fluid">
+                <div className="container">
+                    <div className="row align-items-start">
+                        <div className="col-6">
+                            <p className="lead">Location.</p>
+                            <h4 className="display-4">5th event for Meetup 1</h4>
+                            <p className="lead">Meetup 1</p>
+                        </div>
+                        <div className="col-4">
+                            
+                        </div>
+                    </div>
+                </div>
             </div>
         );
     }
