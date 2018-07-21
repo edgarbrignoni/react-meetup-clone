@@ -3,7 +3,7 @@ import { Consumer } from '../stores/AppContext.jsx';
 import Navbar from '../component/Navbar.jsx';
 import Card from '../component/Card.jsx';
 import Footer from '../component/Footer.jsx';
-//create your first component
+
 class Home extends React.Component{
     
     render(){

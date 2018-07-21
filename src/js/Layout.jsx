@@ -27,8 +27,8 @@ class Layout extends React.Component {
                 method: 'post',
                 body: JSON.stringify(
                     {
-                        "username":"group1",
-                        "password":"1234"
+                        "username":receivedUsername,
+                        "password":receivedPassword
                     }),
                 headers: new Headers(
                     {
@@ -83,7 +83,11 @@ class Layout extends React.Component {
                   .then(response => response.json())
                   .then(data => this.setState({ meetups: data }))
                   .catch(error => console.log(error));
-            }  
+            },
+            "logout": () => this.setState({
+                session: {
+                }
+            })
         };
     }
     
