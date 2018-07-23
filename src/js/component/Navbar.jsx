@@ -16,11 +16,11 @@ class Navbar extends React.Component{
         };
     }
     
-    componentDidUpdate(prevProps, prevState) {
-        // Previous ThemeContext value is prevProps.theme
-        // New ThemeContext value is this.props.theme
-        if(this.props.session.token) $('#exampleModal').modal('hide');
-    }
+    // componentDidUpdate(prevProps, prevState) {
+    //     // Previous ThemeContext value is prevProps.theme
+    //     // New ThemeContext value is this.props.theme
+    //     if(this.props.session.token) $('#exampleModal').modal('hide');
+    // }
     
     render(){
         let homeActive = this.props.currentView === "home" ? "active" :"";
@@ -39,7 +39,7 @@ class Navbar extends React.Component{
                     <div className="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                         <div className="navbar-nav">
                             {session && typeof(session.user_nicename) !== 'undefined' ?
-                                <button type="button" className="btn btn-secondary">Logout</button>
+                                <button type="button" className="btn btn-secondary" onClick={(e) => actions.logout()}>Logout</button>
                             :
                                 <button 
                                     type="button" 
@@ -61,10 +61,12 @@ class Navbar extends React.Component{
                                 </button>
                             </div>
                             <div className="modal-body">
-                                <form role="form" onSubmit={(e) => {
-                                    e.preventDefault();
-                                    actions.loadSession(this.state.username, this.state.password);
-                                }}>
+                                <form role="form" onSubmit={
+                                        (e) => {
+                                            e.preventDefault();
+                                            actions.loadSession(this.state.username, this.state.password);
+                                        }
+                                    }>
                                     <div className="form-group">
                                         <input type="text" name="user" value={this.state.user} placeholder="Username" onChange={(e) => this.setState({username: e.target.value})} />
                                         <input type="password" name="password" value={this.state.password} placeholder="Password" onChange={(e) => this.setState({password: e.target.value})} />

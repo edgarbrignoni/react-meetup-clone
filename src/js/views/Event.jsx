@@ -34,10 +34,10 @@ class Event extends React.Component {
                             if (!event) { 
                                 return(<p>Loading</p>);
                             } else { 
-                                const yesDisabled = typeof event.rsvpYes !== 'undefined' && event.rsvpYes.includes("nachovz")  ? "disabled" : "";
-                                const noDisabled =typeof event.rsvpNo !== 'undefined' && event.rsvpNo.includes("nachovz")  ? "disabled" : "";
+                                const yesDisabled = typeof event.meta_keys._rsvpYes !== 'undefined' && event.meta_keys._rsvpYes.includes("nachovz")  ? "disabled" : "";
+                                const noDisabled =typeof event.meta_keys._rsvpNo !== 'undefined' && event.meta_keys._rsvpNo.includes("nachovz")  ? "disabled" : "";
                                 
-                                let aTime = event.day+"T"+event.time.replace(/:/g,'');
+                                let aTime = event.day+"T"+event.meta_keys.time.replace(/:/g,'');
                                 let eventDay = Moment(aTime);
                                 
                                 return (
@@ -49,14 +49,15 @@ class Event extends React.Component {
                                                     <div className="col-md-6 offset-md-3 text-center">
                                                         <div className="row">
                                                             <div className="col-12">
+                                                                <p className="eventDate">{eventDay.format("MMM D").toString()}</p>
                                                                 <h1 className="eventTitle">{event.post_title}</h1>
                                                                 <h4> 
                                                                     <Link 
-                                                                        to={"/meetup/"+event.meetup} 
+                                                                        to={"/meetup/"+event.meta_keys._meetup} 
                                                                     > 
                                                                         {
                                                                             state.meetups.length > 0 ?
-                                                                                state.meetups.find((meetup) => meetup.ID === parseInt(event.meetup) ).title
+                                                                                state.meetups.find((meetup) => meetup.ID === parseInt(event.meta_keys._meetup) ).post_title
                                                                             :
                                                                                 "Loading..."
                                                                         } 
@@ -67,7 +68,7 @@ class Event extends React.Component {
                                                     </div>
                                                     {/*right side */}
                                                     <div className="col-md-6 offset-md-3 text-center rounded rsvpBox">
-                                                        <h4 className="mb-4"> {event.rsvpYes.length} people going </h4>
+                                                        <h4 className="mb-4"> {event.meta_keys._rsvpYes.length} people going </h4>
                                                         {!user.token ? 
                                                             <div className="row mb-4"> 
                                                                 <div className="col mx-auto">
@@ -127,8 +128,8 @@ class Event extends React.Component {
                                                                     <FontAwesomeIcon className="fa-2x" icon={faClock}/>
                                                                 </div>
                                                                 <div className="col-8">
-                                                                    <span className="card-date">{event.day}</span><br/>
-                                                                    <span className="card-time">{event.time}</span><br/>
+                                                                    <span className="card-date">{eventDay.format("dddd, MMMM DD, YYYY").toString()}</span><br/>
+                                                                    <span className="card-time">{eventDay.format("h:mm a").toString()}</span><br/>
                                                                     <span className="card-schedule">Every first and last Tuesday of the month</span>
                                                                 </div>
                                                             </div>

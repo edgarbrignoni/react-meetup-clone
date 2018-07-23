@@ -3,7 +3,7 @@ import { Consumer } from '../stores/AppContext.jsx';
 import Navbar from '../component/Navbar.jsx';
 import Card from '../component/Card.jsx';
 import Footer from '../component/Footer.jsx';
-//create your first component
+
 class Home extends React.Component{
     
     render(){
@@ -24,10 +24,10 @@ class Home extends React.Component{
                                     key={index}
                                     ID={item.ID}
                                     name={item.post_title}
-                                    date={item.day}
-                                    time={item.time}
-                                    description={item.description}
-                                    location={item.location}
+                                    date={item.meta_keys.day}
+                                    time={item.meta_keys.time}
+                                    description={item.post_content}
+                                    // location={item.location}
                                 />
                             );
                         })
