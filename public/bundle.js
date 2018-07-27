@@ -64,7 +64,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "8350c3e24f139ce07d60";
+/******/ 	var hotCurrentHash = "4612c8f1f31f7d52e6e5";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -62147,132 +62147,40 @@ var Layout = function (_React$Component) {
         var _this = _possibleConstructorReturn(this, (Layout.__proto__ || Object.getPrototypeOf(Layout)).call(this));
 
         _this.state = {
-            "meetups": [{
-                ID: 1,
-                title: "Adults",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque habitant morbi tristique senectus et netus et malesuada. Amet nisl suscipit adipiscing bibendum est ultricies integer quis. Ipsum nunc aliquet bibendum enim facilisis. Viverra mauris in aliquam sem fringilla ut.",
-                listOfEvetns: [1, 2, 3]
-            }, {
-                ID: 2,
-                title: "Movies",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet porttitor eget dolor. Dignissim enim sit amet venenatis urna cursus eget nunc scelerisque. Porttitor eget dolor morbi non arcu risus. Ultrices vitae auctor eu augue ut.",
-                listOfEvetns: [4, 5, 6]
-            }, {
-                ID: 3,
-                title: "Teens",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis at tellus at urna condimentum. Massa placerat duis ultricies lacus sed turpis. Sed turpis tincidunt id aliquet risus. Curabitur vitae nunc sed velit.",
-                listOfEvetns: [7, 8, 9]
-            }],
-            "events": [{
-                ID: 1,
-                post_title: "Speed Dating",
-                day: "October 31",
-                time: "10:00 pm",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet luctus venenatis lectus magna. Montes nascetur ridiculus mus mauris vitae ultricies leo integer. Aenean et tortor at risus. At elementum eu facilisis sed.",
-                location: "Coconut Groove",
-                rsvpYes: [8, 9, 4],
-                rsvpNo: [4, 1, 6],
-                meetup: 3
-            }, {
-                ID: 2,
-                post_title: "Billiards",
-                day: "July 5",
-                time: "9:00 pm",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet luctus venenatis lectus magna. Montes nascetur ridiculus mus mauris vitae ultricies leo integer. Aenean et tortor at risus. At elementum eu facilisis sed.",
-                location: "Homstead",
-                rsvpYes: [8, 9, 4],
-                rsvpNo: [4, 1, 6],
-                meetup: 3
-            }, {
-                ID: 3,
-                post_title: "Poker Nights",
-                day: "June 10",
-                time: "10:00 pm",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet luctus venenatis lectus magna. Montes nascetur ridiculus mus mauris vitae ultricies leo integer. Aenean et tortor at risus. At elementum eu facilisis sed.",
-                location: "North Miami",
-                rsvpYes: [8, 9, 4],
-                rsvpNo: [4, 1, 6],
-                meetup: 3
-            }, {
-                ID: 4,
-                post_title: "Cook With Us",
-                day: "August 1",
-                time: "8:00 pm",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet luctus venenatis lectus magna. Montes nascetur ridiculus mus mauris vitae ultricies leo integer. Aenean et tortor at risus. At elementum eu facilisis sed.",
-                location: "Hialeah",
-                rsvpYes: [8, 9, 4],
-                rsvpNo: [4, 1, 6],
-                meetup: 1
-            }, {
-                ID: 5,
-                post_title: "Bowling Afternoon",
-                day: "August 5",
-                time: "1:00 pm",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet luctus venenatis lectus magna. Montes nascetur ridiculus mus mauris vitae ultricies leo integer. Aenean et tortor at risus. At elementum eu facilisis sed.",
-                location: "Pembrook Pines",
-                rsvpYes: [8, 9, 4],
-                rsvpNo: [4, 1, 6],
-                meetup: 1
-            }, {
-                ID: 6,
-                post_title: "Beach Time",
-                day: "February 3",
-                time: "12:00 pm",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet luctus venenatis lectus magna. Montes nascetur ridiculus mus mauris vitae ultricies leo integer. Aenean et tortor at risus. At elementum eu facilisis sed.",
-                location: "Brickell",
-                rsvpYes: [8, 9, 4],
-                rsvpNo: [4, 1, 6],
-                meetup: 3
-            }, {
-                ID: 7,
-                post_title: "Bond Marathon",
-                day: "January 13",
-                time: "9:00 am",
-                description: "Play Bingo with your community evey 10th of the month. Bring your friends and family",
-                location: "Coral Gables",
-                rsvpYes: [1, 2, 3],
-                rsvpNo: [4, 5, 6],
-                meetup: 2
-            }, {
-                ID: 8,
-                post_title: "Despicable Me",
-                day: "February 15",
-                time: "9:00 pm",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet luctus venenatis lectus magna. Montes nascetur ridiculus mus mauris vitae ultricies leo integer. Aenean et tortor at risus. At elementum eu facilisis sed.",
-                location: "South Beach",
-                rsvpYes: [1, 2, 3],
-                rsvpNo: [4, 5, 6],
-                meetup: 2
-            }, {
-                ID: 9,
-                post_title: "Coco",
-                day: "May 20",
-                time: "5:00 pm",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pharetra magna ac placerat vestibulum lectus. Ipsum dolor sit amet consectetur adipiscing elit pellentesque. Diam maecenas ultricies mi eget mauris pharetra et ultrices. Dictum sit amet justo donec.",
-                location: "Kendall",
-                rsvpYes: [1, 2, 3],
-                rsvpNo: [4, 5, 6],
-                meetup: 2
-            }],
-            "session": {
-                ID: 1,
-                username: "mompy",
-                password: "abc123",
-                token: "wjer147892akerfdv"
-            },
+            "meetups": [],
+            "events": [],
+            "session": {},
             "isLoading": true
         };
 
         _this.actions = {
             "loadSession": function loadSession(receivedUsername, receivedPassword) {
-                _this.setState({
-                    session: {
-                        ID: 1000,
-                        user_nicename: receivedUsername,
-                        password: receivedPassword,
-                        token: "gfdrtu6545hftydhgrhxfh"
-                    }
+                fetch('https://wordpress-breathecode-cli-nachovz.c9users.io/wp-json/jwt-auth/v1/token', {
+                    method: 'post',
+                    body: JSON.stringify({
+                        "username": receivedUsername,
+                        "password": receivedPassword
+                    }),
+                    headers: new Headers({
+                        'Content-Type': 'application/json'
+                    })
+                }).then(function (response) {
+                    return response.json();
+                }).then(function (data) {
+                    return _this.setState({ session: data });
+                }).catch(function (error) {
+                    return console.log(error);
                 });
+                // this.setState(
+                //     {
+                //         session: {
+                //             ID: 1000,
+                //             user_nicename: receivedUsername,
+                //             password: receivedPassword,
+                //             token: "gfdrtu6545hftydhgrhxfh"
+                //         }
+                //     }
+                // );
             },
             "rsvpEvent": function rsvpEvent(id, userId, answer, token) {
                 var indexOfEvent = 0;
@@ -62296,12 +62204,39 @@ var Layout = function (_React$Component) {
                 tempArray[indexOfEvent] = event;
 
                 _this.setState({ "events": tempArray });
+            },
+            "loadInitialData": function loadInitialData() {
+                fetch('https://wordpress-breathecode-cli-nachovz.c9users.io/wp-json/sample_api/v1/events').then(function (response) {
+                    return response.json();
+                }).then(function (data) {
+                    return _this.setState({ events: data, isLoading: false });
+                }).catch(function (error) {
+                    return console.log(error);
+                });
+
+                fetch('https://wordpress-breathecode-cli-nachovz.c9users.io/wp-json/sample_api/v1/meetups').then(function (response) {
+                    return response.json();
+                }).then(function (data) {
+                    return _this.setState({ meetups: data });
+                }).catch(function (error) {
+                    return console.log(error);
+                });
+            },
+            "logout": function logout() {
+                return _this.setState({
+                    session: {}
+                });
             }
         };
         return _this;
     }
 
     _createClass(Layout, [{
+        key: "componentDidMount",
+        value: function componentDidMount() {
+            this.actions.loadInitialData();
+        }
+    }, {
         key: "render",
         value: function render() {
             return _react2.default.createElement(
@@ -62309,7 +62244,7 @@ var Layout = function (_React$Component) {
                 null,
                 _react2.default.createElement(
                     _reactRouterDom.BrowserRouter,
-                    null,
+                    { basename: "/public/" },
                     _react2.default.createElement(
                         _reactRouterDom.Switch,
                         null,
@@ -62600,14 +62535,13 @@ var Navbar = function (_React$Component) {
         return _this;
     }
 
+    // componentDidUpdate(prevProps, prevState) {
+    //     // Previous ThemeContext value is prevProps.theme
+    //     // New ThemeContext value is this.props.theme
+    //     if(this.props.session.token) $('#exampleModal').modal('hide');
+    // }
+
     _createClass(Navbar, [{
-        key: 'componentDidUpdate',
-        value: function componentDidUpdate(prevProps, prevState) {
-            // Previous ThemeContext value is prevProps.theme
-            // New ThemeContext value is this.props.theme
-            if (this.props.session.token) (0, _jquery2.default)('#exampleModal').modal('hide');
-        }
-    }, {
         key: 'render',
         value: function render() {
             var _this2 = this;
@@ -62643,7 +62577,9 @@ var Navbar = function (_React$Component) {
                             { className: 'navbar-nav' },
                             session && typeof session.user_nicename !== 'undefined' ? _react2.default.createElement(
                                 'button',
-                                { type: 'button', className: 'btn btn-secondary' },
+                                { type: 'button', className: 'btn btn-secondary', onClick: function onClick(e) {
+                                        return actions.logout();
+                                    } },
                                 'Logout'
                             ) : _react2.default.createElement(
                                 'button',
@@ -62931,10 +62867,10 @@ var Event = function (_React$Component) {
                                 "Loading"
                             );
                         } else {
-                            var yesDisabled = typeof event.rsvpYes !== 'undefined' && event.rsvpYes.includes("nachovz") ? "disabled" : "";
-                            var noDisabled = typeof event.rsvpNo !== 'undefined' && event.rsvpNo.includes("nachovz") ? "disabled" : "";
+                            var yesDisabled = typeof event.meta_keys._rsvpYes !== 'undefined' && event.meta_keys._rsvpYes.includes("nachovz") ? "disabled" : "";
+                            var noDisabled = typeof event.meta_keys._rsvpNo !== 'undefined' && event.meta_keys._rsvpNo.includes("nachovz") ? "disabled" : "";
 
-                            var aTime = event.day + "T" + event.time.replace(/:/g, '');
+                            var aTime = event.day + "T" + event.meta_keys.time.replace(/:/g, '');
                             var eventDay = (0, _moment2.default)(aTime);
 
                             return _react2.default.createElement(
@@ -62959,6 +62895,11 @@ var Event = function (_React$Component) {
                                                         "div",
                                                         { className: "col-12" },
                                                         _react2.default.createElement(
+                                                            "p",
+                                                            { className: "eventDate" },
+                                                            eventDay.format("MMM D").toString()
+                                                        ),
+                                                        _react2.default.createElement(
                                                             "h1",
                                                             { className: "eventTitle" },
                                                             event.post_title
@@ -62969,11 +62910,11 @@ var Event = function (_React$Component) {
                                                             _react2.default.createElement(
                                                                 _reactRouterDom.Link,
                                                                 {
-                                                                    to: "/meetup/" + event.meetup
+                                                                    to: "/meetup/" + event.meta_keys._meetup
                                                                 },
                                                                 state.meetups.length > 0 ? state.meetups.find(function (meetup) {
-                                                                    return meetup.ID === parseInt(event.meetup);
-                                                                }).title : "Loading..."
+                                                                    return meetup.ID === parseInt(event.meta_keys._meetup);
+                                                                }).post_title : "Loading..."
                                                             )
                                                         )
                                                     )
@@ -62986,7 +62927,7 @@ var Event = function (_React$Component) {
                                                     "h4",
                                                     { className: "mb-4" },
                                                     " ",
-                                                    event.rsvpYes.length,
+                                                    event.meta_keys._rsvpYes.length,
                                                     " people going "
                                                 ),
                                                 !user.token ? _react2.default.createElement(
@@ -63089,13 +63030,13 @@ var Event = function (_React$Component) {
                                                             _react2.default.createElement(
                                                                 "span",
                                                                 { className: "card-date" },
-                                                                event.day
+                                                                eventDay.format("dddd, MMMM DD, YYYY").toString()
                                                             ),
                                                             _react2.default.createElement("br", null),
                                                             _react2.default.createElement(
                                                                 "span",
                                                                 { className: "card-time" },
-                                                                event.time
+                                                                eventDay.format("h:mm a").toString()
                                                             ),
                                                             _react2.default.createElement("br", null),
                                                             _react2.default.createElement(
@@ -63233,7 +63174,6 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-//create your first component
 var Home = function (_React$Component) {
     _inherits(Home, _React$Component);
 
@@ -63289,10 +63229,10 @@ var Home = function (_React$Component) {
                                 key: index,
                                 ID: item.ID,
                                 name: item.post_title,
-                                date: item.day,
-                                time: item.time,
-                                description: item.description,
-                                location: item.location
+                                date: item.meta_keys.day,
+                                time: item.meta_keys.time,
+                                description: item.post_content
+                                // location={item.location}
                             });
                         });
                     }
@@ -63413,8 +63353,8 @@ var Meetup = function (_React$Component) {
                                 name: item.post_title,
                                 date: item.day,
                                 time: item.time,
-                                description: item.description,
-                                location: item.location
+                                description: item.description
+                                // location={item.location}
                             });
                         });
                     }
