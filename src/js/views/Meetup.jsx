@@ -32,8 +32,8 @@ class Meetup extends React.Component{
                                     name={item.post_title}
                                     date={item.day}
                                     time={item.time}
-                                    description={item.description}
-                                    // location={item.location}
+                                    description={item.post_content}
+                                    location={item.location}
                                 />
                             );
                         })

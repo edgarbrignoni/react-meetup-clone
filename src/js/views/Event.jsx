@@ -35,11 +35,9 @@ class Event extends React.Component {
                     {
                         const user = state.session;
                         const event = state.events.find( event => event.ID === parseInt(this.props.match.params.theid) );
-  
                         if(!event){ 
                             
                             return(<p>Loading</p>);
-                        
                         }else{ 
                             const yesDisabled = typeof event.rsvpYes !== 'undefined' && event.rsvpYes.includes("nachovz")  ? "disabled" : "";
                             const noDisabled =typeof event.rsvpNo !== 'undefined' && event.rsvpNo.includes("nachovz")  ? "disabled" : "";
@@ -73,7 +71,6 @@ class Event extends React.Component {
                                                         </div>
                                                     </div>
                                                 </div>
-                    
                                                 {/*right side */}
                                                 <div className="col-md-3 text-center rounded rsvpBox">
                                                     <h4 className="mb-4"> {event.rsvpYes.length} people going </h4>
@@ -127,7 +124,6 @@ class Event extends React.Component {
                                             </div>
                                         </div>
                                     </div>
-                                        
                                     <div className="container">
                                         <div className="row">
                                             <div className="col-lg-3 order-lg-2">
@@ -165,7 +161,6 @@ class Event extends React.Component {
                                             </div>
                                         </div>
                                     </div>
-                                    
                                     {/* the footer */}
                                     <Footer />
                                 </div>

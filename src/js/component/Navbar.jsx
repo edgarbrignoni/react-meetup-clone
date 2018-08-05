@@ -1,17 +1,17 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import { withSession } from '../stores/AppContext.jsx';
-import $ from "jquery";
+// import $ from "jquery";
 import PropTypes from "prop-types";
 import logo4Geeks from '../../img/logo4Geeks.png';
 
 class Navbar extends React.Component{
-    constructor(props){
-        super(props);
+    constructor(){
+        super();
         
         this.state = {
-            username: "",
-            password: "",
+            username: "initial_state",
+            password: "initial_state",
             modal: false
         };
     }
@@ -23,7 +23,7 @@ class Navbar extends React.Component{
     // }
     
     render(){
-        let homeActive = this.props.currentView === "home" ? "active" :"";
+        // let homeActive = this.props.currentView === "home" ? "active" :"";
         
         const {session, actions} = this.props;
         
@@ -68,7 +68,7 @@ class Navbar extends React.Component{
                                         }
                                     }>
                                     <div className="form-group">
-                                        <input type="text" name="user" value={this.state.user} placeholder="Username" onChange={(e) => this.setState({username: e.target.value})} />
+                                        <input type="text" name="username" value={this.state.username} placeholder="Username" onChange={(e) => this.setState({username: e.target.value})} />
                                         <input type="password" name="password" value={this.state.password} placeholder="Password" onChange={(e) => this.setState({password: e.target.value})} />
                                     </div>
                                     <input type="submit" value="Login" />
