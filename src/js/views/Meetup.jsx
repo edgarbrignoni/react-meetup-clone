@@ -1,8 +1,8 @@
 import React from 'react';
 import { Consumer } from '../stores/AppContext.jsx';
-import Navbar from '../component/Navbar.jsx';
-import Card from '../component/Card.jsx';
-import Footer from '../component/Footer.jsx';
+import Navbar from '../components/Navbar.jsx';
+import Card from '../components/Card.jsx';
+import Footer from '../components/Footer.jsx';
 
 class Meetup extends React.Component{
     

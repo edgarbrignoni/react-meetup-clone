@@ -5,6 +5,7 @@ import { Provider } from "./stores/AppContext.jsx";
 import Home from "./views/Home.jsx";
 import Event from "./views/Event.jsx";
 import Meetup from "./views/Meetup.jsx";
+import Sample from "./views/Sample.jsx";
 
 class Layout extends React.Component {
     
@@ -13,31 +14,33 @@ class Layout extends React.Component {
         
         this.state = {
             "meetups": [
-                {
-                    ID: 1,
-                    post_title: "Adults",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque habitant morbi tristique senectus et netus et malesuada. Amet nisl suscipit adipiscing bibendum est ultricies integer quis. Ipsum nunc aliquet bibendum enim facilisis. Viverra mauris in aliquam sem fringilla ut.",
-                    listOfEvetns: [ 1, 2, 3]
-                },
-                {
-                    ID: 2,
-                    post_title: "Movies",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet porttitor eget dolor. Dignissim enim sit amet venenatis urna cursus eget nunc scelerisque. Porttitor eget dolor morbi non arcu risus. Ultrices vitae auctor eu augue ut.",
-                    listOfEvetns: [ 4, 5, 6]
-                },
-                {
-                    ID: 3,
-                    post_title: "Teens",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis at tellus at urna condimentum. Massa placerat duis ultricies lacus sed turpis. Sed turpis tincidunt id aliquet risus. Curabitur vitae nunc sed velit.",
-                    listOfEvetns: [ 7, 8, 9]
-                }
+                // {
+                //     ID: 1,
+                //     post_title: "Adults",
+                //     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque habitant morbi tristique senectus et netus et malesuada. Amet nisl suscipit adipiscing bibendum est ultricies integer quis. Ipsum nunc aliquet bibendum enim facilisis. Viverra mauris in aliquam sem fringilla ut.",
+                //     listOfEvetns: [ 1, 2, 3]
+                // },
+                // {
+                //     ID: 2,
+                //     post_title: "Movies",
+                //     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet porttitor eget dolor. Dignissim enim sit amet venenatis urna cursus eget nunc scelerisque. Porttitor eget dolor morbi non arcu risus. Ultrices vitae auctor eu augue ut.",
+                //     listOfEvetns: [ 4, 5, 6]
+                // },
+                // {
+                //     ID: 3,
+                //     post_title: "Teens",
+                //     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis at tellus at urna condimentum. Massa placerat duis ultricies lacus sed turpis. Sed turpis tincidunt id aliquet risus. Curabitur vitae nunc sed velit.",
+                //     listOfEvetns: [ 7, 8, 9]
+                // }
             ],
             "events": [
                 {
                     ID: 1,
                     post_title: "Speed Dating",
-                    day: "October 31",
-                    time: "10:00 pm",
+                    day: "2018-10-31",
+                    // day: "October 31",
+                    time: "22:00:00-05:00",
+                    // time: "10:00 pm",
                     post_content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet luctus venenatis lectus magna. Montes nascetur ridiculus mus mauris vitae ultricies leo integer. Aenean et tortor at risus. At elementum eu facilisis sed.",
                     location: "Coconut Groove",
                     rsvpYes: [8,9,4],
@@ -194,6 +197,39 @@ class Layout extends React.Component {
                 
                 this.setState({"events": tempArray});
             },
+            "updateSample" : (id, title, content, text, select, text_area, radio, fracture, luxation, sprain) => {
+                console.log(id, title, content, text, select, text_area, radio, fracture, luxation, sprain);
+                let url = 'https://backend-meetup-clone-edgarbrignoni.c9users.io/wp-json/sample_api/v1/samples';
+                var data = {
+                    id: id,
+                    title: title,
+                    content: content,
+                    text: text,
+                    select: select,
+                    text_area: text_area,
+                    radio: radio,
+                    fracture: fracture,
+                    luxation: luxation,
+                    sprain: sprain
+                };
+                
+                // fetch(url+id, {
+                fetch(url, {
+                    method: 'PUT',
+                    body: JSON.stringify(data),
+                    headers: new Headers({
+                        'Content-Type': 'application/json'
+                        //'Authorization': 'Bearer '+this.state.session.token
+                    })
+                })
+                .then(data => {
+                  if (data.status !== 200 ) {
+                    throw new Error(data); //INVALID TOKEN
+                  }
+                  this.actions.loadInitialData();
+                });
+                // .catch(error => console.log(error));
+            },
             "loadInitialData": () => {
                 // fetch('https://wordpress-breathecode-cli-nachovz.c9users.io/wp-json/sample_api/v1/events')
                 // .then(response => response.json())
@@ -226,6 +262,7 @@ class Layout extends React.Component {
                             <Route exact path="/home" component={Home} />
                             <Route exact path="/event/:theid" component={Event} />
                             <Route exact path="/meetup/:theid" component={Meetup} />
+                            <Route exact path="/sample" component={Sample} />
                         </Provider>
                         <Route render={() => <h1>Not found!</h1>} />
                     </Switch>

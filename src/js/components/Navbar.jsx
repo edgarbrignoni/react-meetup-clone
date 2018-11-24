@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import { withSession } from '../stores/AppContext.jsx';
-// import $ from "jquery";
+import $ from "jquery";
 import PropTypes from "prop-types";
 import logo4Geeks from '../../img/logo4Geeks.png';
 
@@ -16,11 +16,11 @@ class Navbar extends React.Component{
         };
     }
     
-    // componentDidUpdate(prevProps, prevState) {
+    componentDidUpdate(prevProps, prevState) {
     //     // Previous ThemeContext value is prevProps.theme
     //     // New ThemeContext value is this.props.theme
-    //     if(this.props.session.token) $('#exampleModal').modal('hide');
-    // }
+        if(this.props.session.token) $('#exampleModal').modal('hide');
+    }
     
     render(){
         // let homeActive = this.props.currentView === "home" ? "active" :"";
