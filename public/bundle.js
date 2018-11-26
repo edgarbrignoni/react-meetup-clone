@@ -64,7 +64,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "38f0e0aea8fa1b5ea872";
+/******/ 	var hotCurrentHash = "0219a59049f4d0b94342";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -62387,7 +62387,7 @@ var Layout = function (_React$Component) {
                 null,
                 _react2.default.createElement(
                     _reactRouterDom.BrowserRouter,
-                    null,
+                    { basename: '/public' },
                     _react2.default.createElement(
                         _reactRouterDom.Switch,
                         null,
