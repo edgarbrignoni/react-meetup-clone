@@ -198,7 +198,7 @@ class Layout extends React.Component {
                 this.setState({"events": tempArray});
             },
             "updateSample" : (id, title, content, text, select, text_area, radio, fracture, luxation, sprain) => {
-                console.log(id, title, content, text, select, text_area, radio, fracture, luxation, sprain);
+                //console.log(id, title, content, text, select, text_area, radio, fracture, luxation, sprain);
                 let url = 'https://backend-meetup-clone-edgarbrignoni.c9users.io/wp-json/sample_api/v1/samples';
                 var data = {
                     id: id,

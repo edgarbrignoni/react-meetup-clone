@@ -64,7 +64,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "92fea7dfcbc03d8776b2";
+/******/ 	var hotCurrentHash = "38f0e0aea8fa1b5ea872";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -62323,7 +62323,7 @@ var Layout = function (_React$Component) {
                 _this.setState({ "events": tempArray });
             },
             "updateSample": function updateSample(id, title, content, text, select, text_area, radio, fracture, luxation, sprain) {
-                console.log(id, title, content, text, select, text_area, radio, fracture, luxation, sprain);
+                //console.log(id, title, content, text, select, text_area, radio, fracture, luxation, sprain);
                 var url = 'https://backend-meetup-clone-edgarbrignoni.c9users.io/wp-json/sample_api/v1/samples';
                 var data = {
                     id: id,
