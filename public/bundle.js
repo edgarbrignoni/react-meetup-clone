@@ -64,7 +64,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "0219a59049f4d0b94342";
+/******/ 	var hotCurrentHash = "d2bf88a520c986dd892a";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -62394,7 +62394,7 @@ var Layout = function (_React$Component) {
                         _react2.default.createElement(
                             _AppContext.Provider,
                             { value: { state: this.state, actions: this.actions } },
-                            _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/", component: _Home2.default }),
+                            _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/public/", component: _Home2.default }),
                             _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/home", component: _Home2.default }),
                             _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/event/:theid", component: _Event2.default }),
                             _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/meetup/:theid", component: _Meetup2.default }),

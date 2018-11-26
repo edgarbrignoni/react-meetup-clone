@@ -258,7 +258,7 @@ class Layout extends React.Component {
                 <BrowserRouter basename={'/public'}>
                     <Switch>
                         <Provider value={{state:this.state, actions:this.actions}}>
-                            <Route exact path="/" component={Home} />
+                            <Route exact path="/public/" component={Home} />
                             <Route exact path="/home" component={Home} />
                             <Route exact path="/event/:theid" component={Event} />
                             <Route exact path="/meetup/:theid" component={Meetup} />
