@@ -6,8 +6,7 @@
   "scripts": {
     "c9": "webpack-dev-server --mode development --open --host $IP --port $PORT",
     "dev-server": "webpack-dev-server --mode development",
-    "build": "webpack --mode development",
-    "homepage": "https://react-meetup-clone.edgarbrignoni.com/public"
+    "build": "webpack --mode development"
   },
   "author": "Alejandro Sanchez",
   "license": "ISC",
