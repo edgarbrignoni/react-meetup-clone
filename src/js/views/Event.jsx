@@ -43,9 +43,13 @@ class Event extends React.Component {
                                 const yesDisabled = typeof event.rsvpYes !== 'undefined' && event.rsvpYes.includes("nachovz")  ? "disabled" : "";
                                 const noDisabled =typeof event.rsvpNo !== 'undefined' && event.rsvpNo.includes("nachovz")  ? "disabled" : "";
                                 
-                                let aTime = event.day+"T"+event.time.replace(/:/g,'');
-                                // console.log('aTime', aTime);
-                                let eventDay = Moment(aTime);
+                                let eventDate = event.meta_keys.event_date_time;
+                                //console.log('eventDate', eventDate);
+                                let eventDay = Moment(eventDate).format("dddd, MMMM Do YYYY");
+                                //console.log('eventDay', eventDay);
+                                let eventTime = Moment(eventDate).format("h:mm a");
+                                //console.log('eventTime', eventTime);
+                                //let eventDay = Moment(aTime);
                                 // console.log('eventDay', eventDay);
                                 
                                 return (
@@ -57,7 +61,7 @@ class Event extends React.Component {
                                                     <div className="col-md-9 mb-3">
                                                         <div className="row">
                                                             <div className="col-12">
-                                                                <p className="eventDate">{eventDay.format("MMM D").toString()}</p>
+                                                                <p className="eventDate">{eventDay}</p>
                                                                 <h1 className="eventTitle">{event.post_title}</h1>
                                                                 <h4> 
                                                                     <Link 
@@ -76,7 +80,7 @@ class Event extends React.Component {
                                                     </div>
                                                     {/*right side */}
                                                     <div className="col-md-3 text-center rounded rsvpBox">
-                                                        <h4 className="mb-4"> {event.rsvpYes.length} people going </h4>
+                                                        <h4 className="mb-4"> {/*event.rsvpYes.length*/} people going </h4>
                                                         
                                                         {!user.token ? 
                                                             <div className="row mb-4"> 
@@ -137,8 +141,8 @@ class Event extends React.Component {
                                                                     <FontAwesomeIcon icon={faClock}/>
                                                                 </div>
                                                                 <div className="col-8">
-                                                                    <span className="card-date">{eventDay.format("dddd, MMMM DD, YYYY").toString()}</span><br/>
-                                                                    <span className="card-time">{eventDay.format("h:mm a").toString()}</span><br/>
+                                                                    <span className="card-date">{eventDay/*.format("dddd, MMMM DD, YYYY").toString()*/}</span><br/>
+                                                                    <span className="card-time">{eventTime/*.format("h:mm a").toString()*/}</span><br/>
                                                                     <span className="card-schedule">Every first and last Tuesday of the month</span>
                                                                 </div>
                                                             </div>

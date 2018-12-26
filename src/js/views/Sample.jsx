@@ -24,13 +24,15 @@ class Sample extends React.Component{
             luxation: "",
             sprain: ""
         };
+        
         this.handleInputChange = this.handleInputChange.bind(this);
     }
     
-    handleInputChange(event) {
-        const target = event.target;
+    handleInputChange(e) {
+        const target = e.target;
         const value = target.type === 'checkbox' ? target.checked : target.value;
         const name = target.name;
+        console.log("event", e);
         console.log("checked", target.checked);
         console.log("value", target.value);
         console.log("name", target.name);
@@ -76,7 +78,7 @@ class Sample extends React.Component{
                                         value="1"
                                         checked={this.state.fracture}
                                         onChange={this.handleInputChange}
-                                        // onChange={(e) => this.setState({fracture: e.target.value})}
+                                        //onChange={(e) => this.setState({fracture: e.target.value})}
                                     />
                                     <label className="form-check-label" htmlFor="fracture">
                                         Fracture

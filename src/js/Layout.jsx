@@ -34,107 +34,107 @@ class Layout extends React.Component {
                 // }
             ],
             "events": [
-                {
-                    ID: 1,
-                    post_title: "Speed Dating",
-                    day: "2018-10-31",
-                    // day: "October 31",
-                    time: "22:00:00-05:00",
-                    // time: "10:00 pm",
-                    post_content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet luctus venenatis lectus magna. Montes nascetur ridiculus mus mauris vitae ultricies leo integer. Aenean et tortor at risus. At elementum eu facilisis sed.",
-                    location: "Coconut Groove",
-                    rsvpYes: [8,9,4],
-                    rsvpNo: [4,1,6],
-                    meetup: 3
-                },
-                {
-                    ID: 2,
-                    post_title: "Billiards",
-                    day: "July 5",
-                    time: "9:00 pm",
-                    post_content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet luctus venenatis lectus magna. Montes nascetur ridiculus mus mauris vitae ultricies leo integer. Aenean et tortor at risus. At elementum eu facilisis sed.",
-                    location: "Homstead",
-                    rsvpYes: [8,9,4],
-                    rsvpNo: [4,1,6],
-                    meetup: 3
-                },
-                {
-                    ID: 3,
-                    post_title: "Poker Nights",
-                    day: "June 10",
-                    time: "10:00 pm",
-                    post_content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet luctus venenatis lectus magna. Montes nascetur ridiculus mus mauris vitae ultricies leo integer. Aenean et tortor at risus. At elementum eu facilisis sed.",
-                    location: "North Miami",
-                    rsvpYes: [8,9,4],
-                    rsvpNo: [4,1,6],
-                    meetup: 3
-                },
-                {
-                    ID: 4,
-                    post_title: "Cook With Us",
-                    day: "August 1",
-                    time: "8:00 pm",
-                    post_content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet luctus venenatis lectus magna. Montes nascetur ridiculus mus mauris vitae ultricies leo integer. Aenean et tortor at risus. At elementum eu facilisis sed.",
-                    location: "Hialeah",
-                    rsvpYes: [8,9,4],
-                    rsvpNo: [4,1,6],
-                    meetup: 1
-                },
-                {
-                    ID: 5,
-                    post_title: "Bowling Afternoon",
-                    day: "August 5",
-                    time: "1:00 pm",
-                    post_content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet luctus venenatis lectus magna. Montes nascetur ridiculus mus mauris vitae ultricies leo integer. Aenean et tortor at risus. At elementum eu facilisis sed.",
-                    location: "Pembrook Pines",
-                    rsvpYes: [8,9,4],
-                    rsvpNo: [4,1,6],
-                    meetup: 1
-                },
-                {
-                    ID: 6,
-                    post_title: "Beach Time",
-                    day: "February 3",
-                    time: "12:00 pm",
-                    post_content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet luctus venenatis lectus magna. Montes nascetur ridiculus mus mauris vitae ultricies leo integer. Aenean et tortor at risus. At elementum eu facilisis sed.",
-                    location: "Brickell",
-                    rsvpYes: [8,9,4],
-                    rsvpNo: [4,1,6],
-                    meetup: 3
-                },
-                {
-                    ID: 7,
-                    post_title: "Bond Marathon",
-                    day: "January 13",
-                    time: "9:00 am",
-                    post_content: "Play Bingo with your community evey 10th of the month. Bring your friends and family",
-                    location: "Coral Gables",
-                    rsvpYes: [ 1, 2, 3],
-                    rsvpNo: [ 4, 5, 6],
-                    meetup: 2
-                },
-                {
-                    ID: 8,
-                    post_title: "Despicable Me",
-                    day: "February 15",
-                    time: "9:00 pm",
-                    post_content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet luctus venenatis lectus magna. Montes nascetur ridiculus mus mauris vitae ultricies leo integer. Aenean et tortor at risus. At elementum eu facilisis sed.",
-                    location: "South Beach",
-                    rsvpYes: [ 1, 2, 3],
-                    rsvpNo: [ 4, 5, 6],
-                    meetup: 2
-                },
-                {
-                    ID: 9,
-                    post_title: "Coco",
-                    day: "May 20",
-                    time: "5:00 pm",
-                    post_content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pharetra magna ac placerat vestibulum lectus. Ipsum dolor sit amet consectetur adipiscing elit pellentesque. Diam maecenas ultricies mi eget mauris pharetra et ultrices. Dictum sit amet justo donec.",
-                    location: "Kendall",
-                    rsvpYes: [ 1, 2, 3],
-                    rsvpNo: [ 4, 5, 6],
-                    meetup: 2
-                }
+                // {
+                //     ID: 1,
+                //     post_title: "Speed Dating",
+                //     day: "2018-10-31",
+                //     // day: "October 31",
+                //     time: "20:27:45-05:00",
+                //     // time: "10:00 pm",
+                //     post_content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet luctus venenatis lectus magna. Montes nascetur ridiculus mus mauris vitae ultricies leo integer. Aenean et tortor at risus. At elementum eu facilisis sed.",
+                //     location: "Coconut Groove",
+                //     rsvpYes: [8,9,4],
+                //     rsvpNo: [4,1,6],
+                //     meetup: 3
+                // }
+                // {
+                //     ID: 2,
+                //     post_title: "Billiards",
+                //     day: "July 5",
+                //     time: "9:00 pm",
+                //     post_content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet luctus venenatis lectus magna. Montes nascetur ridiculus mus mauris vitae ultricies leo integer. Aenean et tortor at risus. At elementum eu facilisis sed.",
+                //     location: "Homstead",
+                //     rsvpYes: [8,9,4],
+                //     rsvpNo: [4,1,6],
+                //     meetup: 3
+                // },
+                // {
+                //     ID: 3,
+                //     post_title: "Poker Nights",
+                //     day: "June 10",
+                //     time: "10:00 pm",
+                //     post_content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet luctus venenatis lectus magna. Montes nascetur ridiculus mus mauris vitae ultricies leo integer. Aenean et tortor at risus. At elementum eu facilisis sed.",
+                //     location: "North Miami",
+                //     rsvpYes: [8,9,4],
+                //     rsvpNo: [4,1,6],
+                //     meetup: 3
+                // },
+                // {
+                //     ID: 4,
+                //     post_title: "Cook With Us",
+                //     day: "August 1",
+                //     time: "8:00 pm",
+                //     post_content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet luctus venenatis lectus magna. Montes nascetur ridiculus mus mauris vitae ultricies leo integer. Aenean et tortor at risus. At elementum eu facilisis sed.",
+                //     location: "Hialeah",
+                //     rsvpYes: [8,9,4],
+                //     rsvpNo: [4,1,6],
+                //     meetup: 1
+                // },
+                // {
+                //     ID: 5,
+                //     post_title: "Bowling Afternoon",
+                //     day: "August 5",
+                //     time: "1:00 pm",
+                //     post_content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet luctus venenatis lectus magna. Montes nascetur ridiculus mus mauris vitae ultricies leo integer. Aenean et tortor at risus. At elementum eu facilisis sed.",
+                //     location: "Pembrook Pines",
+                //     rsvpYes: [8,9,4],
+                //     rsvpNo: [4,1,6],
+                //     meetup: 1
+                // },
+                // {
+                //     ID: 6,
+                //     post_title: "Beach Time",
+                //     day: "February 3",
+                //     time: "12:00 pm",
+                //     post_content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet luctus venenatis lectus magna. Montes nascetur ridiculus mus mauris vitae ultricies leo integer. Aenean et tortor at risus. At elementum eu facilisis sed.",
+                //     location: "Brickell",
+                //     rsvpYes: [8,9,4],
+                //     rsvpNo: [4,1,6],
+                //     meetup: 3
+                // },
+                // {
+                //     ID: 7,
+                //     post_title: "Bond Marathon",
+                //     day: "January 13",
+                //     time: "9:00 am",
+                //     post_content: "Play Bingo with your community evey 10th of the month. Bring your friends and family",
+                //     location: "Coral Gables",
+                //     rsvpYes: [ 1, 2, 3],
+                //     rsvpNo: [ 4, 5, 6],
+                //     meetup: 2
+                // },
+                // {
+                //     ID: 8,
+                //     post_title: "Despicable Me",
+                //     day: "February 15",
+                //     time: "9:00 pm",
+                //     post_content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet luctus venenatis lectus magna. Montes nascetur ridiculus mus mauris vitae ultricies leo integer. Aenean et tortor at risus. At elementum eu facilisis sed.",
+                //     location: "South Beach",
+                //     rsvpYes: [ 1, 2, 3],
+                //     rsvpNo: [ 4, 5, 6],
+                //     meetup: 2
+                // },
+                // {
+                //     ID: 9,
+                //     post_title: "Coco",
+                //     day: "May 20",
+                //     time: "5:00 pm",
+                //     post_content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pharetra magna ac placerat vestibulum lectus. Ipsum dolor sit amet consectetur adipiscing elit pellentesque. Diam maecenas ultricies mi eget mauris pharetra et ultrices. Dictum sit amet justo donec.",
+                //     location: "Kendall",
+                //     rsvpYes: [ 1, 2, 3],
+                //     rsvpNo: [ 4, 5, 6],
+                //     meetup: 2
+                // }
             ],
             "session": {
                 ID: 1,
@@ -231,10 +231,10 @@ class Layout extends React.Component {
                 // .catch(error => console.log(error));
             },
             "loadInitialData": () => {
-                // fetch('https://wordpress-breathecode-cli-nachovz.c9users.io/wp-json/sample_api/v1/events')
-                // .then(response => response.json())
-                // .then(data => this.setState({ events: data, isLoading: false }))
-                // .catch(error => console.log(error));
+                fetch('https://backend-meetup-clone-edgarbrignoni.c9users.io/wp-json/sample_api/v1/events')
+                .then(response => response.json())
+                .then(data => this.setState({ events: data, isLoading: false }));
+                //.catch(error => console.log(error));
               
                 // fetch('https://wordpress-breathecode-cli-nachovz.c9users.io/wp-json/sample_api/v1/meetups')
                 // .then(response => response.json())
