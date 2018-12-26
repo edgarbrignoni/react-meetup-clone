@@ -64,7 +64,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "f23218b26490045c00bd";
+/******/ 	var hotCurrentHash = "8e396e234c84bb4361f7";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -62171,99 +62171,109 @@ var Layout = function (_React$Component) {
                 //     listOfEvetns: [ 7, 8, 9]
                 // }
             ],
-            "events": [{
-                ID: 1,
-                post_title: "Speed Dating",
-                day: "2018-10-31",
-                // day: "October 31",
-                time: "22:00:00-05:00",
-                // time: "10:00 pm",
-                post_content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet luctus venenatis lectus magna. Montes nascetur ridiculus mus mauris vitae ultricies leo integer. Aenean et tortor at risus. At elementum eu facilisis sed.",
-                location: "Coconut Groove",
-                rsvpYes: [8, 9, 4],
-                rsvpNo: [4, 1, 6],
-                meetup: 3
-            }, {
-                ID: 2,
-                post_title: "Billiards",
-                day: "July 5",
-                time: "9:00 pm",
-                post_content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet luctus venenatis lectus magna. Montes nascetur ridiculus mus mauris vitae ultricies leo integer. Aenean et tortor at risus. At elementum eu facilisis sed.",
-                location: "Homstead",
-                rsvpYes: [8, 9, 4],
-                rsvpNo: [4, 1, 6],
-                meetup: 3
-            }, {
-                ID: 3,
-                post_title: "Poker Nights",
-                day: "June 10",
-                time: "10:00 pm",
-                post_content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet luctus venenatis lectus magna. Montes nascetur ridiculus mus mauris vitae ultricies leo integer. Aenean et tortor at risus. At elementum eu facilisis sed.",
-                location: "North Miami",
-                rsvpYes: [8, 9, 4],
-                rsvpNo: [4, 1, 6],
-                meetup: 3
-            }, {
-                ID: 4,
-                post_title: "Cook With Us",
-                day: "August 1",
-                time: "8:00 pm",
-                post_content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet luctus venenatis lectus magna. Montes nascetur ridiculus mus mauris vitae ultricies leo integer. Aenean et tortor at risus. At elementum eu facilisis sed.",
-                location: "Hialeah",
-                rsvpYes: [8, 9, 4],
-                rsvpNo: [4, 1, 6],
-                meetup: 1
-            }, {
-                ID: 5,
-                post_title: "Bowling Afternoon",
-                day: "August 5",
-                time: "1:00 pm",
-                post_content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet luctus venenatis lectus magna. Montes nascetur ridiculus mus mauris vitae ultricies leo integer. Aenean et tortor at risus. At elementum eu facilisis sed.",
-                location: "Pembrook Pines",
-                rsvpYes: [8, 9, 4],
-                rsvpNo: [4, 1, 6],
-                meetup: 1
-            }, {
-                ID: 6,
-                post_title: "Beach Time",
-                day: "February 3",
-                time: "12:00 pm",
-                post_content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet luctus venenatis lectus magna. Montes nascetur ridiculus mus mauris vitae ultricies leo integer. Aenean et tortor at risus. At elementum eu facilisis sed.",
-                location: "Brickell",
-                rsvpYes: [8, 9, 4],
-                rsvpNo: [4, 1, 6],
-                meetup: 3
-            }, {
-                ID: 7,
-                post_title: "Bond Marathon",
-                day: "January 13",
-                time: "9:00 am",
-                post_content: "Play Bingo with your community evey 10th of the month. Bring your friends and family",
-                location: "Coral Gables",
-                rsvpYes: [1, 2, 3],
-                rsvpNo: [4, 5, 6],
-                meetup: 2
-            }, {
-                ID: 8,
-                post_title: "Despicable Me",
-                day: "February 15",
-                time: "9:00 pm",
-                post_content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet luctus venenatis lectus magna. Montes nascetur ridiculus mus mauris vitae ultricies leo integer. Aenean et tortor at risus. At elementum eu facilisis sed.",
-                location: "South Beach",
-                rsvpYes: [1, 2, 3],
-                rsvpNo: [4, 5, 6],
-                meetup: 2
-            }, {
-                ID: 9,
-                post_title: "Coco",
-                day: "May 20",
-                time: "5:00 pm",
-                post_content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pharetra magna ac placerat vestibulum lectus. Ipsum dolor sit amet consectetur adipiscing elit pellentesque. Diam maecenas ultricies mi eget mauris pharetra et ultrices. Dictum sit amet justo donec.",
-                location: "Kendall",
-                rsvpYes: [1, 2, 3],
-                rsvpNo: [4, 5, 6],
-                meetup: 2
-            }],
+            "events": [
+                // {
+                //     ID: 1,
+                //     post_title: "Speed Dating",
+                //     day: "2018-10-31",
+                //     // day: "October 31",
+                //     time: "20:27:45-05:00",
+                //     // time: "10:00 pm",
+                //     post_content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet luctus venenatis lectus magna. Montes nascetur ridiculus mus mauris vitae ultricies leo integer. Aenean et tortor at risus. At elementum eu facilisis sed.",
+                //     location: "Coconut Groove",
+                //     rsvpYes: [8,9,4],
+                //     rsvpNo: [4,1,6],
+                //     meetup: 3
+                // }
+                // {
+                //     ID: 2,
+                //     post_title: "Billiards",
+                //     day: "July 5",
+                //     time: "9:00 pm",
+                //     post_content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet luctus venenatis lectus magna. Montes nascetur ridiculus mus mauris vitae ultricies leo integer. Aenean et tortor at risus. At elementum eu facilisis sed.",
+                //     location: "Homstead",
+                //     rsvpYes: [8,9,4],
+                //     rsvpNo: [4,1,6],
+                //     meetup: 3
+                // },
+                // {
+                //     ID: 3,
+                //     post_title: "Poker Nights",
+                //     day: "June 10",
+                //     time: "10:00 pm",
+                //     post_content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet luctus venenatis lectus magna. Montes nascetur ridiculus mus mauris vitae ultricies leo integer. Aenean et tortor at risus. At elementum eu facilisis sed.",
+                //     location: "North Miami",
+                //     rsvpYes: [8,9,4],
+                //     rsvpNo: [4,1,6],
+                //     meetup: 3
+                // },
+                // {
+                //     ID: 4,
+                //     post_title: "Cook With Us",
+                //     day: "August 1",
+                //     time: "8:00 pm",
+                //     post_content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet luctus venenatis lectus magna. Montes nascetur ridiculus mus mauris vitae ultricies leo integer. Aenean et tortor at risus. At elementum eu facilisis sed.",
+                //     location: "Hialeah",
+                //     rsvpYes: [8,9,4],
+                //     rsvpNo: [4,1,6],
+                //     meetup: 1
+                // },
+                // {
+                //     ID: 5,
+                //     post_title: "Bowling Afternoon",
+                //     day: "August 5",
+                //     time: "1:00 pm",
+                //     post_content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet luctus venenatis lectus magna. Montes nascetur ridiculus mus mauris vitae ultricies leo integer. Aenean et tortor at risus. At elementum eu facilisis sed.",
+                //     location: "Pembrook Pines",
+                //     rsvpYes: [8,9,4],
+                //     rsvpNo: [4,1,6],
+                //     meetup: 1
+                // },
+                // {
+                //     ID: 6,
+                //     post_title: "Beach Time",
+                //     day: "February 3",
+                //     time: "12:00 pm",
+                //     post_content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet luctus venenatis lectus magna. Montes nascetur ridiculus mus mauris vitae ultricies leo integer. Aenean et tortor at risus. At elementum eu facilisis sed.",
+                //     location: "Brickell",
+                //     rsvpYes: [8,9,4],
+                //     rsvpNo: [4,1,6],
+                //     meetup: 3
+                // },
+                // {
+                //     ID: 7,
+                //     post_title: "Bond Marathon",
+                //     day: "January 13",
+                //     time: "9:00 am",
+                //     post_content: "Play Bingo with your community evey 10th of the month. Bring your friends and family",
+                //     location: "Coral Gables",
+                //     rsvpYes: [ 1, 2, 3],
+                //     rsvpNo: [ 4, 5, 6],
+                //     meetup: 2
+                // },
+                // {
+                //     ID: 8,
+                //     post_title: "Despicable Me",
+                //     day: "February 15",
+                //     time: "9:00 pm",
+                //     post_content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet luctus venenatis lectus magna. Montes nascetur ridiculus mus mauris vitae ultricies leo integer. Aenean et tortor at risus. At elementum eu facilisis sed.",
+                //     location: "South Beach",
+                //     rsvpYes: [ 1, 2, 3],
+                //     rsvpNo: [ 4, 5, 6],
+                //     meetup: 2
+                // },
+                // {
+                //     ID: 9,
+                //     post_title: "Coco",
+                //     day: "May 20",
+                //     time: "5:00 pm",
+                //     post_content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pharetra magna ac placerat vestibulum lectus. Ipsum dolor sit amet consectetur adipiscing elit pellentesque. Diam maecenas ultricies mi eget mauris pharetra et ultrices. Dictum sit amet justo donec.",
+                //     location: "Kendall",
+                //     rsvpYes: [ 1, 2, 3],
+                //     rsvpNo: [ 4, 5, 6],
+                //     meetup: 2
+                // }
+            ],
             "session": {
                 ID: 1,
                 username: "mompy",
@@ -62355,10 +62365,12 @@ var Layout = function (_React$Component) {
                 // .catch(error => console.log(error));
             },
             "loadInitialData": function loadInitialData() {
-                // fetch('https://wordpress-breathecode-cli-nachovz.c9users.io/wp-json/sample_api/v1/events')
-                // .then(response => response.json())
-                // .then(data => this.setState({ events: data, isLoading: false }))
-                // .catch(error => console.log(error));
+                fetch('https://backend-meetup-clone-edgarbrignoni.c9users.io/wp-json/sample_api/v1/events').then(function (response) {
+                    return response.json();
+                }).then(function (data) {
+                    return _this.setState({ events: data, isLoading: false });
+                });
+                //.catch(error => console.log(error));
 
                 // fetch('https://wordpress-breathecode-cli-nachovz.c9users.io/wp-json/sample_api/v1/meetups')
                 // .then(response => response.json())
@@ -63022,9 +63034,13 @@ var Event = function (_React$Component) {
                             var yesDisabled = typeof event.rsvpYes !== 'undefined' && event.rsvpYes.includes("nachovz") ? "disabled" : "";
                             var noDisabled = typeof event.rsvpNo !== 'undefined' && event.rsvpNo.includes("nachovz") ? "disabled" : "";
 
-                            var aTime = event.day + "T" + event.time.replace(/:/g, '');
-                            // console.log('aTime', aTime);
-                            var eventDay = (0, _moment2.default)(aTime);
+                            var eventDate = event.meta_keys.event_date_time;
+                            //console.log('eventDate', eventDate);
+                            var eventDay = (0, _moment2.default)(eventDate).format("dddd, MMMM Do YYYY");
+                            //console.log('eventDay', eventDay);
+                            var eventTime = (0, _moment2.default)(eventDate).format("h:mm a");
+                            //console.log('eventTime', eventTime);
+                            //let eventDay = Moment(aTime);
                             // console.log('eventDay', eventDay);
 
                             return _react2.default.createElement(
@@ -63051,7 +63067,7 @@ var Event = function (_React$Component) {
                                                         _react2.default.createElement(
                                                             "p",
                                                             { className: "eventDate" },
-                                                            eventDay.format("MMM D").toString()
+                                                            eventDay
                                                         ),
                                                         _react2.default.createElement(
                                                             "h1",
@@ -63081,7 +63097,6 @@ var Event = function (_React$Component) {
                                                     "h4",
                                                     { className: "mb-4" },
                                                     " ",
-                                                    event.rsvpYes.length,
                                                     " people going "
                                                 ),
                                                 !user.token ? _react2.default.createElement(
@@ -63176,13 +63191,13 @@ var Event = function (_React$Component) {
                                                             _react2.default.createElement(
                                                                 "span",
                                                                 { className: "card-date" },
-                                                                eventDay.format("dddd, MMMM DD, YYYY").toString()
+                                                                eventDay /*.format("dddd, MMMM DD, YYYY").toString()*/
                                                             ),
                                                             _react2.default.createElement("br", null),
                                                             _react2.default.createElement(
                                                                 "span",
                                                                 { className: "card-time" },
-                                                                eventDay.format("h:mm a").toString()
+                                                                eventTime /*.format("h:mm a").toString()*/
                                                             ),
                                                             _react2.default.createElement("br", null),
                                                             _react2.default.createElement(
@@ -63311,6 +63326,10 @@ var _Footer = __webpack_require__(/*! ../components/Footer.jsx */ "./src/js/comp
 
 var _Footer2 = _interopRequireDefault(_Footer);
 
+var _moment = __webpack_require__(/*! moment */ "./node_modules/moment/moment.js");
+
+var _moment2 = _interopRequireDefault(_moment);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -63370,13 +63389,20 @@ var Home = function (_React$Component) {
                     function (_ref) {
                         var state = _ref.state;
                         return state.events.map(function (item, index) {
+                            //let aTime = item.day+"T"+item.time.replace(/:/g,'');
+                            var eventDate = item.meta_keys.event_date_time;
+                            //console.log('eventDate', eventDate);
+                            var eventDay = (0, _moment2.default)(eventDate).format("dddd, MMMM Do YYYY");
+                            //console.log('eventDay', eventDay);
+                            var eventTime = (0, _moment2.default)(eventDate).format("h:mm a");
+                            //console.log('eventTime', eventTime);
                             return _react2.default.createElement(_Card2.default, {
                                 key: index,
                                 ID: item.ID,
                                 name: item.post_title,
-                                date: item.day,
-                                time: item.time,
-                                location: item.location,
+                                date: eventDay,
+                                time: eventTime,
+                                location: item.meta_keys.location,
                                 description: item.post_content
                             });
                         });
@@ -63590,16 +63616,18 @@ var Sample = function (_React$Component) {
             luxation: "",
             sprain: ""
         };
+
         _this.handleInputChange = _this.handleInputChange.bind(_this);
         return _this;
     }
 
     _createClass(Sample, [{
         key: 'handleInputChange',
-        value: function handleInputChange(event) {
-            var target = event.target;
+        value: function handleInputChange(e) {
+            var target = e.target;
             var value = target.type === 'checkbox' ? target.checked : target.value;
             var name = target.name;
+            console.log("event", e);
             console.log("checked", target.checked);
             console.log("value", target.value);
             console.log("name", target.name);
@@ -63652,7 +63680,7 @@ var Sample = function (_React$Component) {
                                         value: '1',
                                         checked: this.state.fracture,
                                         onChange: this.handleInputChange
-                                        // onChange={(e) => this.setState({fracture: e.target.value})}
+                                        //onChange={(e) => this.setState({fracture: e.target.value})}
                                     }),
                                     _react2.default.createElement(
                                         'label',
