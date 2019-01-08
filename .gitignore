@@ -12,6 +12,9 @@ php_errorlog
 !package.json
 !webpack.production.js
 !webpack.development.js
+!bundle.js
+!bundle.js.map
+!index.html
 
 # track readme.md in the root (i.e. do NOT ignore it)
 !README.md
