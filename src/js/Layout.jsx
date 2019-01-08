@@ -238,8 +238,9 @@ class Layout extends React.Component {
                 //.catch(error => console.log(error));
               
                 // fetch('https://wordpress-breathecode-cli-nachovz.c9users.io/wp-json/sample_api/v1/meetups')
-                // .then(response => response.json())
-                // .then(data => this.setState({ meetups: data }))
+                fetch('https://www.edgarbrignoni.com/backend/wp-json/sample_api/v1/meetups')
+                .then(response => response.json())
+                .then(data => this.setState({ meetups: data }));
                 // .catch(error => console.log(error));
             },
             "logout": () => this.setState({

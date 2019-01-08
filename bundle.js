@@ -64,7 +64,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "03a50d9f4353f86dca37";
+/******/ 	var hotCurrentHash = "3f92310c99b191e33ec0";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -62374,8 +62374,11 @@ var Layout = function (_React$Component) {
                 //.catch(error => console.log(error));
 
                 // fetch('https://wordpress-breathecode-cli-nachovz.c9users.io/wp-json/sample_api/v1/meetups')
-                // .then(response => response.json())
-                // .then(data => this.setState({ meetups: data }))
+                fetch('https://www.edgarbrignoni.com/backend/wp-json/sample_api/v1/meetups').then(function (response) {
+                    return response.json();
+                }).then(function (data) {
+                    return _this.setState({ meetups: data });
+                });
                 // .catch(error => console.log(error));
             },
             "logout": function logout() {
