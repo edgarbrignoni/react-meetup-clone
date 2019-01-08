@@ -64,7 +64,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "3f92310c99b191e33ec0";
+/******/ 	var hotCurrentHash = "8f9eafec978c72d6ac2e";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -62332,38 +62332,39 @@ var Layout = function (_React$Component) {
 
                 _this.setState({ "events": tempArray });
             },
-            "updateSample": function updateSample(id, title, content, text, select, text_area, radio, fracture, luxation, sprain) {
-                //console.log(id, title, content, text, select, text_area, radio, fracture, luxation, sprain);
-                var url = 'https://backend-meetup-clone-edgarbrignoni.c9users.io/wp-json/sample_api/v1/samples';
-                var data = {
-                    id: id,
-                    title: title,
-                    content: content,
-                    text: text,
-                    select: select,
-                    text_area: text_area,
-                    radio: radio,
-                    fracture: fracture,
-                    luxation: luxation,
-                    sprain: sprain
-                };
+            // "updateSample" : (id, title, content, text, select, text_area, radio, fracture, luxation, sprain) => {
+            //     //console.log(id, title, content, text, select, text_area, radio, fracture, luxation, sprain);
+            //     let url = 'https://backend-meetup-clone-edgarbrignoni.c9users.io/wp-json/sample_api/v1/samples';
+            //     var data = {
+            //         id: id,
+            //         title: title,
+            //         content: content,
+            //         text: text,
+            //         select: select,
+            //         text_area: text_area,
+            //         radio: radio,
+            //         fracture: fracture,
+            //         luxation: luxation,
+            //         sprain: sprain
+            //     };
 
-                // fetch(url+id, {
-                fetch(url, {
-                    method: 'PUT',
-                    body: JSON.stringify(data),
-                    headers: new Headers({
-                        'Content-Type': 'application/json'
-                        //'Authorization': 'Bearer '+this.state.session.token
-                    })
-                }).then(function (data) {
-                    if (data.status !== 200) {
-                        throw new Error(data); //INVALID TOKEN
-                    }
-                    _this.actions.loadInitialData();
-                });
-                // .catch(error => console.log(error));
-            },
+            //     // fetch(url+id, {
+            //     fetch(url, {
+            //         method: 'PUT',
+            //         body: JSON.stringify(data),
+            //         headers: new Headers({
+            //             'Content-Type': 'application/json'
+            //             //'Authorization': 'Bearer '+this.state.session.token
+            //         })
+            //     })
+            //     .then(data => {
+            //       if (data.status !== 200 ) {
+            //         throw new Error(data); //INVALID TOKEN
+            //       }
+            //       this.actions.loadInitialData();
+            //     });
+            //     // .catch(error => console.log(error));
+            // },
             "loadInitialData": function loadInitialData() {
                 //fetch('https://backend-meetup-clone-edgarbrignoni.c9users.io/wp-json/sample_api/v1/events')
                 fetch('https://www.edgarbrignoni.com/backend/wp-json/sample_api/v1/events').then(function (response) {
