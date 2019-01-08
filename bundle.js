@@ -64,7 +64,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "8e396e234c84bb4361f7";
+/******/ 	var hotCurrentHash = "03a50d9f4353f86dca37";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -62126,13 +62126,13 @@ var _Event = __webpack_require__(/*! ./views/Event.jsx */ "./src/js/views/Event.
 
 var _Event2 = _interopRequireDefault(_Event);
 
-var _Meetup = __webpack_require__(/*! ./views/Meetup.jsx */ "./src/js/views/Meetup.jsx");
-
-var _Meetup2 = _interopRequireDefault(_Meetup);
-
 var _Sample = __webpack_require__(/*! ./views/Sample.jsx */ "./src/js/views/Sample.jsx");
 
 var _Sample2 = _interopRequireDefault(_Sample);
+
+var _Meetup = __webpack_require__(/*! ./views/Meetup.jsx */ "./src/js/views/Meetup.jsx");
+
+var _Meetup2 = _interopRequireDefault(_Meetup);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -62365,7 +62365,8 @@ var Layout = function (_React$Component) {
                 // .catch(error => console.log(error));
             },
             "loadInitialData": function loadInitialData() {
-                fetch('https://backend-meetup-clone-edgarbrignoni.c9users.io/wp-json/sample_api/v1/events').then(function (response) {
+                //fetch('https://backend-meetup-clone-edgarbrignoni.c9users.io/wp-json/sample_api/v1/events')
+                fetch('https://www.edgarbrignoni.com/backend/wp-json/sample_api/v1/events').then(function (response) {
                     return response.json();
                 }).then(function (data) {
                     return _this.setState({ events: data, isLoading: false });

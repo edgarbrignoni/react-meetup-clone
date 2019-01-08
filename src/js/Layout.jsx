@@ -4,8 +4,8 @@ import { Provider } from "./stores/AppContext.jsx";
 
 import Home from "./views/Home.jsx";
 import Event from "./views/Event.jsx";
-import Meetup from "./views/Meetup.jsx";
 import Sample from "./views/Sample.jsx";
+import Meetup from "./views/Meetup.jsx";
 
 class Layout extends React.Component {
     
@@ -231,7 +231,8 @@ class Layout extends React.Component {
                 // .catch(error => console.log(error));
             },
             "loadInitialData": () => {
-                fetch('https://backend-meetup-clone-edgarbrignoni.c9users.io/wp-json/sample_api/v1/events')
+                //fetch('https://backend-meetup-clone-edgarbrignoni.c9users.io/wp-json/sample_api/v1/events')
+                fetch('https://www.edgarbrignoni.com/backend/wp-json/sample_api/v1/events')
                 .then(response => response.json())
                 .then(data => this.setState({ events: data, isLoading: false }));
                 //.catch(error => console.log(error));
