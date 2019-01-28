@@ -64,7 +64,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "8f9eafec978c72d6ac2e";
+/******/ 	var hotCurrentHash = "733ee92890885bfe81b6";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -62347,7 +62347,6 @@ var Layout = function (_React$Component) {
             //         luxation: luxation,
             //         sprain: sprain
             //     };
-
             //     // fetch(url+id, {
             //     fetch(url, {
             //         method: 'PUT',
