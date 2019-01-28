@@ -212,7 +212,6 @@ class Layout extends React.Component {
             //         luxation: luxation,
             //         sprain: sprain
             //     };
-                
             //     // fetch(url+id, {
             //     fetch(url, {
             //         method: 'PUT',
