@@ -57,6 +57,9 @@ node_modules/
 # ignore the dist directory were our bundle files are going to be
 !public/*
 !public/index.html
+!index.html
+!bundle.js
+!bundle.js.map
 
 dist/*
 !dist/index.html
