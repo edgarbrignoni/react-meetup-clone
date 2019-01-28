@@ -58,6 +58,7 @@ node_modules/
 !public/*
 !public/index.html
 !index.html
+
 !bundle.js
 !bundle.js.map
 
