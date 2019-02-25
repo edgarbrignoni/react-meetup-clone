@@ -12,9 +12,9 @@ export function withSession(Component) {
     // ... and renders the wrapped component with the context theme!
     // Notice that we pass through any additional props as well
     return (
-        <Consumer>
-            {({state, actions}) => <Component {...props} session={state.session} actions={actions} />}
-        </Consumer>
+      <Consumer>
+        {({state, actions}) => <Component {...props} session={state.session} actions={actions} />}
+      </Consumer>
     );
   };
 }
