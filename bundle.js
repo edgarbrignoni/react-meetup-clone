@@ -64,7 +64,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "733ee92890885bfe81b6";
+/******/ 	var hotCurrentHash = "a05348840ee04cdacee6";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -62105,7 +62105,7 @@ module.exports = __webpack_require__.p + "logo4Geeks.png";
 
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
 });
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -62143,293 +62143,290 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var Layout = function (_React$Component) {
-    _inherits(Layout, _React$Component);
+  _inherits(Layout, _React$Component);
 
-    function Layout() {
-        _classCallCheck(this, Layout);
+  function Layout() {
+    _classCallCheck(this, Layout);
 
-        var _this = _possibleConstructorReturn(this, (Layout.__proto__ || Object.getPrototypeOf(Layout)).call(this));
+    var _this = _possibleConstructorReturn(this, (Layout.__proto__ || Object.getPrototypeOf(Layout)).call(this));
 
-        _this.state = {
-            "meetups": [
-                // {
-                //     ID: 1,
-                //     post_title: "Adults",
-                //     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque habitant morbi tristique senectus et netus et malesuada. Amet nisl suscipit adipiscing bibendum est ultricies integer quis. Ipsum nunc aliquet bibendum enim facilisis. Viverra mauris in aliquam sem fringilla ut.",
-                //     listOfEvetns: [ 1, 2, 3]
-                // },
-                // {
-                //     ID: 2,
-                //     post_title: "Movies",
-                //     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet porttitor eget dolor. Dignissim enim sit amet venenatis urna cursus eget nunc scelerisque. Porttitor eget dolor morbi non arcu risus. Ultrices vitae auctor eu augue ut.",
-                //     listOfEvetns: [ 4, 5, 6]
-                // },
-                // {
-                //     ID: 3,
-                //     post_title: "Teens",
-                //     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis at tellus at urna condimentum. Massa placerat duis ultricies lacus sed turpis. Sed turpis tincidunt id aliquet risus. Curabitur vitae nunc sed velit.",
-                //     listOfEvetns: [ 7, 8, 9]
-                // }
-            ],
-            "events": [
-                // {
-                //     ID: 1,
-                //     post_title: "Speed Dating",
-                //     day: "2018-10-31",
-                //     // day: "October 31",
-                //     time: "20:27:45-05:00",
-                //     // time: "10:00 pm",
-                //     post_content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet luctus venenatis lectus magna. Montes nascetur ridiculus mus mauris vitae ultricies leo integer. Aenean et tortor at risus. At elementum eu facilisis sed.",
-                //     location: "Coconut Groove",
-                //     rsvpYes: [8,9,4],
-                //     rsvpNo: [4,1,6],
-                //     meetup: 3
-                // }
-                // {
-                //     ID: 2,
-                //     post_title: "Billiards",
-                //     day: "July 5",
-                //     time: "9:00 pm",
-                //     post_content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet luctus venenatis lectus magna. Montes nascetur ridiculus mus mauris vitae ultricies leo integer. Aenean et tortor at risus. At elementum eu facilisis sed.",
-                //     location: "Homstead",
-                //     rsvpYes: [8,9,4],
-                //     rsvpNo: [4,1,6],
-                //     meetup: 3
-                // },
-                // {
-                //     ID: 3,
-                //     post_title: "Poker Nights",
-                //     day: "June 10",
-                //     time: "10:00 pm",
-                //     post_content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet luctus venenatis lectus magna. Montes nascetur ridiculus mus mauris vitae ultricies leo integer. Aenean et tortor at risus. At elementum eu facilisis sed.",
-                //     location: "North Miami",
-                //     rsvpYes: [8,9,4],
-                //     rsvpNo: [4,1,6],
-                //     meetup: 3
-                // },
-                // {
-                //     ID: 4,
-                //     post_title: "Cook With Us",
-                //     day: "August 1",
-                //     time: "8:00 pm",
-                //     post_content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet luctus venenatis lectus magna. Montes nascetur ridiculus mus mauris vitae ultricies leo integer. Aenean et tortor at risus. At elementum eu facilisis sed.",
-                //     location: "Hialeah",
-                //     rsvpYes: [8,9,4],
-                //     rsvpNo: [4,1,6],
-                //     meetup: 1
-                // },
-                // {
-                //     ID: 5,
-                //     post_title: "Bowling Afternoon",
-                //     day: "August 5",
-                //     time: "1:00 pm",
-                //     post_content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet luctus venenatis lectus magna. Montes nascetur ridiculus mus mauris vitae ultricies leo integer. Aenean et tortor at risus. At elementum eu facilisis sed.",
-                //     location: "Pembrook Pines",
-                //     rsvpYes: [8,9,4],
-                //     rsvpNo: [4,1,6],
-                //     meetup: 1
-                // },
-                // {
-                //     ID: 6,
-                //     post_title: "Beach Time",
-                //     day: "February 3",
-                //     time: "12:00 pm",
-                //     post_content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet luctus venenatis lectus magna. Montes nascetur ridiculus mus mauris vitae ultricies leo integer. Aenean et tortor at risus. At elementum eu facilisis sed.",
-                //     location: "Brickell",
-                //     rsvpYes: [8,9,4],
-                //     rsvpNo: [4,1,6],
-                //     meetup: 3
-                // },
-                // {
-                //     ID: 7,
-                //     post_title: "Bond Marathon",
-                //     day: "January 13",
-                //     time: "9:00 am",
-                //     post_content: "Play Bingo with your community evey 10th of the month. Bring your friends and family",
-                //     location: "Coral Gables",
-                //     rsvpYes: [ 1, 2, 3],
-                //     rsvpNo: [ 4, 5, 6],
-                //     meetup: 2
-                // },
-                // {
-                //     ID: 8,
-                //     post_title: "Despicable Me",
-                //     day: "February 15",
-                //     time: "9:00 pm",
-                //     post_content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet luctus venenatis lectus magna. Montes nascetur ridiculus mus mauris vitae ultricies leo integer. Aenean et tortor at risus. At elementum eu facilisis sed.",
-                //     location: "South Beach",
-                //     rsvpYes: [ 1, 2, 3],
-                //     rsvpNo: [ 4, 5, 6],
-                //     meetup: 2
-                // },
-                // {
-                //     ID: 9,
-                //     post_title: "Coco",
-                //     day: "May 20",
-                //     time: "5:00 pm",
-                //     post_content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pharetra magna ac placerat vestibulum lectus. Ipsum dolor sit amet consectetur adipiscing elit pellentesque. Diam maecenas ultricies mi eget mauris pharetra et ultrices. Dictum sit amet justo donec.",
-                //     location: "Kendall",
-                //     rsvpYes: [ 1, 2, 3],
-                //     rsvpNo: [ 4, 5, 6],
-                //     meetup: 2
-                // }
-            ],
-            "session": {
-                ID: 1,
-                username: "mompy",
-                password: "abc123",
-                token: "wjer147892akerfdv"
-            },
-            "isLoading": true
+    _this.state = {
+      "meetups": [
+        //   {
+        //     ID: 1,
+        //     post_title: "Adults",
+        //     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque habitant morbi tristique senectus et netus et malesuada. Amet nisl suscipit adipiscing bibendum est ultricies integer quis. Ipsum nunc aliquet bibendum enim facilisis. Viverra mauris in aliquam sem fringilla ut.",
+        //     listOfEvetns: [ 1, 2, 3]
+        //   },
+        //   {
+        //     ID: 2,
+        //     post_title: "Movies",
+        //     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet porttitor eget dolor. Dignissim enim sit amet venenatis urna cursus eget nunc scelerisque. Porttitor eget dolor morbi non arcu risus. Ultrices vitae auctor eu augue ut.",
+        //     listOfEvetns: [ 4, 5, 6]
+        //   },
+        //   {
+        //     ID: 3,
+        //     post_title: "Teens",
+        //     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis at tellus at urna condimentum. Massa placerat duis ultricies lacus sed turpis. Sed turpis tincidunt id aliquet risus. Curabitur vitae nunc sed velit.",
+        //     listOfEvetns: [ 7, 8, 9]
+        //   }
+      ],
+      "events": [
+        // {
+        //   ID: 1,
+        //   post_title: "Speed Dating",
+        //   day: "2018-10-31",
+        //   // day: "October 31",
+        //   time: "20:27:45-05:00",
+        //   // time: "10:00 pm",
+        //   post_content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet luctus venenatis lectus magna. Montes nascetur ridiculus mus mauris vitae ultricies leo integer. Aenean et tortor at risus. At elementum eu facilisis sed.",
+        //   location: "Coconut Groove",
+        //   rsvpYes: [8,9,4],
+        //   rsvpNo: [4,1,6],
+        //   meetup: 3
+        // },
+        // {
+        //   ID: 2,
+        //   post_title: "Billiards",
+        //   day: "July 5",
+        //   time: "9:00 pm",
+        //   post_content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet luctus venenatis lectus magna. Montes nascetur ridiculus mus mauris vitae ultricies leo integer. Aenean et tortor at risus. At elementum eu facilisis sed.",
+        //   location: "Homstead",
+        //   rsvpYes: [8,9,4],
+        //   rsvpNo: [4,1,6],
+        //   meetup: 3
+        // },
+        // {
+        //   ID: 3,
+        //   post_title: "Poker Nights",
+        //   day: "June 10",
+        //   time: "10:00 pm",
+        //   post_content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet luctus venenatis lectus magna. Montes nascetur ridiculus mus mauris vitae ultricies leo integer. Aenean et tortor at risus. At elementum eu facilisis sed.",
+        //   location: "North Miami",
+        //   rsvpYes: [8,9,4],
+        //   rsvpNo: [4,1,6],
+        //   meetup: 3
+        // },
+        // {
+        //   ID: 4,
+        //   post_title: "Cook With Us",
+        //   day: "August 1",
+        //   time: "8:00 pm",
+        //   post_content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet luctus venenatis lectus magna. Montes nascetur ridiculus mus mauris vitae ultricies leo integer. Aenean et tortor at risus. At elementum eu facilisis sed.",
+        //   location: "Hialeah",
+        //   rsvpYes: [8,9,4],
+        //   rsvpNo: [4,1,6],
+        //   meetup: 1
+        // },
+        // {
+        //   ID: 5,
+        //   post_title: "Bowling Afternoon",
+        //   day: "August 5",
+        //   time: "1:00 pm",
+        //   post_content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet luctus venenatis lectus magna. Montes nascetur ridiculus mus mauris vitae ultricies leo integer. Aenean et tortor at risus. At elementum eu facilisis sed.",
+        //   location: "Pembrook Pines",
+        //   rsvpYes: [8,9,4],
+        //   rsvpNo: [4,1,6],
+        //   meetup: 1
+        // },
+        // {
+        //   ID: 6,
+        //   post_title: "Beach Time",
+        //   day: "February 3",
+        //   time: "12:00 pm",
+        //   post_content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet luctus venenatis lectus magna. Montes nascetur ridiculus mus mauris vitae ultricies leo integer. Aenean et tortor at risus. At elementum eu facilisis sed.",
+        //   location: "Brickell",
+        //   rsvpYes: [8,9,4],
+        //   rsvpNo: [4,1,6],
+        //   meetup: 3
+        // },
+        // {
+        //   ID: 7,
+        //   post_title: "Bond Marathon",
+        //   day: "January 13",
+        //   time: "9:00 am",
+        //   post_content: "Play Bingo with your community evey 10th of the month. Bring your friends and family",
+        //   location: "Coral Gables",
+        //   rsvpYes: [ 1, 2, 3],
+        //   rsvpNo: [ 4, 5, 6],
+        //   meetup: 2
+        // },
+        // {
+        //   ID: 8,
+        //   post_title: "Despicable Me",
+        //   day: "February 15",
+        //   time: "9:00 pm",
+        //   post_content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet luctus venenatis lectus magna. Montes nascetur ridiculus mus mauris vitae ultricies leo integer. Aenean et tortor at risus. At elementum eu facilisis sed.",
+        //   location: "South Beach",
+        //   rsvpYes: [ 1, 2, 3],
+        //   rsvpNo: [ 4, 5, 6],
+        //   meetup: 2
+        // },
+        // {
+        //   ID: 9,
+        //   post_title: "Coco",
+        //   day: "May 20",
+        //   time: "5:00 pm",
+        //   post_content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pharetra magna ac placerat vestibulum lectus. Ipsum dolor sit amet consectetur adipiscing elit pellentesque. Diam maecenas ultricies mi eget mauris pharetra et ultrices. Dictum sit amet justo donec.",
+        //   location: "Kendall",
+        //   rsvpYes: [ 1, 2, 3],
+        //   rsvpNo: [ 4, 5, 6],
+        //   meetup: 2
+        // }
+      ],
+      "session": {
+        ID: 1,
+        username: "mompy",
+        password: "abc123",
+        token: "wjer147892akerfdv"
+      },
+      "isLoading": true
+    };
+
+    _this.actions = {
+      "loadSession": function loadSession(receivedUsername, receivedPassword) {
+        // fetch('https://wordpress-breathecode-cli-nachovz.c9users.io/wp-json/jwt-auth/v1/token', {
+        //   method: 'post',
+        //   body: JSON.stringify({
+        //     "username":receivedUsername,
+        //     "password":receivedPassword
+        //   }),
+        //   headers: new Headers({
+        //     'Content-Type':'application/json'
+        //   })
+        // })
+        // .then(response => response.json())
+        // .then(data => this.setState({ session: data}))
+        // .catch(error => console.log(error));
+
+        _this.setState({
+          session: {
+            ID: 1000,
+            user_nicename: receivedUsername,
+            password: receivedPassword,
+            token: "gfdrtu6545hftydhgrhxfh"
+          }
+        });
+      },
+      "rsvpEvent": function rsvpEvent(id, userId, answer, token) {
+        var indexOfEvent = 0;
+        var theArrayWithEvent = _this.state.events.filter(function (item, index) {
+          if (item.ID === parseInt(id)) {
+            indexOfEvent = index;
+            return true;
+          }
+        });
+
+        var event = theArrayWithEvent[0];
+
+        if (answer === "yes") {
+          event.rsvpYes.push(userId);
+        } else {
+          event.rsvpNo.push(userId);
+        }
+
+        var tempArray = _this.state.events;
+        tempArray[indexOfEvent] = event;
+
+        _this.setState({ "events": tempArray });
+      },
+      "updateSample": function updateSample(id, title, content, text, select, text_area, radio, fracture, luxation, sprain) {
+        //console.log(id, title, content, text, select, text_area, radio, fracture, luxation, sprain);
+        var url = 'https://www.edgarbrignoni.com/backend/wp-json/sample_api/v1/samples';
+        var data = {
+          id: id,
+          title: title,
+          content: content,
+          text: text,
+          select: select,
+          text_area: text_area,
+          radio: radio,
+          fracture: fracture,
+          luxation: luxation,
+          sprain: sprain
         };
+        // fetch(url+id, {
+        fetch(url, {
+          method: 'PUT',
+          body: JSON.stringify(data),
+          headers: new Headers({
+            'Content-Type': 'application/json'
+            //'Authorization': 'Bearer '+this.state.session.token
+          })
+        }).then(function (data) {
+          if (data.status !== 200) {
+            throw new Error(data); //INVALID TOKEN
+          }
+          _this.actions.loadInitialData();
+        });
+        // .catch(error => console.log(error));
+      },
+      "loadInitialData": function loadInitialData() {
+        //fetch('https://backend-meetup-clone-edgarbrignoni.c9users.io/wp-json/sample_api/v1/events')
+        fetch('https://www.edgarbrignoni.com/backend/wp-json/sample_api/v1/events').then(function (response) {
+          return response.json();
+        }).then(function (data) {
+          return _this.setState({ events: data, isLoading: false });
+        });
+        //.catch(error => console.log(error));
 
-        _this.actions = {
-            "loadSession": function loadSession(receivedUsername, receivedPassword) {
-                // fetch('https://wordpress-breathecode-cli-nachovz.c9users.io/wp-json/jwt-auth/v1/token', {
-                //     method: 'post',
-                //     body: JSON.stringify(
-                //         {
-                //             "username":receivedUsername,
-                //             "password":receivedPassword
-                //         }),
-                //     headers: new Headers(
-                //         {
-                //             'Content-Type':'application/json'
-                //         })
-                // })
-                // .then(response => response.json())
-                // .then(data => this.setState({ session: data}))
-                // .catch(error => console.log(error));
-                _this.setState({
-                    session: {
-                        ID: 1000,
-                        user_nicename: receivedUsername,
-                        password: receivedPassword,
-                        token: "gfdrtu6545hftydhgrhxfh"
-                    }
-                });
-            },
-            "rsvpEvent": function rsvpEvent(id, userId, answer, token) {
-                var indexOfEvent = 0;
-                var theArrayWithEvent = _this.state.events.filter(function (item, index) {
+        // fetch('https://wordpress-breathecode-cli-nachovz.c9users.io/wp-json/sample_api/v1/meetups')
+        fetch('https://www.edgarbrignoni.com/backend/wp-json/sample_api/v1/meetups').then(function (response) {
+          return response.json();
+        }).then(function (data) {
+          return _this.setState({ meetups: data });
+        });
+        // .catch(error => console.log(error));
+      },
+      "logout": function logout() {
+        return _this.setState({
+          session: {}
+        });
+      }
+    };
+    return _this;
+  }
 
-                    if (item.ID === parseInt(id)) {
-                        indexOfEvent = index;
-                        return true;
-                    }
-                });
-
-                var event = theArrayWithEvent[0];
-
-                if (answer === "yes") {
-                    event.rsvpYes.push(userId);
-                } else {
-                    event.rsvpNo.push(userId);
-                }
-
-                var tempArray = _this.state.events;
-                tempArray[indexOfEvent] = event;
-
-                _this.setState({ "events": tempArray });
-            },
-            // "updateSample" : (id, title, content, text, select, text_area, radio, fracture, luxation, sprain) => {
-            //     //console.log(id, title, content, text, select, text_area, radio, fracture, luxation, sprain);
-            //     let url = 'https://backend-meetup-clone-edgarbrignoni.c9users.io/wp-json/sample_api/v1/samples';
-            //     var data = {
-            //         id: id,
-            //         title: title,
-            //         content: content,
-            //         text: text,
-            //         select: select,
-            //         text_area: text_area,
-            //         radio: radio,
-            //         fracture: fracture,
-            //         luxation: luxation,
-            //         sprain: sprain
-            //     };
-            //     // fetch(url+id, {
-            //     fetch(url, {
-            //         method: 'PUT',
-            //         body: JSON.stringify(data),
-            //         headers: new Headers({
-            //             'Content-Type': 'application/json'
-            //             //'Authorization': 'Bearer '+this.state.session.token
-            //         })
-            //     })
-            //     .then(data => {
-            //       if (data.status !== 200 ) {
-            //         throw new Error(data); //INVALID TOKEN
-            //       }
-            //       this.actions.loadInitialData();
-            //     });
-            //     // .catch(error => console.log(error));
-            // },
-            "loadInitialData": function loadInitialData() {
-                //fetch('https://backend-meetup-clone-edgarbrignoni.c9users.io/wp-json/sample_api/v1/events')
-                fetch('https://www.edgarbrignoni.com/backend/wp-json/sample_api/v1/events').then(function (response) {
-                    return response.json();
-                }).then(function (data) {
-                    return _this.setState({ events: data, isLoading: false });
-                });
-                //.catch(error => console.log(error));
-
-                // fetch('https://wordpress-breathecode-cli-nachovz.c9users.io/wp-json/sample_api/v1/meetups')
-                fetch('https://www.edgarbrignoni.com/backend/wp-json/sample_api/v1/meetups').then(function (response) {
-                    return response.json();
-                }).then(function (data) {
-                    return _this.setState({ meetups: data });
-                });
-                // .catch(error => console.log(error));
-            },
-            "logout": function logout() {
-                return _this.setState({
-                    session: {}
-                });
-            }
-        };
-        return _this;
+  _createClass(Layout, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      this.actions.loadInitialData();
     }
+  }, {
+    key: "render",
+    value: function render() {
+      return _react2.default.createElement(
+        _react2.default.Fragment,
+        null,
+        _react2.default.createElement(
+          _reactRouterDom.BrowserRouter,
+          null,
+          _react2.default.createElement(
+            _reactRouterDom.Switch,
+            null,
+            _react2.default.createElement(
+              _AppContext.Provider,
+              { value: { state: this.state, actions: this.actions } },
+              _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/", component: _Home2.default }),
+              _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/home", component: _Home2.default }),
+              _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/event/:theid", component: _Event2.default }),
+              _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/meetup/:theid", component: _Meetup2.default }),
+              _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/sample", component: _Sample2.default })
+            ),
+            _react2.default.createElement(_reactRouterDom.Route, { render: function render() {
+                return _react2.default.createElement(
+                  "h1",
+                  null,
+                  "Not found!"
+                );
+              } })
+          )
+        )
+      );
+    }
+  }]);
 
-    _createClass(Layout, [{
-        key: "componentDidMount",
-        value: function componentDidMount() {
-            this.actions.loadInitialData();
-        }
-    }, {
-        key: "render",
-        value: function render() {
-            return _react2.default.createElement(
-                _react2.default.Fragment,
-                null,
-                _react2.default.createElement(
-                    _reactRouterDom.BrowserRouter,
-                    null,
-                    _react2.default.createElement(
-                        _reactRouterDom.Switch,
-                        null,
-                        _react2.default.createElement(
-                            _AppContext.Provider,
-                            { value: { state: this.state, actions: this.actions } },
-                            _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/", component: _Home2.default }),
-                            _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/home", component: _Home2.default }),
-                            _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/event/:theid", component: _Event2.default }),
-                            _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/meetup/:theid", component: _Meetup2.default }),
-                            _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/sample", component: _Sample2.default })
-                        ),
-                        _react2.default.createElement(_reactRouterDom.Route, { render: function render() {
-                                return _react2.default.createElement(
-                                    "h1",
-                                    null,
-                                    "Not found!"
-                                );
-                            } })
-                    )
-                )
-            );
-        }
-    }]);
-
-    return Layout;
+  return Layout;
 }(_react2.default.Component);
 
 exports.default = Layout;
@@ -62447,7 +62444,7 @@ exports.default = Layout;
 
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
 });
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -62471,92 +62468,92 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var Card = function (_React$Component) {
-    _inherits(Card, _React$Component);
+  _inherits(Card, _React$Component);
 
-    function Card(props) {
-        _classCallCheck(this, Card);
+  function Card(props) {
+    _classCallCheck(this, Card);
 
-        return _possibleConstructorReturn(this, (Card.__proto__ || Object.getPrototypeOf(Card)).call(this, props));
-    }
+    return _possibleConstructorReturn(this, (Card.__proto__ || Object.getPrototypeOf(Card)).call(this, props));
+  }
 
-    _createClass(Card, [{
-        key: 'render',
-        value: function render() {
-            return _react2.default.createElement(
+  _createClass(Card, [{
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'div',
+        { className: 'row' },
+        _react2.default.createElement(
+          'div',
+          { className: 'col-md-6 mx-auto mt-5' },
+          _react2.default.createElement(
+            'div',
+            { className: 'card' },
+            _react2.default.createElement(
+              'div',
+              { className: 'card-header' },
+              _react2.default.createElement(
+                'h2',
+                null,
+                this.props.date
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'card-body' },
+              _react2.default.createElement(
                 'div',
                 { className: 'row' },
                 _react2.default.createElement(
-                    'div',
-                    { className: 'col-md-6 mx-auto mt-5' },
+                  'div',
+                  { className: 'col-sm-4 pr-0' },
+                  _react2.default.createElement(
+                    'h4',
+                    { className: 'card-text' },
+                    this.props.time
+                  )
+                ),
+                _react2.default.createElement(
+                  'div',
+                  { className: 'col-sm-8' },
+                  _react2.default.createElement(
+                    _reactRouterDom.Link,
+                    { to: "/event/" + this.props.ID },
                     _react2.default.createElement(
-                        'div',
-                        { className: 'card' },
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'card-header' },
-                            _react2.default.createElement(
-                                'h2',
-                                null,
-                                this.props.date
-                            )
-                        ),
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'card-body' },
-                            _react2.default.createElement(
-                                'div',
-                                { className: 'row' },
-                                _react2.default.createElement(
-                                    'div',
-                                    { className: 'col-sm-4 pr-0' },
-                                    _react2.default.createElement(
-                                        'h4',
-                                        { className: 'card-text' },
-                                        this.props.time
-                                    )
-                                ),
-                                _react2.default.createElement(
-                                    'div',
-                                    { className: 'col-sm-8' },
-                                    _react2.default.createElement(
-                                        _reactRouterDom.Link,
-                                        { to: "/event/" + this.props.ID },
-                                        _react2.default.createElement(
-                                            'h4',
-                                            { className: 'card-text' },
-                                            this.props.name,
-                                            ' - ',
-                                            this.props.location
-                                        ),
-                                        _react2.default.createElement('br', null)
-                                    ),
-                                    _react2.default.createElement(
-                                        'p',
-                                        { className: 'card-text' },
-                                        this.props.description
-                                    )
-                                )
-                            )
-                        )
-                    )
+                      'h4',
+                      { className: 'card-text' },
+                      this.props.name,
+                      ' - ',
+                      this.props.location
+                    ),
+                    _react2.default.createElement('br', null)
+                  ),
+                  _react2.default.createElement(
+                    'p',
+                    { className: 'card-text' },
+                    this.props.description
+                  )
                 )
-            );
-        }
-    }]);
+              )
+            )
+          )
+        )
+      );
+    }
+  }]);
 
-    return Card;
+  return Card;
 }(_react2.default.Component);
 
 exports.default = Card;
 
 
 Card.propTypes = {
-    ID: _propTypes2.default.number,
-    name: _propTypes2.default.string,
-    date: _propTypes2.default.string,
-    time: _propTypes2.default.string,
-    description: _propTypes2.default.string,
-    location: _propTypes2.default.string
+  ID: _propTypes2.default.number,
+  name: _propTypes2.default.string,
+  date: _propTypes2.default.string,
+  time: _propTypes2.default.string,
+  description: _propTypes2.default.string,
+  location: _propTypes2.default.string
 };
 
 /***/ }),
@@ -62572,7 +62569,7 @@ Card.propTypes = {
 
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
 });
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -62597,38 +62594,38 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 //create your first component
 var Footer = function (_React$Component) {
-    _inherits(Footer, _React$Component);
+  _inherits(Footer, _React$Component);
 
-    function Footer() {
-        _classCallCheck(this, Footer);
+  function Footer() {
+    _classCallCheck(this, Footer);
 
-        return _possibleConstructorReturn(this, (Footer.__proto__ || Object.getPrototypeOf(Footer)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (Footer.__proto__ || Object.getPrototypeOf(Footer)).apply(this, arguments));
+  }
+
+  _createClass(Footer, [{
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'div',
+        { className: 'footer' },
+        _react2.default.createElement(
+          'div',
+          { className: 'container-fluid mt-5 pb-2' },
+          _react2.default.createElement(
+            'p',
+            { className: 'text-center' },
+            _react2.default.createElement(
+              _reactRouterDom.Link,
+              { to: '/' },
+              _react2.default.createElement('img', { id: 'logoInverted', className: 'img-fluid', src: _logo4Geeks2.default })
+            )
+          )
+        )
+      );
     }
+  }]);
 
-    _createClass(Footer, [{
-        key: 'render',
-        value: function render() {
-            return _react2.default.createElement(
-                'div',
-                { className: 'footer' },
-                _react2.default.createElement(
-                    'div',
-                    { className: 'container-fluid mt-5 pb-2' },
-                    _react2.default.createElement(
-                        'p',
-                        { className: 'text-center' },
-                        _react2.default.createElement(
-                            _reactRouterDom.Link,
-                            { to: '/' },
-                            _react2.default.createElement('img', { id: 'logoInverted', className: 'img-fluid', src: _logo4Geeks2.default })
-                        )
-                    )
-                )
-            );
-        }
-    }]);
-
-    return Footer;
+  return Footer;
 }(_react2.default.Component);
 
 exports.default = Footer;
@@ -62646,7 +62643,7 @@ exports.default = Footer;
 
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
 });
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -62680,146 +62677,147 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var Navbar = function (_React$Component) {
-    _inherits(Navbar, _React$Component);
+  _inherits(Navbar, _React$Component);
 
-    function Navbar() {
-        _classCallCheck(this, Navbar);
+  function Navbar() {
+    _classCallCheck(this, Navbar);
 
-        var _this = _possibleConstructorReturn(this, (Navbar.__proto__ || Object.getPrototypeOf(Navbar)).call(this));
+    var _this = _possibleConstructorReturn(this, (Navbar.__proto__ || Object.getPrototypeOf(Navbar)).call(this));
 
-        _this.state = {
-            username: "initial_state",
-            password: "initial_state",
-            modal: false
-        };
-        return _this;
+    _this.state = {
+      username: "initial_state",
+      password: "initial_state",
+      modal: false
+    };
+    return _this;
+  }
+
+  _createClass(Navbar, [{
+    key: 'componentDidUpdate',
+    value: function componentDidUpdate(prevProps, prevState) {
+      //     // Previous ThemeContext value is prevProps.theme
+      //     // New ThemeContext value is this.props.theme
+      if (this.props.session.token) (0, _jquery2.default)('#exampleModal').modal('hide');
     }
+  }, {
+    key: 'render',
+    value: function render() {
+      var _this2 = this;
 
-    _createClass(Navbar, [{
-        key: 'componentDidUpdate',
-        value: function componentDidUpdate(prevProps, prevState) {
-            //     // Previous ThemeContext value is prevProps.theme
-            //     // New ThemeContext value is this.props.theme
-            if (this.props.session.token) (0, _jquery2.default)('#exampleModal').modal('hide');
-        }
-    }, {
-        key: 'render',
-        value: function render() {
-            var _this2 = this;
+      // let homeActive = this.props.currentView === "home" ? "active" :"";
 
-            // let homeActive = this.props.currentView === "home" ? "active" :"";
-
-            var _props = this.props,
-                session = _props.session,
-                actions = _props.actions;
+      var _props = this.props,
+          session = _props.session,
+          actions = _props.actions;
 
 
-            return _react2.default.createElement(
+      return _react2.default.createElement(
+        'div',
+        null,
+        _react2.default.createElement(
+          'nav',
+          { className: 'navbar navbar-dark bg-dark justify-content-between navbar-expand-sm' },
+          _react2.default.createElement(
+            _reactRouterDom.Link,
+            { className: 'navbar-brand', to: '/' },
+            _react2.default.createElement('img', { id: 'logoInverted', className: 'img-fluid', src: _logo4Geeks2.default })
+          ),
+          _react2.default.createElement(
+            'button',
+            { className: 'navbar-toggler', type: 'button', 'data-toggle': 'collapse', 'data-target': '#navbarNavAltMarkup', 'aria-controls': 'navbarNavAltMarkup', 'aria-expanded': 'false', 'aria-label': 'Toggle navigation' },
+            _react2.default.createElement('span', { className: 'navbar-toggler-icon' })
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'collapse navbar-collapse justify-content-end', id: 'navbarNavAltMarkup' },
+            _react2.default.createElement(
+              'div',
+              { className: 'navbar-nav' },
+              session && typeof session.user_nicename !== 'undefined' ? _react2.default.createElement(
+                'button',
+                { type: 'button', className: 'btn btn-secondary', onClick: function onClick(e) {
+                    return actions.logout();
+                  } },
+                'Logout'
+              ) : _react2.default.createElement(
+                'button',
+                {
+                  type: 'button',
+                  className: 'btn btn-primary',
+                  'data-toggle': 'modal',
+                  'data-target': '#exampleModal'
+                },
+                'Login'
+              )
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'modal fade', id: 'exampleModal', tabIndex: '-1', role: 'dialog', 'aria-labelledby': 'exampleModalLabel', 'aria-hidden': 'true' },
+          _react2.default.createElement(
+            'div',
+            { className: 'modal-dialog', role: 'document' },
+            _react2.default.createElement(
+              'div',
+              { className: 'modal-content' },
+              _react2.default.createElement(
                 'div',
-                null,
+                { className: 'modal-header' },
                 _react2.default.createElement(
-                    'nav',
-                    { className: 'navbar navbar-dark bg-dark justify-content-between navbar-expand-sm' },
-                    _react2.default.createElement(
-                        _reactRouterDom.Link,
-                        { className: 'navbar-brand', to: '/' },
-                        _react2.default.createElement('img', { id: 'logoInverted', className: 'img-fluid', src: _logo4Geeks2.default })
-                    ),
-                    _react2.default.createElement(
-                        'button',
-                        { className: 'navbar-toggler', type: 'button', 'data-toggle': 'collapse', 'data-target': '#navbarNavAltMarkup', 'aria-controls': 'navbarNavAltMarkup', 'aria-expanded': 'false', 'aria-label': 'Toggle navigation' },
-                        _react2.default.createElement('span', { className: 'navbar-toggler-icon' })
-                    ),
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'collapse navbar-collapse justify-content-end', id: 'navbarNavAltMarkup' },
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'navbar-nav' },
-                            session && typeof session.user_nicename !== 'undefined' ? _react2.default.createElement(
-                                'button',
-                                { type: 'button', className: 'btn btn-secondary', onClick: function onClick(e) {
-                                        return actions.logout();
-                                    } },
-                                'Logout'
-                            ) : _react2.default.createElement(
-                                'button',
-                                {
-                                    type: 'button',
-                                    className: 'btn btn-primary',
-                                    'data-toggle': 'modal',
-                                    'data-target': '#exampleModal' },
-                                'Login'
-                            )
-                        )
-                    )
+                  'h5',
+                  { className: 'modal-title', id: 'exampleModalLabel' },
+                  'Login'
                 ),
                 _react2.default.createElement(
-                    'div',
-                    { className: 'modal fade', id: 'exampleModal', tabIndex: '-1', role: 'dialog', 'aria-labelledby': 'exampleModalLabel', 'aria-hidden': 'true' },
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'modal-dialog', role: 'document' },
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'modal-content' },
-                            _react2.default.createElement(
-                                'div',
-                                { className: 'modal-header' },
-                                _react2.default.createElement(
-                                    'h5',
-                                    { className: 'modal-title', id: 'exampleModalLabel' },
-                                    'Login'
-                                ),
-                                _react2.default.createElement(
-                                    'button',
-                                    { type: 'button', className: 'close', 'data-dismiss': 'modal', 'aria-label': 'Close' },
-                                    _react2.default.createElement(
-                                        'span',
-                                        { 'aria-hidden': 'true' },
-                                        '\xD7'
-                                    )
-                                )
-                            ),
-                            _react2.default.createElement(
-                                'div',
-                                { className: 'modal-body' },
-                                _react2.default.createElement(
-                                    'form',
-                                    { role: 'form', onSubmit: function onSubmit(e) {
-                                            e.preventDefault();
-                                            actions.loadSession(_this2.state.username, _this2.state.password);
-                                        } },
-                                    _react2.default.createElement(
-                                        'div',
-                                        { className: 'form-group' },
-                                        _react2.default.createElement('input', { type: 'text', name: 'username', value: this.state.username, placeholder: 'Username', onChange: function onChange(e) {
-                                                return _this2.setState({ username: e.target.value });
-                                            } }),
-                                        _react2.default.createElement('input', { type: 'password', name: 'password', value: this.state.password, placeholder: 'Password', onChange: function onChange(e) {
-                                                return _this2.setState({ password: e.target.value });
-                                            } })
-                                    ),
-                                    _react2.default.createElement('input', { type: 'submit', value: 'Login' })
-                                )
-                            )
-                        )
-                    )
+                  'button',
+                  { type: 'button', className: 'close', 'data-dismiss': 'modal', 'aria-label': 'Close' },
+                  _react2.default.createElement(
+                    'span',
+                    { 'aria-hidden': 'true' },
+                    '\xD7'
+                  )
                 )
-            );
-        }
-    }]);
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'modal-body' },
+                _react2.default.createElement(
+                  'form',
+                  { role: 'form', onSubmit: function onSubmit(e) {
+                      e.preventDefault();
+                      actions.loadSession(_this2.state.username, _this2.state.password);
+                    } },
+                  _react2.default.createElement(
+                    'div',
+                    { className: 'form-group' },
+                    _react2.default.createElement('input', { type: 'text', name: 'username', value: this.state.username, placeholder: 'Username', onChange: function onChange(e) {
+                        return _this2.setState({ username: e.target.value });
+                      } }),
+                    _react2.default.createElement('input', { type: 'password', name: 'password', value: this.state.password, placeholder: 'Password', onChange: function onChange(e) {
+                        return _this2.setState({ password: e.target.value });
+                      } })
+                  ),
+                  _react2.default.createElement('input', { type: 'submit', value: 'Login' })
+                )
+              )
+            )
+          )
+        )
+      );
+    }
+  }]);
 
-    return Navbar;
+  return Navbar;
 }(_react2.default.Component);
 
 exports.default = (0, _AppContext.withSession)(Navbar);
 
 
 Navbar.propTypes = {
-    session: _propTypes2.default.object,
-    actions: _propTypes2.default.object,
-    currentView: _propTypes2.default.string
+  session: _propTypes2.default.object,
+  actions: _propTypes2.default.object,
+  currentView: _propTypes2.default.string
 };
 
 /***/ }),
@@ -62931,7 +62929,7 @@ function withSession(Component) {
 
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
 });
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -62992,306 +62990,307 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 
 var Event = function (_React$Component) {
-    _inherits(Event, _React$Component);
+  _inherits(Event, _React$Component);
 
-    function Event(props) {
-        _classCallCheck(this, Event);
+  function Event(props) {
+    _classCallCheck(this, Event);
 
-        var _this = _possibleConstructorReturn(this, (Event.__proto__ || Object.getPrototypeOf(Event)).call(this, props));
+    var _this = _possibleConstructorReturn(this, (Event.__proto__ || Object.getPrototypeOf(Event)).call(this, props));
 
-        _this.state = {
-            login: false
-        };
-        return _this;
-    }
+    _this.state = {
+      login: false
+    };
+    return _this;
+  }
 
-    _createClass(Event, [{
-        key: "render",
-        value: function render() {
-            var _this2 = this;
+  _createClass(Event, [{
+    key: "render",
+    value: function render() {
+      var _this2 = this;
 
-            // ReactGA.pageview(window.location.pathname + window.location.search);
+      // ReactGA.pageview(window.location.pathname + window.location.search);
 
-            return _react2.default.createElement(
+      return _react2.default.createElement(
+        "div",
+        null,
+        _react2.default.createElement(_Navbar2.default, null),
+        _react2.default.createElement(
+          _AppContext.Consumer,
+          null,
+          function (_ref) {
+            var state = _ref.state,
+                actions = _ref.actions;
+
+            var user = state.session;
+            // console.log(user);
+            var event = state.events.find(function (event) {
+              return event.ID === parseInt(_this2.props.match.params.theid);
+            });
+            if (!event) {
+              return _react2.default.createElement(
+                "p",
+                null,
+                "Loading"
+              );
+            } else {
+              var yesDisabled = typeof event.rsvpYes !== 'undefined' && event.rsvpYes.includes("nachovz") ? "disabled" : "";
+              var noDisabled = typeof event.rsvpNo !== 'undefined' && event.rsvpNo.includes("nachovz") ? "disabled" : "";
+
+              var eventDate = event.meta_keys.event_date_time;
+              //console.log('eventDate', eventDate);
+              var eventDay = (0, _moment2.default)(eventDate).format("dddd, MMMM Do YYYY");
+              //console.log('eventDay', eventDay);
+              var eventTime = (0, _moment2.default)(eventDate).format("h:mm a");
+              //console.log('eventTime', eventTime);
+              //let eventDay = Moment(aTime);
+              // console.log('eventDay', eventDay);
+
+              return _react2.default.createElement(
                 "div",
                 null,
-                _react2.default.createElement(_Navbar2.default, null),
                 _react2.default.createElement(
-                    _AppContext.Consumer,
-                    null,
-                    function (_ref) {
-                        var state = _ref.state,
-                            actions = _ref.actions;
+                  "div",
+                  { className: "jumbotron-fluid mb-3" },
+                  _react2.default.createElement(
+                    "div",
+                    { className: "container-fluid" },
+                    _react2.default.createElement(
+                      "div",
+                      { className: "row" },
+                      _react2.default.createElement(
+                        "div",
+                        { className: "col-md-9 mb-3" },
+                        _react2.default.createElement(
+                          "div",
+                          { className: "row" },
+                          _react2.default.createElement(
+                            "div",
+                            { className: "col-12" },
+                            _react2.default.createElement(
+                              "p",
+                              { className: "eventDate" },
+                              eventDay
+                            ),
+                            _react2.default.createElement(
+                              "h1",
+                              { className: "eventTitle" },
+                              event.post_title
+                            ),
+                            _react2.default.createElement(
+                              "h4",
+                              null,
+                              _react2.default.createElement(
+                                _reactRouterDom.Link,
+                                {
+                                  to: "/meetup/" + event.meetup
+                                },
+                                state.meetups.length > 0 ? state.meetups.find(function (meetup) {
+                                  return meetup.ID === parseInt(event.meetup);
+                                }).post_title : "Loading..."
+                              )
+                            )
+                          )
+                        )
+                      ),
+                      _react2.default.createElement(
+                        "div",
+                        { className: "col-md-3 text-center rounded rsvpBox" },
+                        _react2.default.createElement(
+                          "h4",
+                          { className: "mb-4" },
+                          " ",
+                          " people going "
+                        ),
+                        !user.token ? _react2.default.createElement(
+                          "div",
+                          { className: "row mb-4" },
+                          _react2.default.createElement(
+                            "div",
+                            { className: "col mx-auto" },
+                            _react2.default.createElement(
+                              "button",
+                              { type: "button",
+                                className: "btn btn-primary",
+                                "data-toggle": "modal",
+                                "data-target": "#exampleModal",
+                                onClick: function onClick() {
+                                  return _this2.setState({ login: true });
+                                }
+                              },
+                              "Login to RSVP"
+                            )
+                          )
+                        ) : _react2.default.createElement(
+                          "div",
+                          { className: "row mb-4" },
+                          _react2.default.createElement(
+                            "div",
+                            { className: "col-md-6" },
+                            _react2.default.createElement(
+                              "button",
+                              {
+                                type: "button",
+                                className: "btn btn-success w-100 yesBTN",
+                                disabled: yesDisabled,
+                                onClick: function onClick() {
+                                  return actions.rsvpEvent(_this2.props.match.params.theid, user.user_nicename, "yes", user.token);
+                                }
+                              },
+                              "Yes"
+                            )
+                          ),
+                          _react2.default.createElement(
+                            "div",
+                            { className: "col-md-6" },
+                            _react2.default.createElement(
+                              "button",
+                              { type: "button",
+                                className: "btn btn-danger w-100 noBTN",
+                                disabled: noDisabled,
+                                onClick: function onClick() {
+                                  return actions.rsvpEvent(_this2.props.match.params.theid, user.user_nicename, "no", user.token);
+                                }
+                              },
+                              "No"
+                            )
+                          )
+                        ),
+                        _react2.default.createElement(
+                          "div",
+                          { className: "text-center socialIcons" },
+                          _react2.default.createElement(_reactFontawesome2.default, { icon: _faTwitter2.default }),
+                          _react2.default.createElement(_reactFontawesome2.default, { icon: _faFacebook2.default })
+                        )
+                      )
+                    )
+                  )
+                ),
+                _react2.default.createElement(
+                  "div",
+                  { className: "container" },
+                  _react2.default.createElement(
+                    "div",
+                    { className: "row" },
+                    _react2.default.createElement(
+                      "div",
+                      { className: "col-lg-3 order-lg-2" },
+                      _react2.default.createElement(
+                        "div",
+                        { className: "card smallCard" },
+                        _react2.default.createElement(
+                          "div",
+                          { className: "card-body" },
+                          _react2.default.createElement(
+                            "div",
+                            { className: "row cardInfo" },
+                            _react2.default.createElement(
+                              "div",
+                              { className: "col-2 socialIcons" },
+                              _react2.default.createElement(_reactFontawesome2.default, { icon: _faClock2.default })
+                            ),
+                            _react2.default.createElement(
+                              "div",
+                              { className: "col-8" },
+                              _react2.default.createElement(
+                                "span",
+                                { className: "card-date" },
+                                eventDay /*.format("dddd, MMMM DD, YYYY").toString()*/
+                              ),
+                              _react2.default.createElement("br", null),
+                              _react2.default.createElement(
+                                "span",
+                                { className: "card-time" },
+                                eventTime /*.format("h:mm a").toString()*/
+                              ),
+                              _react2.default.createElement("br", null),
+                              _react2.default.createElement(
+                                "span",
+                                { className: "card-schedule" },
+                                "Every first and last Tuesday of the month"
+                              )
+                            )
+                          )
+                        )
+                      )
+                    ),
+                    _react2.default.createElement(
+                      "div",
+                      { className: "col-lg-9 order-lg-1 mx-auto" },
+                      _react2.default.createElement(
+                        "div",
+                        { className: "row" },
+                        _react2.default.createElement(
+                          "div",
+                          { className: "col-12 mb-4" },
+                          _react2.default.createElement("img", { className: "img-fluid", src: "http://via.placeholder.com/800X500", alt: "event image of..." }),
+                          _react2.default.createElement(
+                            "h5",
+                            { className: "details" },
+                            _react2.default.createElement(
+                              "strong",
+                              null,
+                              "Details"
+                            )
+                          ),
+                          _react2.default.createElement(
+                            "p",
+                            { className: "bodyText" },
+                            "Snuggle up with cute kitties, hot lattes, and a book. We host this event twice a month for a place to socialize or maybe come out for alternative therapy.",
+                            _react2.default.createElement("br", null),
+                            _react2.default.createElement("br", null),
+                            "There are a few rules to follow for this event:"
+                          ),
+                          _react2.default.createElement(
+                            "ul",
+                            null,
+                            _react2.default.createElement(
+                              "li",
+                              null,
+                              "You must purchase a beverage (e.g. coffee, tea, cocoa, etc)"
+                            ),
+                            _react2.default.createElement(
+                              "li",
+                              null,
+                              "Stay as long as you like but only 30 minutes with each cat"
+                            ),
+                            _react2.default.createElement(
+                              "li",
+                              null,
+                              "Be kind to cats and humans alike"
+                            ),
+                            _react2.default.createElement(
+                              "li",
+                              null,
+                              "No children under 12 years old. This event is an escape for most people who attend"
+                            ),
+                            _react2.default.createElement(
+                              "li",
+                              null,
+                              "Must wear headphones for phone calls and music"
+                            )
+                          )
+                        )
+                      )
+                    )
+                  )
+                ),
+                _react2.default.createElement(_Footer2.default, null)
+              );
+            }
+          }
+        )
+      );
+    }
+  }]);
 
-                        var user = state.session;
-                        // console.log(user);
-                        var event = state.events.find(function (event) {
-                            return event.ID === parseInt(_this2.props.match.params.theid);
-                        });
-                        if (!event) {
-                            return _react2.default.createElement(
-                                "p",
-                                null,
-                                "Loading"
-                            );
-                        } else {
-                            var yesDisabled = typeof event.rsvpYes !== 'undefined' && event.rsvpYes.includes("nachovz") ? "disabled" : "";
-                            var noDisabled = typeof event.rsvpNo !== 'undefined' && event.rsvpNo.includes("nachovz") ? "disabled" : "";
-
-                            var eventDate = event.meta_keys.event_date_time;
-                            //console.log('eventDate', eventDate);
-                            var eventDay = (0, _moment2.default)(eventDate).format("dddd, MMMM Do YYYY");
-                            //console.log('eventDay', eventDay);
-                            var eventTime = (0, _moment2.default)(eventDate).format("h:mm a");
-                            //console.log('eventTime', eventTime);
-                            //let eventDay = Moment(aTime);
-                            // console.log('eventDay', eventDay);
-
-                            return _react2.default.createElement(
-                                "div",
-                                null,
-                                _react2.default.createElement(
-                                    "div",
-                                    { className: "jumbotron-fluid mb-3" },
-                                    _react2.default.createElement(
-                                        "div",
-                                        { className: "container-fluid" },
-                                        _react2.default.createElement(
-                                            "div",
-                                            { className: "row" },
-                                            _react2.default.createElement(
-                                                "div",
-                                                { className: "col-md-9 mb-3" },
-                                                _react2.default.createElement(
-                                                    "div",
-                                                    { className: "row" },
-                                                    _react2.default.createElement(
-                                                        "div",
-                                                        { className: "col-12" },
-                                                        _react2.default.createElement(
-                                                            "p",
-                                                            { className: "eventDate" },
-                                                            eventDay
-                                                        ),
-                                                        _react2.default.createElement(
-                                                            "h1",
-                                                            { className: "eventTitle" },
-                                                            event.post_title
-                                                        ),
-                                                        _react2.default.createElement(
-                                                            "h4",
-                                                            null,
-                                                            _react2.default.createElement(
-                                                                _reactRouterDom.Link,
-                                                                {
-                                                                    to: "/meetup/" + event.meetup
-                                                                },
-                                                                state.meetups.length > 0 ? state.meetups.find(function (meetup) {
-                                                                    return meetup.ID === parseInt(event.meetup);
-                                                                }).post_title : "Loading..."
-                                                            )
-                                                        )
-                                                    )
-                                                )
-                                            ),
-                                            _react2.default.createElement(
-                                                "div",
-                                                { className: "col-md-3 text-center rounded rsvpBox" },
-                                                _react2.default.createElement(
-                                                    "h4",
-                                                    { className: "mb-4" },
-                                                    " ",
-                                                    " people going "
-                                                ),
-                                                !user.token ? _react2.default.createElement(
-                                                    "div",
-                                                    { className: "row mb-4" },
-                                                    _react2.default.createElement(
-                                                        "div",
-                                                        { className: "col mx-auto" },
-                                                        _react2.default.createElement(
-                                                            "button",
-                                                            { type: "button",
-                                                                className: "btn btn-primary",
-                                                                "data-toggle": "modal",
-                                                                "data-target": "#exampleModal",
-                                                                onClick: function onClick() {
-                                                                    return _this2.setState({ login: true });
-                                                                }
-                                                            },
-                                                            "Login to RSVP"
-                                                        )
-                                                    )
-                                                ) : _react2.default.createElement(
-                                                    "div",
-                                                    { className: "row mb-4" },
-                                                    _react2.default.createElement(
-                                                        "div",
-                                                        { className: "col-md-6" },
-                                                        _react2.default.createElement(
-                                                            "button",
-                                                            { type: "button",
-                                                                className: "btn btn-success w-100 yesBTN",
-                                                                disabled: yesDisabled,
-                                                                onClick: function onClick() {
-                                                                    return actions.rsvpEvent(_this2.props.match.params.theid, user.user_nicename, "yes", user.token);
-                                                                }
-                                                            },
-                                                            "Yes"
-                                                        )
-                                                    ),
-                                                    _react2.default.createElement(
-                                                        "div",
-                                                        { className: "col-md-6" },
-                                                        _react2.default.createElement(
-                                                            "button",
-                                                            { type: "button",
-                                                                className: "btn btn-danger w-100 noBTN",
-                                                                disabled: noDisabled,
-                                                                onClick: function onClick() {
-                                                                    return actions.rsvpEvent(_this2.props.match.params.theid, user.user_nicename, "no", user.token);
-                                                                }
-                                                            },
-                                                            "No"
-                                                        )
-                                                    )
-                                                ),
-                                                _react2.default.createElement(
-                                                    "div",
-                                                    { className: "text-center socialIcons" },
-                                                    _react2.default.createElement(_reactFontawesome2.default, { icon: _faTwitter2.default }),
-                                                    _react2.default.createElement(_reactFontawesome2.default, { icon: _faFacebook2.default })
-                                                )
-                                            )
-                                        )
-                                    )
-                                ),
-                                _react2.default.createElement(
-                                    "div",
-                                    { className: "container" },
-                                    _react2.default.createElement(
-                                        "div",
-                                        { className: "row" },
-                                        _react2.default.createElement(
-                                            "div",
-                                            { className: "col-lg-3 order-lg-2" },
-                                            _react2.default.createElement(
-                                                "div",
-                                                { className: "card smallCard" },
-                                                _react2.default.createElement(
-                                                    "div",
-                                                    { className: "card-body" },
-                                                    _react2.default.createElement(
-                                                        "div",
-                                                        { className: "row cardInfo" },
-                                                        _react2.default.createElement(
-                                                            "div",
-                                                            { className: "col-2 socialIcons" },
-                                                            _react2.default.createElement(_reactFontawesome2.default, { icon: _faClock2.default })
-                                                        ),
-                                                        _react2.default.createElement(
-                                                            "div",
-                                                            { className: "col-8" },
-                                                            _react2.default.createElement(
-                                                                "span",
-                                                                { className: "card-date" },
-                                                                eventDay /*.format("dddd, MMMM DD, YYYY").toString()*/
-                                                            ),
-                                                            _react2.default.createElement("br", null),
-                                                            _react2.default.createElement(
-                                                                "span",
-                                                                { className: "card-time" },
-                                                                eventTime /*.format("h:mm a").toString()*/
-                                                            ),
-                                                            _react2.default.createElement("br", null),
-                                                            _react2.default.createElement(
-                                                                "span",
-                                                                { className: "card-schedule" },
-                                                                "Every first and last Tuesday of the month"
-                                                            )
-                                                        )
-                                                    )
-                                                )
-                                            )
-                                        ),
-                                        _react2.default.createElement(
-                                            "div",
-                                            { className: "col-lg-9 order-lg-1 mx-auto" },
-                                            _react2.default.createElement(
-                                                "div",
-                                                { className: "row" },
-                                                _react2.default.createElement(
-                                                    "div",
-                                                    { className: "col-12 mb-4" },
-                                                    _react2.default.createElement("img", { className: "img-fluid", src: "http://via.placeholder.com/800X500", alt: "event image of..." }),
-                                                    _react2.default.createElement(
-                                                        "h5",
-                                                        { className: "details" },
-                                                        _react2.default.createElement(
-                                                            "strong",
-                                                            null,
-                                                            "Details"
-                                                        )
-                                                    ),
-                                                    _react2.default.createElement(
-                                                        "p",
-                                                        { className: "bodyText" },
-                                                        "Snuggle up with cute kitties, hot lattes, and a book. We host this event twice a month for a place to socialize or maybe come out for alternative therapy.",
-                                                        _react2.default.createElement("br", null),
-                                                        _react2.default.createElement("br", null),
-                                                        "There are a few rules to follow for this event:"
-                                                    ),
-                                                    _react2.default.createElement(
-                                                        "ul",
-                                                        null,
-                                                        _react2.default.createElement(
-                                                            "li",
-                                                            null,
-                                                            "You must purchase a beverage (e.g. coffee, tea, cocoa, etc)"
-                                                        ),
-                                                        _react2.default.createElement(
-                                                            "li",
-                                                            null,
-                                                            "Stay as long as you like but only 30 minutes with each cat"
-                                                        ),
-                                                        _react2.default.createElement(
-                                                            "li",
-                                                            null,
-                                                            "Be kind to cats and humans alike"
-                                                        ),
-                                                        _react2.default.createElement(
-                                                            "li",
-                                                            null,
-                                                            "No children under 12 years old. This event is an escape for most people who attend"
-                                                        ),
-                                                        _react2.default.createElement(
-                                                            "li",
-                                                            null,
-                                                            "Must wear headphones for phone calls and music"
-                                                        )
-                                                    )
-                                                )
-                                            )
-                                        )
-                                    )
-                                ),
-                                _react2.default.createElement(_Footer2.default, null)
-                            );
-                        }
-                    }
-                )
-            );
-        }
-    }]);
-
-    return Event;
+  return Event;
 }(_react2.default.Component);
 
 exports.default = Event;
 
 
 Event.propTypes = {
-    match: _propTypes2.default.object
+  match: _propTypes2.default.object
 };
 
 /***/ }),
@@ -63307,7 +63306,7 @@ Event.propTypes = {
 
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
 });
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -63343,81 +63342,81 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var Home = function (_React$Component) {
-    _inherits(Home, _React$Component);
+  _inherits(Home, _React$Component);
 
-    function Home() {
-        _classCallCheck(this, Home);
+  function Home() {
+    _classCallCheck(this, Home);
 
-        return _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).apply(this, arguments));
+  }
+
+  _createClass(Home, [{
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        _react2.default.Fragment,
+        null,
+        _react2.default.createElement(_Navbar2.default, null),
+        _react2.default.createElement(
+          'div',
+          { className: 'header text-center pb-3' },
+          _react2.default.createElement('br', null),
+          _react2.default.createElement(
+            'h1',
+            { className: 'display-4' },
+            'The Meetup Clone'
+          ),
+          _react2.default.createElement(
+            'p',
+            { className: 'lead' },
+            'This is a mini project created by ',
+            _react2.default.createElement(
+              'a',
+              { href: '#' },
+              '4GeeksAcademy'
+            )
+          ),
+          _react2.default.createElement(
+            'p',
+            null,
+            _react2.default.createElement(
+              'small',
+              null,
+              'Using: ReactJS, Bootstrap, @Fortawesome, Moment, React-router'
+            )
+          )
+        ),
+        _react2.default.createElement(
+          _AppContext.Consumer,
+          null,
+          function (_ref) {
+            var state = _ref.state;
+            return state.events.map(function (item, index) {
+              //let aTime = item.day+"T"+item.time.replace(/:/g,'');
+              var eventDate = item.meta_keys.event_date_time;
+              //console.log('eventDate', eventDate);
+              var eventDay = (0, _moment2.default)(eventDate).format("dddd, MMMM Do YYYY");
+              //console.log('eventDay', eventDay);
+              var eventTime = (0, _moment2.default)(eventDate).format("h:mm a");
+              //console.log('eventTime', eventTime);
+              return _react2.default.createElement(_Card2.default, {
+                key: index,
+                ID: item.ID,
+                name: item.post_title,
+                date: eventDay,
+                time: eventTime,
+                location: item.meta_keys.location,
+                description: item.post_content
+              });
+            });
+          }
+        ),
+        _react2.default.createElement(_Footer2.default, null)
+      );
     }
+  }]);
 
-    _createClass(Home, [{
-        key: 'render',
-        value: function render() {
-            return _react2.default.createElement(
-                _react2.default.Fragment,
-                null,
-                _react2.default.createElement(_Navbar2.default, null),
-                _react2.default.createElement(
-                    'div',
-                    { className: 'header text-center pb-3' },
-                    _react2.default.createElement('br', null),
-                    _react2.default.createElement(
-                        'h1',
-                        { className: 'display-4' },
-                        'The Meetup Clone'
-                    ),
-                    _react2.default.createElement(
-                        'p',
-                        { className: 'lead' },
-                        'This is a mini project created by ',
-                        _react2.default.createElement(
-                            'a',
-                            { href: '#' },
-                            '4GeeksAcademy'
-                        )
-                    ),
-                    _react2.default.createElement(
-                        'p',
-                        null,
-                        _react2.default.createElement(
-                            'small',
-                            null,
-                            'Using: ReactJS, Bootstrap, @Fortawesome, Moment, React-router'
-                        )
-                    )
-                ),
-                _react2.default.createElement(
-                    _AppContext.Consumer,
-                    null,
-                    function (_ref) {
-                        var state = _ref.state;
-                        return state.events.map(function (item, index) {
-                            //let aTime = item.day+"T"+item.time.replace(/:/g,'');
-                            var eventDate = item.meta_keys.event_date_time;
-                            //console.log('eventDate', eventDate);
-                            var eventDay = (0, _moment2.default)(eventDate).format("dddd, MMMM Do YYYY");
-                            //console.log('eventDay', eventDay);
-                            var eventTime = (0, _moment2.default)(eventDate).format("h:mm a");
-                            //console.log('eventTime', eventTime);
-                            return _react2.default.createElement(_Card2.default, {
-                                key: index,
-                                ID: item.ID,
-                                name: item.post_title,
-                                date: eventDay,
-                                time: eventTime,
-                                location: item.meta_keys.location,
-                                description: item.post_content
-                            });
-                        });
-                    }
-                ),
-                _react2.default.createElement(_Footer2.default, null)
-            );
-        }
-    }]);
-
-    return Home;
+  return Home;
 }(_react2.default.Component);
 
 exports.default = Home;
@@ -63435,7 +63434,7 @@ exports.default = Home;
 
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
 });
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -63467,79 +63466,79 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var Meetup = function (_React$Component) {
-    _inherits(Meetup, _React$Component);
+  _inherits(Meetup, _React$Component);
 
-    function Meetup() {
-        _classCallCheck(this, Meetup);
+  function Meetup() {
+    _classCallCheck(this, Meetup);
 
-        return _possibleConstructorReturn(this, (Meetup.__proto__ || Object.getPrototypeOf(Meetup)).apply(this, arguments));
-    }
+    return _possibleConstructorReturn(this, (Meetup.__proto__ || Object.getPrototypeOf(Meetup)).apply(this, arguments));
+  }
 
-    _createClass(Meetup, [{
-        key: 'render',
-        value: function render() {
-            return _react2.default.createElement(
-                _react2.default.Fragment,
+  _createClass(Meetup, [{
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        _react2.default.Fragment,
+        null,
+        _react2.default.createElement(_Navbar2.default, null),
+        _react2.default.createElement(
+          'div',
+          { className: 'container-fluid' },
+          _react2.default.createElement(
+            'div',
+            { className: 'header row' },
+            _react2.default.createElement(
+              'div',
+              { className: 'col mt-4 mb-4' },
+              _react2.default.createElement(
+                'a',
+                { href: '#' },
+                _react2.default.createElement('img', { className: 'img-fluid', src: 'http://via.placeholder.com/600x350' })
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'col mt-4 mb-4' },
+              _react2.default.createElement(
+                'h4',
                 null,
-                _react2.default.createElement(_Navbar2.default, null),
-                _react2.default.createElement(
-                    'div',
-                    { className: 'container-fluid' },
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'header row' },
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'col mt-4 mb-4' },
-                            _react2.default.createElement(
-                                'a',
-                                { href: '#' },
-                                _react2.default.createElement('img', { className: 'img-fluid', src: 'http://via.placeholder.com/600x350' })
-                            )
-                        ),
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'col mt-4 mb-4' },
-                            _react2.default.createElement(
-                                'h4',
-                                null,
-                                'Meetup ##'
-                            ),
-                            _react2.default.createElement('br', null),
-                            _react2.default.createElement(
-                                'p',
-                                null,
-                                'Location',
-                                _react2.default.createElement('br', null),
-                                'City, State'
-                            )
-                        )
-                    )
-                ),
-                _react2.default.createElement(
-                    _AppContext.Consumer,
-                    null,
-                    function (_ref) {
-                        var state = _ref.state;
-                        return state.events.map(function (item, index) {
-                            return _react2.default.createElement(_Card2.default, {
-                                key: index,
-                                ID: item.ID,
-                                name: item.post_title,
-                                date: item.day,
-                                time: item.time,
-                                description: item.post_content,
-                                location: item.location
-                            });
-                        });
-                    }
-                ),
-                _react2.default.createElement(_Footer2.default, null)
-            );
-        }
-    }]);
+                'Meetup ##'
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                null,
+                'Location',
+                _react2.default.createElement('br', null),
+                'City, State'
+              )
+            )
+          )
+        ),
+        _react2.default.createElement(
+          _AppContext.Consumer,
+          null,
+          function (_ref) {
+            var state = _ref.state;
+            return state.events.map(function (item, index) {
+              return _react2.default.createElement(_Card2.default, {
+                key: index,
+                ID: item.ID,
+                name: item.post_title,
+                date: item.day,
+                time: item.time,
+                description: item.post_content,
+                location: item.location
+              });
+            });
+          }
+        ),
+        _react2.default.createElement(_Footer2.default, null)
+      );
+    }
+  }]);
 
-    return Meetup;
+  return Meetup;
 }(_react2.default.Component);
 
 exports.default = Meetup;
@@ -63557,7 +63556,7 @@ exports.default = Meetup;
 
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
 });
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -63601,351 +63600,351 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var Sample = function (_React$Component) {
-    _inherits(Sample, _React$Component);
+  _inherits(Sample, _React$Component);
 
-    function Sample(props) {
-        _classCallCheck(this, Sample);
+  function Sample(props) {
+    _classCallCheck(this, Sample);
 
-        var _this = _possibleConstructorReturn(this, (Sample.__proto__ || Object.getPrototypeOf(Sample)).call(this, props));
+    var _this = _possibleConstructorReturn(this, (Sample.__proto__ || Object.getPrototypeOf(Sample)).call(this, props));
 
-        _this.state = {
-            id: "65",
-            title: "title",
-            content: "content",
-            text: "text",
-            select: "Select 3",
-            text_area: "text area",
-            radio: "Radio 2",
-            fracture: true,
-            luxation: "",
-            sprain: ""
-        };
+    _this.state = {
+      id: "12",
+      title: "title",
+      content: "content",
+      text: "text",
+      select: "Select 3",
+      text_area: "text area",
+      radio: "Radio 2",
+      fracture: "",
+      luxation: "",
+      sprain: ""
+    };
 
-        _this.handleInputChange = _this.handleInputChange.bind(_this);
-        return _this;
+    _this.handleInputChange = _this.handleInputChange.bind(_this);
+    return _this;
+  }
+
+  _createClass(Sample, [{
+    key: 'handleInputChange',
+    value: function handleInputChange(e) {
+      var target = e.target;
+      var value = target.type === 'checkbox' ? target.checked : target.value;
+      var name = target.name;
+      console.log("event", e);
+      console.log("checked", target.checked);
+      console.log("value", target.value);
+      console.log("name", target.name);
+
+      this.setState(_defineProperty({}, name, value));
     }
+  }, {
+    key: 'render',
+    value: function render() {
+      var _this2 = this;
 
-    _createClass(Sample, [{
-        key: 'handleInputChange',
-        value: function handleInputChange(e) {
-            var target = e.target;
-            var value = target.type === 'checkbox' ? target.checked : target.value;
-            var name = target.name;
-            console.log("event", e);
-            console.log("checked", target.checked);
-            console.log("value", target.value);
-            console.log("name", target.name);
-
-            this.setState(_defineProperty({}, name, value));
-        }
-    }, {
-        key: 'render',
-        value: function render() {
-            var _this2 = this;
-
-            var _props = this.props,
-                session = _props.session,
-                actions = _props.actions;
+      var _props = this.props,
+          session = _props.session,
+          actions = _props.actions;
 
 
-            return _react2.default.createElement(
-                _react2.default.Fragment,
-                null,
-                _react2.default.createElement(_Navbar2.default, null),
-                _react2.default.createElement('p', null),
+      return _react2.default.createElement(
+        _react2.default.Fragment,
+        null,
+        _react2.default.createElement(_Navbar2.default, null),
+        _react2.default.createElement('p', null),
+        _react2.default.createElement(
+          'div',
+          { className: 'container' },
+          _react2.default.createElement(
+            'form',
+            { role: 'form', onSubmit: function onSubmit(e) {
+                e.preventDefault();
+                actions.updateSample(_this2.state.id, _this2.state.title, _this2.state.content, _this2.state.text, _this2.state.select, _this2.state.text_area, _this2.state.radio, _this2.state.fracture, _this2.state.luxation, _this2.state.sprain);
+              } },
+            _react2.default.createElement(
+              'div',
+              { className: 'form-group row' },
+              _react2.default.createElement(
+                'div',
+                { className: 'col-sm-2' },
+                'Checkbox'
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'col-sm-10' },
                 _react2.default.createElement(
-                    'div',
-                    { className: 'container' },
-                    _react2.default.createElement(
-                        'form',
-                        { role: 'form', onSubmit: function onSubmit(e) {
-                                e.preventDefault();
-                                actions.updateSample(_this2.state.id, _this2.state.title, _this2.state.content, _this2.state.text, _this2.state.select, _this2.state.text_area, _this2.state.radio, _this2.state.fracture, _this2.state.luxation, _this2.state.sprain);
-                            } },
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'form-group row' },
-                            _react2.default.createElement(
-                                'div',
-                                { className: 'col-sm-2' },
-                                'Checkbox'
-                            ),
-                            _react2.default.createElement(
-                                'div',
-                                { className: 'col-sm-10' },
-                                _react2.default.createElement(
-                                    'div',
-                                    { className: 'form-check' },
-                                    _react2.default.createElement('input', {
-                                        className: 'form-check-input',
-                                        type: 'checkbox',
-                                        id: 'fracture',
-                                        name: 'fracture',
-                                        value: '1',
-                                        checked: this.state.fracture,
-                                        onChange: this.handleInputChange
-                                        //onChange={(e) => this.setState({fracture: e.target.value})}
-                                    }),
-                                    _react2.default.createElement(
-                                        'label',
-                                        { className: 'form-check-label', htmlFor: 'fracture' },
-                                        'Fracture'
-                                    )
-                                ),
-                                _react2.default.createElement(
-                                    'div',
-                                    { className: 'form-check' },
-                                    _react2.default.createElement('input', {
-                                        className: 'form-check-input',
-                                        type: 'checkbox',
-                                        id: 'luxation',
-                                        name: 'luxation',
-                                        value: '2',
-                                        checked: this.state.luxation,
-                                        onChange: this.handleInputChange
-                                        // onChange={(e) => this.setState({luxation: e.target.value})}
-                                        // defaultChecked={this.state.luxation}
-                                    }),
-                                    _react2.default.createElement(
-                                        'label',
-                                        { className: 'form-check-label', htmlFor: 'luxation' },
-                                        'Luxation'
-                                    )
-                                ),
-                                _react2.default.createElement(
-                                    'div',
-                                    { className: 'form-check' },
-                                    _react2.default.createElement('input', {
-                                        className: 'form-check-input',
-                                        type: 'checkbox',
-                                        id: 'sprain',
-                                        name: 'sprain',
-                                        value: '3',
-                                        checked: this.state.sprain,
-                                        onChange: this.handleInputChange
-                                        // onChange={(e) => this.setState({sprain: e.target.value})}
-                                        // defaultChecked={this.state.sprain}
-                                    }),
-                                    _react2.default.createElement(
-                                        'label',
-                                        { className: 'form-check-label', htmlFor: 'sprain' },
-                                        'Sprain'
-                                    )
-                                )
-                            )
-                        ),
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'form-group' },
-                            _react2.default.createElement(
-                                'label',
-                                { htmlFor: 'exampleFormControlInput1' },
-                                'Post title'
-                            ),
-                            _react2.default.createElement('input', {
-                                name: 'title',
-                                value: this.state.title,
-                                onChange: function onChange(e) {
-                                    return _this2.setState({ title: e.target.value });
-                                },
-                                type: 'text',
-                                className: 'form-control',
-                                id: 'exampleFormControlInput1',
-                                placeholder: ''
-                            })
-                        ),
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'form-group' },
-                            _react2.default.createElement(
-                                'label',
-                                { htmlFor: 'exampleFormControlTextarea2' },
-                                'Post content'
-                            ),
-                            _react2.default.createElement('textarea', {
-                                className: 'form-control',
-                                id: 'exampleFormControlTextarea2',
-                                rows: '3',
-                                name: 'content',
-                                value: this.state.content,
-                                onChange: function onChange(e) {
-                                    return _this2.setState({ content: e.target.value });
-                                }
-                            })
-                        ),
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'form-group' },
-                            _react2.default.createElement(
-                                'label',
-                                { htmlFor: 'exampleFormControlInput3' },
-                                'Example text'
-                            ),
-                            _react2.default.createElement('input', {
-                                name: 'text',
-                                value: this.state.text,
-                                onChange: function onChange(e) {
-                                    return _this2.setState({ text: e.target.value });
-                                },
-                                type: 'text',
-                                className: 'form-control',
-                                id: 'exampleFormControlInput3',
-                                placeholder: ''
-                            })
-                        ),
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'form-group' },
-                            _react2.default.createElement(
-                                'label',
-                                { htmlFor: 'exampleFormControlSelect1' },
-                                'Example select'
-                            ),
-                            _react2.default.createElement(
-                                'select',
-                                {
-                                    className: 'form-control',
-                                    id: 'exampleFormControlSelect1',
-                                    name: 'select',
-                                    value: this.state.select,
-                                    onChange: function onChange(e) {
-                                        return _this2.setState({ select: e.target.value });
-                                    }
-                                },
-                                _react2.default.createElement(
-                                    'option',
-                                    { value: 'Select 1' },
-                                    'Select 1'
-                                ),
-                                _react2.default.createElement(
-                                    'option',
-                                    { value: 'Select 2' },
-                                    'Select 2'
-                                ),
-                                _react2.default.createElement(
-                                    'option',
-                                    { value: 'Select 3' },
-                                    'Select 3'
-                                )
-                            )
-                        ),
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'form-group' },
-                            _react2.default.createElement(
-                                'label',
-                                { htmlFor: 'exampleFormControlTextarea1' },
-                                'Example textarea'
-                            ),
-                            _react2.default.createElement('textarea', {
-                                className: 'form-control',
-                                id: 'exampleFormControlTextarea1',
-                                rows: '3',
-                                name: 'text_area',
-                                value: this.state.text_area,
-                                onChange: function onChange(e) {
-                                    return _this2.setState({ text_area: e.target.value });
-                                }
-                            })
-                        ),
-                        _react2.default.createElement(
-                            'fieldset',
-                            { className: 'form-group' },
-                            _react2.default.createElement(
-                                'div',
-                                { className: 'row' },
-                                _react2.default.createElement(
-                                    'legend',
-                                    { className: 'col-form-label col-sm-2 pt-0' },
-                                    'Radios'
-                                ),
-                                _react2.default.createElement(
-                                    'div',
-                                    { className: 'col-sm-10' },
-                                    _react2.default.createElement(
-                                        'div',
-                                        { className: 'form-check' },
-                                        _react2.default.createElement('input', {
-                                            className: 'form-check-input',
-                                            type: 'radio',
-                                            name: 'radio',
-                                            id: 'radio1',
-                                            value: 'Radio 1',
-                                            onChange: function onChange(e) {
-                                                return _this2.setState({ radio: e.target.value });
-                                            },
-                                            checked: this.state.radio === 'Radio 1'
-                                        }),
-                                        _react2.default.createElement(
-                                            'label',
-                                            { className: 'form-check-label', htmlFor: 'radio1' },
-                                            'Radio 1'
-                                        )
-                                    ),
-                                    _react2.default.createElement(
-                                        'div',
-                                        { className: 'form-check' },
-                                        _react2.default.createElement('input', {
-                                            className: 'form-check-input',
-                                            type: 'radio',
-                                            name: 'radio',
-                                            id: 'radio2',
-                                            value: 'Radio 2',
-                                            onChange: function onChange(e) {
-                                                return _this2.setState({ radio: e.target.value });
-                                            },
-                                            checked: this.state.radio === 'Radio 2'
-                                        }),
-                                        _react2.default.createElement(
-                                            'label',
-                                            { className: 'form-check-label', htmlFor: 'radio2' },
-                                            'Radio 2'
-                                        )
-                                    ),
-                                    _react2.default.createElement(
-                                        'div',
-                                        { className: 'form-check' },
-                                        _react2.default.createElement('input', {
-                                            className: 'form-check-input',
-                                            type: 'radio',
-                                            name: 'radio',
-                                            id: 'radio3',
-                                            value: 'Radio 3',
-                                            onChange: function onChange(e) {
-                                                return _this2.setState({ radio: e.target.value });
-                                            },
-                                            checked: this.state.radio === 'Radio 3'
-                                        }),
-                                        _react2.default.createElement(
-                                            'label',
-                                            { className: 'form-check-label', htmlFor: 'radio3' },
-                                            'Radio 3'
-                                        )
-                                    )
-                                )
-                            )
-                        ),
-                        _react2.default.createElement(
-                            'button',
-                            { className: 'btn btn-primary', type: 'submit' },
-                            'Submit'
-                        )
-                    )
+                  'div',
+                  { className: 'form-check' },
+                  _react2.default.createElement('input', {
+                    className: 'form-check-input',
+                    type: 'checkbox',
+                    id: 'fracture',
+                    name: 'fracture',
+                    value: '1',
+                    checked: this.state.fracture,
+                    onChange: this.handleInputChange
+                    //onChange={(e) => this.setState({fracture: e.target.value})}
+                  }),
+                  _react2.default.createElement(
+                    'label',
+                    { className: 'form-check-label', htmlFor: 'fracture' },
+                    'Fracture'
+                  )
                 ),
-                _react2.default.createElement(_Footer2.default, null)
-            );
-        }
-    }]);
+                _react2.default.createElement(
+                  'div',
+                  { className: 'form-check' },
+                  _react2.default.createElement('input', {
+                    className: 'form-check-input',
+                    type: 'checkbox',
+                    id: 'luxation',
+                    name: 'luxation',
+                    value: '2',
+                    checked: this.state.luxation,
+                    onChange: this.handleInputChange
+                    // onChange={(e) => this.setState({luxation: e.target.value})}
+                    // defaultChecked={this.state.luxation}
+                  }),
+                  _react2.default.createElement(
+                    'label',
+                    { className: 'form-check-label', htmlFor: 'luxation' },
+                    'Luxation'
+                  )
+                ),
+                _react2.default.createElement(
+                  'div',
+                  { className: 'form-check' },
+                  _react2.default.createElement('input', {
+                    className: 'form-check-input',
+                    type: 'checkbox',
+                    id: 'sprain',
+                    name: 'sprain',
+                    value: '3',
+                    checked: this.state.sprain,
+                    onChange: this.handleInputChange
+                    // onChange={(e) => this.setState({sprain: e.target.value})}
+                    // defaultChecked={this.state.sprain}
+                  }),
+                  _react2.default.createElement(
+                    'label',
+                    { className: 'form-check-label', htmlFor: 'sprain' },
+                    'Sprain'
+                  )
+                )
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'form-group' },
+              _react2.default.createElement(
+                'label',
+                { htmlFor: 'exampleFormControlInput1' },
+                'Post title'
+              ),
+              _react2.default.createElement('input', {
+                name: 'title',
+                value: this.state.title,
+                onChange: function onChange(e) {
+                  return _this2.setState({ title: e.target.value });
+                },
+                type: 'text',
+                className: 'form-control',
+                id: 'exampleFormControlInput1',
+                placeholder: ''
+              })
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'form-group' },
+              _react2.default.createElement(
+                'label',
+                { htmlFor: 'exampleFormControlTextarea2' },
+                'Post content'
+              ),
+              _react2.default.createElement('textarea', {
+                className: 'form-control',
+                id: 'exampleFormControlTextarea2',
+                rows: '3',
+                name: 'content',
+                value: this.state.content,
+                onChange: function onChange(e) {
+                  return _this2.setState({ content: e.target.value });
+                }
+              })
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'form-group' },
+              _react2.default.createElement(
+                'label',
+                { htmlFor: 'exampleFormControlInput3' },
+                'Example text'
+              ),
+              _react2.default.createElement('input', {
+                name: 'text',
+                value: this.state.text,
+                onChange: function onChange(e) {
+                  return _this2.setState({ text: e.target.value });
+                },
+                type: 'text',
+                className: 'form-control',
+                id: 'exampleFormControlInput3',
+                placeholder: ''
+              })
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'form-group' },
+              _react2.default.createElement(
+                'label',
+                { htmlFor: 'exampleFormControlSelect1' },
+                'Example select'
+              ),
+              _react2.default.createElement(
+                'select',
+                {
+                  className: 'form-control',
+                  id: 'exampleFormControlSelect1',
+                  name: 'select',
+                  value: this.state.select,
+                  onChange: function onChange(e) {
+                    return _this2.setState({ select: e.target.value });
+                  }
+                },
+                _react2.default.createElement(
+                  'option',
+                  { value: 'Select 1' },
+                  'Select 1'
+                ),
+                _react2.default.createElement(
+                  'option',
+                  { value: 'Select 2' },
+                  'Select 2'
+                ),
+                _react2.default.createElement(
+                  'option',
+                  { value: 'Select 3' },
+                  'Select 3'
+                )
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'form-group' },
+              _react2.default.createElement(
+                'label',
+                { htmlFor: 'exampleFormControlTextarea1' },
+                'Example textarea'
+              ),
+              _react2.default.createElement('textarea', {
+                className: 'form-control',
+                id: 'exampleFormControlTextarea1',
+                rows: '3',
+                name: 'text_area',
+                value: this.state.text_area,
+                onChange: function onChange(e) {
+                  return _this2.setState({ text_area: e.target.value });
+                }
+              })
+            ),
+            _react2.default.createElement(
+              'fieldset',
+              { className: 'form-group' },
+              _react2.default.createElement(
+                'div',
+                { className: 'row' },
+                _react2.default.createElement(
+                  'legend',
+                  { className: 'col-form-label col-sm-2 pt-0' },
+                  'Radios'
+                ),
+                _react2.default.createElement(
+                  'div',
+                  { className: 'col-sm-10' },
+                  _react2.default.createElement(
+                    'div',
+                    { className: 'form-check' },
+                    _react2.default.createElement('input', {
+                      className: 'form-check-input',
+                      type: 'radio',
+                      name: 'radio',
+                      id: 'radio1',
+                      value: 'Radio 1',
+                      onChange: function onChange(e) {
+                        return _this2.setState({ radio: e.target.value });
+                      },
+                      checked: this.state.radio === 'Radio 1'
+                    }),
+                    _react2.default.createElement(
+                      'label',
+                      { className: 'form-check-label', htmlFor: 'radio1' },
+                      'Radio 1'
+                    )
+                  ),
+                  _react2.default.createElement(
+                    'div',
+                    { className: 'form-check' },
+                    _react2.default.createElement('input', {
+                      className: 'form-check-input',
+                      type: 'radio',
+                      name: 'radio',
+                      id: 'radio2',
+                      value: 'Radio 2',
+                      onChange: function onChange(e) {
+                        return _this2.setState({ radio: e.target.value });
+                      },
+                      checked: this.state.radio === 'Radio 2'
+                    }),
+                    _react2.default.createElement(
+                      'label',
+                      { className: 'form-check-label', htmlFor: 'radio2' },
+                      'Radio 2'
+                    )
+                  ),
+                  _react2.default.createElement(
+                    'div',
+                    { className: 'form-check' },
+                    _react2.default.createElement('input', {
+                      className: 'form-check-input',
+                      type: 'radio',
+                      name: 'radio',
+                      id: 'radio3',
+                      value: 'Radio 3',
+                      onChange: function onChange(e) {
+                        return _this2.setState({ radio: e.target.value });
+                      },
+                      checked: this.state.radio === 'Radio 3'
+                    }),
+                    _react2.default.createElement(
+                      'label',
+                      { className: 'form-check-label', htmlFor: 'radio3' },
+                      'Radio 3'
+                    )
+                  )
+                )
+              )
+            ),
+            _react2.default.createElement(
+              'button',
+              { className: 'btn btn-primary', type: 'submit' },
+              'Submit'
+            )
+          )
+        ),
+        _react2.default.createElement(_Footer2.default, null)
+      );
+    }
+  }]);
 
-    return Sample;
+  return Sample;
 }(_react2.default.Component);
 
 exports.default = (0, _AppContext.withSession)(Sample);
 
 
 Sample.propTypes = {
-    session: _propTypes2.default.object,
-    actions: _propTypes2.default.object
+  session: _propTypes2.default.object,
+  actions: _propTypes2.default.object
 };
 
 /***/ }),
