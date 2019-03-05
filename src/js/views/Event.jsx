@@ -93,7 +93,7 @@ class Event extends React.Component {
                       <div className="col-lg-9 order-lg-1 mx-auto">
                         <div className="row">
                           <div className="col-12 mb-4">
-                            <img className="img-fluid" src="http://via.placeholder.com/800X500" alt="event image of..." />
+                            <img className="img-fluid" src="https://via.placeholder.com/800X500" alt="event image of..." />
                             <h5 className="details"><strong>Details</strong></h5>
                             <p className="bodyText">Snuggle up with cute kitties, hot lattes, and a book. We host this event twice a month for a place to socialize or maybe come out for alternative therapy.<br/><br/>There are a few rules to follow for this event:</p>
                             <ul>
