@@ -64,7 +64,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "a05348840ee04cdacee6";
+/******/ 	var hotCurrentHash = "ef39c14096ce5675cec7";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -62275,10 +62275,10 @@ var Layout = function (_React$Component) {
         // }
       ],
       "session": {
-        ID: 1,
-        username: "mompy",
-        password: "abc123",
-        token: "wjer147892akerfdv"
+        // ID: 1,
+        // username: "mompy",
+        // password: "abc123",
+        // token: "wjer147892akerfdv"
       },
       "isLoading": true
     };
@@ -62970,6 +62970,10 @@ var _Footer = __webpack_require__(/*! ../components/Footer.jsx */ "./src/js/comp
 
 var _Footer2 = _interopRequireDefault(_Footer);
 
+var _Card = __webpack_require__(/*! ../components/Card.jsx */ "./src/js/components/Card.jsx");
+
+var _Card2 = _interopRequireDefault(_Card);
+
 var _moment = __webpack_require__(/*! moment */ "./node_modules/moment/moment.js");
 
 var _moment2 = _interopRequireDefault(_moment);
@@ -63008,8 +63012,6 @@ var Event = function (_React$Component) {
     value: function render() {
       var _this2 = this;
 
-      // ReactGA.pageview(window.location.pathname + window.location.search);
-
       return _react2.default.createElement(
         "div",
         null,
@@ -63021,7 +63023,7 @@ var Event = function (_React$Component) {
             var state = _ref.state,
                 actions = _ref.actions;
 
-            var user = state.session;
+            //const user = state.session;
             // console.log(user);
             var event = state.events.find(function (event) {
               return event.ID === parseInt(_this2.props.match.params.theid);
@@ -63033,18 +63035,9 @@ var Event = function (_React$Component) {
                 "Loading"
               );
             } else {
-              var yesDisabled = typeof event.rsvpYes !== 'undefined' && event.rsvpYes.includes("nachovz") ? "disabled" : "";
-              var noDisabled = typeof event.rsvpNo !== 'undefined' && event.rsvpNo.includes("nachovz") ? "disabled" : "";
-
               var eventDate = event.meta_keys.event_date_time;
-              //console.log('eventDate', eventDate);
               var eventDay = (0, _moment2.default)(eventDate).format("dddd, MMMM Do YYYY");
-              //console.log('eventDay', eventDay);
               var eventTime = (0, _moment2.default)(eventDate).format("h:mm a");
-              //console.log('eventTime', eventTime);
-              //let eventDay = Moment(aTime);
-              // console.log('eventDay', eventDay);
-
               return _react2.default.createElement(
                 "div",
                 null,
@@ -63076,90 +63069,21 @@ var Event = function (_React$Component) {
                               { className: "eventTitle" },
                               event.post_title
                             ),
+                            console.log(event.post_title),
                             _react2.default.createElement(
                               "h4",
                               null,
                               _react2.default.createElement(
                                 _reactRouterDom.Link,
                                 {
-                                  to: "/meetup/" + event.meetup
+                                  to: "/meetup/" + event.meta_keys.meetup_id
                                 },
                                 state.meetups.length > 0 ? state.meetups.find(function (meetup) {
-                                  return meetup.ID === parseInt(event.meetup);
+                                  return meetup.ID === parseInt(event.meta_keys.meetup_id);
                                 }).post_title : "Loading..."
                               )
                             )
                           )
-                        )
-                      ),
-                      _react2.default.createElement(
-                        "div",
-                        { className: "col-md-3 text-center rounded rsvpBox" },
-                        _react2.default.createElement(
-                          "h4",
-                          { className: "mb-4" },
-                          " ",
-                          " people going "
-                        ),
-                        !user.token ? _react2.default.createElement(
-                          "div",
-                          { className: "row mb-4" },
-                          _react2.default.createElement(
-                            "div",
-                            { className: "col mx-auto" },
-                            _react2.default.createElement(
-                              "button",
-                              { type: "button",
-                                className: "btn btn-primary",
-                                "data-toggle": "modal",
-                                "data-target": "#exampleModal",
-                                onClick: function onClick() {
-                                  return _this2.setState({ login: true });
-                                }
-                              },
-                              "Login to RSVP"
-                            )
-                          )
-                        ) : _react2.default.createElement(
-                          "div",
-                          { className: "row mb-4" },
-                          _react2.default.createElement(
-                            "div",
-                            { className: "col-md-6" },
-                            _react2.default.createElement(
-                              "button",
-                              {
-                                type: "button",
-                                className: "btn btn-success w-100 yesBTN",
-                                disabled: yesDisabled,
-                                onClick: function onClick() {
-                                  return actions.rsvpEvent(_this2.props.match.params.theid, user.user_nicename, "yes", user.token);
-                                }
-                              },
-                              "Yes"
-                            )
-                          ),
-                          _react2.default.createElement(
-                            "div",
-                            { className: "col-md-6" },
-                            _react2.default.createElement(
-                              "button",
-                              { type: "button",
-                                className: "btn btn-danger w-100 noBTN",
-                                disabled: noDisabled,
-                                onClick: function onClick() {
-                                  return actions.rsvpEvent(_this2.props.match.params.theid, user.user_nicename, "no", user.token);
-                                }
-                              },
-                              "No"
-                            )
-                          )
-                        ),
-                        _react2.default.createElement(
-                          "div",
-                          { className: "text-center socialIcons" },
-                          _react2.default.createElement(_reactFontawesome2.default, { icon: _faTwitter2.default }),
-                          _react2.default.createElement(_reactFontawesome2.default, { icon: _faFacebook2.default })
                         )
                       )
                     )
@@ -63449,6 +63373,10 @@ var _Navbar = __webpack_require__(/*! ../components/Navbar.jsx */ "./src/js/comp
 
 var _Navbar2 = _interopRequireDefault(_Navbar);
 
+var _propTypes = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
 var _Card = __webpack_require__(/*! ../components/Card.jsx */ "./src/js/components/Card.jsx");
 
 var _Card2 = _interopRequireDefault(_Card);
@@ -63456,6 +63384,10 @@ var _Card2 = _interopRequireDefault(_Card);
 var _Footer = __webpack_require__(/*! ../components/Footer.jsx */ "./src/js/components/Footer.jsx");
 
 var _Footer2 = _interopRequireDefault(_Footer);
+
+var _moment = __webpack_require__(/*! moment */ "./node_modules/moment/moment.js");
+
+var _moment2 = _interopRequireDefault(_moment);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -63477,58 +63409,90 @@ var Meetup = function (_React$Component) {
   _createClass(Meetup, [{
     key: 'render',
     value: function render() {
+      var _this2 = this;
+
       return _react2.default.createElement(
         _react2.default.Fragment,
         null,
         _react2.default.createElement(_Navbar2.default, null),
         _react2.default.createElement(
-          'div',
-          { className: 'container-fluid' },
-          _react2.default.createElement(
-            'div',
-            { className: 'header row' },
-            _react2.default.createElement(
-              'div',
-              { className: 'col mt-4 mb-4' },
-              _react2.default.createElement(
-                'a',
-                { href: '#' },
-                _react2.default.createElement('img', { className: 'img-fluid', src: 'http://via.placeholder.com/600x350' })
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'col mt-4 mb-4' },
-              _react2.default.createElement(
-                'h4',
-                null,
-                'Meetup ##'
-              ),
-              _react2.default.createElement('br', null),
-              _react2.default.createElement(
+          _AppContext.Consumer,
+          null,
+          function (_ref) {
+            var state = _ref.state,
+                actions = _ref.actions;
+
+            //const user = state.session;
+            //console.log(user);
+            var meetup = state.meetups.find(function (meetup) {
+              return meetup.ID === parseInt(_this2.props.match.params.theid);
+            });
+            console.log(meetup);
+            if (!meetup) {
+              return _react2.default.createElement(
                 'p',
                 null,
-                'Location',
-                _react2.default.createElement('br', null),
-                'City, State'
-              )
-            )
-          )
+                'Loading'
+              );
+            } else {
+              return _react2.default.createElement(
+                'div',
+                { className: 'container-fluid' },
+                _react2.default.createElement(
+                  'div',
+                  { className: 'header row' },
+                  _react2.default.createElement(
+                    'div',
+                    { className: 'col mt-4 mb-4' },
+                    _react2.default.createElement(
+                      'a',
+                      { href: '#' },
+                      _react2.default.createElement('img', { className: 'img-fluid', src: 'http://via.placeholder.com/600x350' })
+                    )
+                  ),
+                  _react2.default.createElement(
+                    'div',
+                    { className: 'col mt-4 mb-4' },
+                    _react2.default.createElement(
+                      'h4',
+                      null,
+                      meetup.post_title
+                    ),
+                    _react2.default.createElement('br', null),
+                    _react2.default.createElement(
+                      'p',
+                      null,
+                      'Location',
+                      _react2.default.createElement('br', null),
+                      'City, State'
+                    )
+                  )
+                )
+              );
+            }
+          }
         ),
         _react2.default.createElement(
           _AppContext.Consumer,
           null,
-          function (_ref) {
-            var state = _ref.state;
+          function (_ref2) {
+            var state = _ref2.state;
             return state.events.map(function (item, index) {
+              var eventDate = item.meta_keys.event_date_time;
+              console.log('eventDate', eventDate);
+              var eventDay = (0, _moment2.default)(eventDate).format("dddd, MMMM Do YYYY");
+              console.log('eventDay', eventDay);
+              var eventTime = (0, _moment2.default)(eventDate).format("h:mm a");
+              console.log('eventTime', eventTime);
+
               return _react2.default.createElement(_Card2.default, {
                 key: index,
                 ID: item.ID,
                 name: item.post_title,
-                date: item.day,
-                time: item.time,
+                date: eventDay,
+                time: eventTime,
                 description: item.post_content,
-                location: item.location
+                location: item.meta_keys.location
               });
             });
           }
@@ -63542,6 +63506,11 @@ var Meetup = function (_React$Component) {
 }(_react2.default.Component);
 
 exports.default = Meetup;
+
+
+Meetup.propTypes = {
+  match: _propTypes2.default.object
+};
 
 /***/ }),
 
