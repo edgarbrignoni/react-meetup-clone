@@ -17,7 +17,7 @@ class Meetup extends React.Component{
             //const user = state.session;
             //console.log(user);
             const meetup = state.meetups.find( meetup => meetup.ID === parseInt(this.props.match.params.theid) );
-            console.log(meetup);
+            //console.log(meetup);
             if (!meetup) { 
               return(<p>Loading</p>);
             } else { 
@@ -25,7 +25,7 @@ class Meetup extends React.Component{
                 <div className="container-fluid">
                   <div className="header row">
                     <div className="col mt-4 mb-4">
-                      <a href="#"><img className="img-fluid" src="http://via.placeholder.com/600x350"/></a>
+                      <a href="#"><img className="img-fluid" src="https://via.placeholder.com/600x350"/></a>
                     </div>
                     <div className="col mt-4 mb-4">
                       <h4>{meetup.post_title}</h4>
@@ -46,11 +46,11 @@ class Meetup extends React.Component{
           {({ state }) => (
             state.events.map((item, index) => {
               let eventDate = item.meta_keys.event_date_time;
-              console.log('eventDate', eventDate);
+              //console.log('eventDate', eventDate);
               let eventDay = Moment(eventDate).format("dddd, MMMM Do YYYY");
-              console.log('eventDay', eventDay);
+              //console.log('eventDay', eventDay);
               let eventTime = Moment(eventDate).format("h:mm a");
-              console.log('eventTime', eventTime);
+              //console.log('eventTime', eventTime);
               
               return (
                 <Card 

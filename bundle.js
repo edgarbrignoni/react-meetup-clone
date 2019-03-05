@@ -64,7 +64,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "8179dd9e32720e91e9f8";
+/******/ 	var hotCurrentHash = "c49f3d4544e909f723b8";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -63146,6 +63146,7 @@ var Event = function (_React$Component) {
                         _react2.default.createElement(
                           "div",
                           { className: "col-12 mb-4" },
+                          _react2.default.createElement("img", { className: "img-fluid", src: "https://via.placeholder.com/800X500", alt: "event image of..." }),
                           _react2.default.createElement(
                             "h5",
                             { className: "details" },
@@ -63426,7 +63427,7 @@ var Meetup = function (_React$Component) {
             var meetup = state.meetups.find(function (meetup) {
               return meetup.ID === parseInt(_this2.props.match.params.theid);
             });
-            console.log(meetup);
+            //console.log(meetup);
             if (!meetup) {
               return _react2.default.createElement(
                 'p',
@@ -63446,7 +63447,7 @@ var Meetup = function (_React$Component) {
                     _react2.default.createElement(
                       'a',
                       { href: '#' },
-                      _react2.default.createElement('img', { className: 'img-fluid', src: 'http://via.placeholder.com/600x350' })
+                      _react2.default.createElement('img', { className: 'img-fluid', src: 'https://via.placeholder.com/600x350' })
                     )
                   ),
                   _react2.default.createElement(
@@ -63478,11 +63479,11 @@ var Meetup = function (_React$Component) {
             var state = _ref2.state;
             return state.events.map(function (item, index) {
               var eventDate = item.meta_keys.event_date_time;
-              console.log('eventDate', eventDate);
+              //console.log('eventDate', eventDate);
               var eventDay = (0, _moment2.default)(eventDate).format("dddd, MMMM Do YYYY");
-              console.log('eventDay', eventDay);
+              //console.log('eventDay', eventDay);
               var eventTime = (0, _moment2.default)(eventDate).format("h:mm a");
-              console.log('eventTime', eventTime);
+              //console.log('eventTime', eventTime);
 
               return _react2.default.createElement(_Card2.default, {
                 key: index,
