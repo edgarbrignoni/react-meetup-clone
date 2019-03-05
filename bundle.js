@@ -64,7 +64,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "c49f3d4544e909f723b8";
+/******/ 	var hotCurrentHash = "624ca218c378cb0d5955";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -63069,7 +63069,6 @@ var Event = function (_React$Component) {
                               { className: "eventTitle" },
                               event.post_title
                             ),
-                            console.log(event.post_title),
                             _react2.default.createElement(
                               "h4",
                               null,

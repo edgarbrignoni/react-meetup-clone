@@ -51,7 +51,7 @@ class Event extends React.Component {
                             <div className="col-12">
                               <p className="eventDate">{eventDay}</p>
                               <h1 className="eventTitle">{event.post_title}</h1>
-                              {console.log(event.post_title)}
+                              {/*console.log(event.post_title)*/}
                               <h4> 
                                 <Link 
                                   to={"/meetup/"+event.meta_keys.meetup_id} 
