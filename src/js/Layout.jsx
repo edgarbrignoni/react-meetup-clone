@@ -137,10 +137,10 @@ class Layout extends React.Component {
         // }
       ],
       "session": {
-        ID: 1,
-        username: "mompy",
-        password: "abc123",
-        token: "wjer147892akerfdv"
+        // ID: 1,
+        // username: "mompy",
+        // password: "abc123",
+        // token: "wjer147892akerfdv"
       },
       "isLoading": true
     };
@@ -192,7 +192,7 @@ class Layout extends React.Component {
         
         this.setState({"events": tempArray});
       },
-      "updateSample" : (id, title, content, text, select, text_area, radio, fracture, luxation, sprain) => {
+      "updateSample": (id, title, content, text, select, text_area, radio, fracture, luxation, sprain) => {
         //console.log(id, title, content, text, select, text_area, radio, fracture, luxation, sprain);
         let url = 'https://www.edgarbrignoni.com/backend/wp-json/sample_api/v1/samples';
         var data = {

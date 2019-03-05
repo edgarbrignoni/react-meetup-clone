@@ -38,10 +38,10 @@ class Card extends React.Component{
 export default Card;
 
 Card.propTypes = {
-    ID: PropTypes.number,
-    name: PropTypes.string,
-    date: PropTypes.string,
-    time: PropTypes.string,
-    description: PropTypes.string,
-    location: PropTypes.string
+  ID: PropTypes.number,
+  name: PropTypes.string,
+  date: PropTypes.string,
+  time: PropTypes.string,
+  description: PropTypes.string,
+  location: PropTypes.string
 };
