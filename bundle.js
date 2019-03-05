@@ -64,7 +64,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "47a3f522a3d7755c0ce5";
+/******/ 	var hotCurrentHash = "8179dd9e32720e91e9f8";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -63146,7 +63146,6 @@ var Event = function (_React$Component) {
                         _react2.default.createElement(
                           "div",
                           { className: "col-12 mb-4" },
-                          _react2.default.createElement("img", { className: "img-fluid", src: "https://via.placeholder.com/800X500", alt: "event image of..." }),
                           _react2.default.createElement(
                             "h5",
                             { className: "details" },
