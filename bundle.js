@@ -64,7 +64,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "624ca218c378cb0d5955";
+/******/ 	var hotCurrentHash = "5887b59145e12d8b62de";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -59678,6 +59678,68 @@ var generatePath = function generatePath() {
 
 /***/ }),
 
+/***/ "./node_modules/react-router/es/index.js":
+/*!***********************************************!*\
+  !*** ./node_modules/react-router/es/index.js ***!
+  \***********************************************/
+/*! exports provided: MemoryRouter, Prompt, Redirect, Route, Router, StaticRouter, Switch, generatePath, matchPath, withRouter */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _MemoryRouter__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./MemoryRouter */ "./node_modules/react-router/es/MemoryRouter.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "MemoryRouter", function() { return _MemoryRouter__WEBPACK_IMPORTED_MODULE_0__["default"]; });
+
+/* harmony import */ var _Prompt__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Prompt */ "./node_modules/react-router/es/Prompt.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Prompt", function() { return _Prompt__WEBPACK_IMPORTED_MODULE_1__["default"]; });
+
+/* harmony import */ var _Redirect__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Redirect */ "./node_modules/react-router/es/Redirect.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Redirect", function() { return _Redirect__WEBPACK_IMPORTED_MODULE_2__["default"]; });
+
+/* harmony import */ var _Route__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Route */ "./node_modules/react-router/es/Route.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Route", function() { return _Route__WEBPACK_IMPORTED_MODULE_3__["default"]; });
+
+/* harmony import */ var _Router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Router */ "./node_modules/react-router/es/Router.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Router", function() { return _Router__WEBPACK_IMPORTED_MODULE_4__["default"]; });
+
+/* harmony import */ var _StaticRouter__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./StaticRouter */ "./node_modules/react-router/es/StaticRouter.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "StaticRouter", function() { return _StaticRouter__WEBPACK_IMPORTED_MODULE_5__["default"]; });
+
+/* harmony import */ var _Switch__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Switch */ "./node_modules/react-router/es/Switch.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Switch", function() { return _Switch__WEBPACK_IMPORTED_MODULE_6__["default"]; });
+
+/* harmony import */ var _generatePath__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./generatePath */ "./node_modules/react-router/es/generatePath.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "generatePath", function() { return _generatePath__WEBPACK_IMPORTED_MODULE_7__["default"]; });
+
+/* harmony import */ var _matchPath__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./matchPath */ "./node_modules/react-router/es/matchPath.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "matchPath", function() { return _matchPath__WEBPACK_IMPORTED_MODULE_8__["default"]; });
+
+/* harmony import */ var _withRouter__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./withRouter */ "./node_modules/react-router/es/withRouter.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "withRouter", function() { return _withRouter__WEBPACK_IMPORTED_MODULE_9__["default"]; });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***/ }),
+
 /***/ "./node_modules/react-router/es/matchPath.js":
 /*!***************************************************!*\
   !*** ./node_modules/react-router/es/matchPath.js ***!
@@ -62134,6 +62196,10 @@ var _Meetup = __webpack_require__(/*! ./views/Meetup.jsx */ "./src/js/views/Meet
 
 var _Meetup2 = _interopRequireDefault(_Meetup);
 
+var _ScrollToTop = __webpack_require__(/*! ./components/ScrollToTop.jsx */ "./src/js/components/ScrollToTop.jsx");
+
+var _ScrollToTop2 = _interopRequireDefault(_ScrollToTop);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -62402,24 +62468,28 @@ var Layout = function (_React$Component) {
           _reactRouterDom.BrowserRouter,
           null,
           _react2.default.createElement(
-            _reactRouterDom.Switch,
+            _ScrollToTop2.default,
             null,
             _react2.default.createElement(
-              _AppContext.Provider,
-              { value: { state: this.state, actions: this.actions } },
-              _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/", component: _Home2.default }),
-              _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/home", component: _Home2.default }),
-              _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/event/:theid", component: _Event2.default }),
-              _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/meetup/:theid", component: _Meetup2.default }),
-              _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/sample", component: _Sample2.default })
-            ),
-            _react2.default.createElement(_reactRouterDom.Route, { render: function render() {
-                return _react2.default.createElement(
-                  "h1",
-                  null,
-                  "Not found!"
-                );
-              } })
+              _reactRouterDom.Switch,
+              null,
+              _react2.default.createElement(
+                _AppContext.Provider,
+                { value: { state: this.state, actions: this.actions } },
+                _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/", component: _Home2.default }),
+                _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/home", component: _Home2.default }),
+                _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/event/:theid", component: _Event2.default }),
+                _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/meetup/:theid", component: _Meetup2.default }),
+                _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/sample", component: _Sample2.default })
+              ),
+              _react2.default.createElement(_reactRouterDom.Route, { render: function render() {
+                  return _react2.default.createElement(
+                    "h1",
+                    null,
+                    "Not found!"
+                  );
+                } })
+            )
           )
         )
       );
@@ -62822,6 +62892,76 @@ Navbar.propTypes = {
 
 /***/ }),
 
+/***/ "./src/js/components/ScrollToTop.jsx":
+/*!*******************************************!*\
+  !*** ./src/js/components/ScrollToTop.jsx ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouter = __webpack_require__(/*! react-router */ "./node_modules/react-router/es/index.js");
+
+var _propTypes = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var ScrollToTop = function (_React$Component) {
+  _inherits(ScrollToTop, _React$Component);
+
+  function ScrollToTop() {
+    _classCallCheck(this, ScrollToTop);
+
+    return _possibleConstructorReturn(this, (ScrollToTop.__proto__ || Object.getPrototypeOf(ScrollToTop)).apply(this, arguments));
+  }
+
+  _createClass(ScrollToTop, [{
+    key: "componentDidUpdate",
+    value: function componentDidUpdate(prevProps) {
+      if (this.props.location !== prevProps.location) {
+        window.scrollTo(0, 0);
+      }
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return this.props.children;
+    }
+  }]);
+
+  return ScrollToTop;
+}(_react2.default.Component);
+
+exports.default = (0, _reactRouter.withRouter)(ScrollToTop);
+
+
+ScrollToTop.propTypes = {
+  location: _propTypes2.default.object,
+  children: _propTypes2.default.any
+};
+
+/***/ }),
+
 /***/ "./src/js/index.js":
 /*!*************************!*\
   !*** ./src/js/index.js ***!
@@ -63024,7 +63164,7 @@ var Event = function (_React$Component) {
                 actions = _ref.actions;
 
             //const user = state.session;
-            // console.log(user);
+            //console.log(user);
             var event = state.events.find(function (event) {
               return event.ID === parseInt(_this2.props.match.params.theid);
             });
@@ -63598,10 +63738,10 @@ var Sample = function (_React$Component) {
       var target = e.target;
       var value = target.type === 'checkbox' ? target.checked : target.value;
       var name = target.name;
-      console.log("event", e);
-      console.log("checked", target.checked);
-      console.log("value", target.value);
-      console.log("name", target.name);
+      //console.log("event", e);
+      //console.log("checked", target.checked);
+      //console.log("value", target.value);
+      //console.log("name", target.name);
 
       this.setState(_defineProperty({}, name, value));
     }
