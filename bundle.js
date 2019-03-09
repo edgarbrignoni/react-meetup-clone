@@ -64,7 +64,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "5887b59145e12d8b62de";
+/******/ 	var hotCurrentHash = "3abf827c1b48b8b17c76";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -62352,27 +62352,31 @@ var Layout = function (_React$Component) {
     _this.actions = {
       "loadSession": function loadSession(receivedUsername, receivedPassword) {
         // fetch('https://wordpress-breathecode-cli-nachovz.c9users.io/wp-json/jwt-auth/v1/token', {
-        //   method: 'post',
-        //   body: JSON.stringify({
-        //     "username":receivedUsername,
-        //     "password":receivedPassword
-        //   }),
-        //   headers: new Headers({
-        //     'Content-Type':'application/json'
-        //   })
-        // })
-        // .then(response => response.json())
-        // .then(data => this.setState({ session: data}))
-        // .catch(error => console.log(error));
-
-        _this.setState({
-          session: {
-            ID: 1000,
-            user_nicename: receivedUsername,
-            password: receivedPassword,
-            token: "gfdrtu6545hftydhgrhxfh"
-          }
+        fetch('https://www.edgarbrignoni.com/backend/wp-json/jwt-auth/v1/token', {
+          method: 'post',
+          body: JSON.stringify({
+            "username": receivedUsername,
+            "password": receivedPassword
+          }),
+          headers: new Headers({
+            'Content-Type': 'application/json'
+          })
+        }).then(function (response) {
+          return response.json();
+        }).then(function (data) {
+          return _this.setState({ session: data });
+        }).catch(function (error) {
+          return console.log(error);
         });
+
+        // this.setState({
+        //   session: {
+        //     ID: 1000,
+        //     user_nicename: receivedUsername,
+        //     password: receivedPassword,
+        //     token: "gfdrtu6545hftydhgrhxfh"
+        //   }
+        // });
       },
       "rsvpEvent": function rsvpEvent(id, userId, answer, token) {
         var indexOfEvent = 0;
