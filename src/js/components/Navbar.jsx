@@ -49,7 +49,7 @@ class Navbar extends React.Component{
                 >
                   Login
                 </button>
-                }
+              }
             </div>
           </div>
         </nav>

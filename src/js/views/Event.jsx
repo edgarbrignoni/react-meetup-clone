@@ -32,7 +32,7 @@ class Event extends React.Component {
         <Consumer>
           {({ state, actions }) => {
             //const user = state.session;
-            // console.log(user);
+            //console.log(user);
             const event = state.events.find( event => event.ID === parseInt(this.props.match.params.theid) );
             if (!event) { 
               return(<p>Loading</p>);

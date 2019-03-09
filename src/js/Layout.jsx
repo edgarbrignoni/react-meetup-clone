@@ -6,6 +6,7 @@ import Home from "./views/Home.jsx";
 import Event from "./views/Event.jsx";
 import Sample from "./views/Sample.jsx";
 import Meetup from "./views/Meetup.jsx";
+import ScrollToTop from "./components/ScrollToTop.jsx";
 
 class Layout extends React.Component {
     
@@ -252,16 +253,18 @@ class Layout extends React.Component {
     return (
       <React.Fragment>
         <BrowserRouter>
-          <Switch>
-            <Provider value={{state:this.state, actions:this.actions}}>
-              <Route exact path="/" component={Home} />
-              <Route exact path="/home" component={Home} />
-              <Route exact path="/event/:theid" component={Event} />
-              <Route exact path="/meetup/:theid" component={Meetup} />
-              <Route exact path="/sample" component={Sample} />
-            </Provider>
-            <Route render={() => <h1>Not found!</h1>} />
-          </Switch>
+          <ScrollToTop>
+            <Switch>
+              <Provider value={{state:this.state, actions:this.actions}}>
+                <Route exact path="/" component={Home} />
+                <Route exact path="/home" component={Home} />
+                <Route exact path="/event/:theid" component={Event} />
+                <Route exact path="/meetup/:theid" component={Meetup} />
+                <Route exact path="/sample" component={Sample} />
+              </Provider>
+              <Route render={() => <h1>Not found!</h1>} />
+            </Switch>
+          </ScrollToTop>
         </BrowserRouter>
       </React.Fragment>
     );

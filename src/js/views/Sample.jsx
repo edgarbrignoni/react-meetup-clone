@@ -32,10 +32,10 @@ class Sample extends React.Component{
     const target = e.target;
     const value = target.type === 'checkbox' ? target.checked : target.value;
     const name = target.name;
-    console.log("event", e);
-    console.log("checked", target.checked);
-    console.log("value", target.value);
-    console.log("name", target.name);
+    //console.log("event", e);
+    //console.log("checked", target.checked);
+    //console.log("value", target.value);
+    //console.log("name", target.name);
 
     this.setState({
         [name]: value
