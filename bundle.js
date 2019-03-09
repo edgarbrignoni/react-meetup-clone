@@ -64,7 +64,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "3abf827c1b48b8b17c76";
+/******/ 	var hotCurrentHash = "de08cfc6b4c4e17b1230";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -62365,6 +62365,11 @@ var Layout = function (_React$Component) {
           return response.json();
         }).then(function (data) {
           return _this.setState({ session: data });
+        }).then(function (data) {
+          if (data.status !== 200) {
+            throw new Error(data); //INVALID TOKEN
+          }
+          _this.actions.loadInitialData();
         }).catch(function (error) {
           return console.log(error);
         });
