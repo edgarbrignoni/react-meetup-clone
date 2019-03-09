@@ -160,7 +160,13 @@ class Layout extends React.Component {
           })
         })
         .then(response => response.json())
-        .then(data => this.setState({ session: data}))
+        .then(data => this.setState({ session: data }))
+        .then(data => {
+          if (data.status !== 200 ) {
+            throw new Error(data); //INVALID TOKEN
+          }
+          this.actions.loadInitialData();
+        })
         .catch(error => console.log(error));
         
         // this.setState({
@@ -240,8 +246,7 @@ class Layout extends React.Component {
         // .catch(error => console.log(error));
       },
       "logout": () => this.setState({
-        session: {
-        }
+        session: {}
       })
     };
   }
